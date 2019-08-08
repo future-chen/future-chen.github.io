@@ -1,0 +1,315 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑"
+}
+a{
+	text-decoration: none;
+}
+/*618活动图片描述*/
+.cdy_618{
+	display:block;
+	width:100%; 
+	height: 50px;
+	background-color:#feb292;
+	margin-bottom: 5px;	
+}
+.cdy_618 img{
+	display: block;
+	margin: 0 auto;
+	width:980px;
+	height: 50px;
+}
+/*帮助中心*/
+.cdy_help{
+	width: 1190px;
+	height: 80px;
+	margin:0 auto; 
+	overflow: hidden;
+}
+.cdy_log{
+	display: block;
+	width: 176px;
+	height: 72px;
+	float: left;
+}
+.cdy_log_right{	
+	float: right;
+	margin-top:45px; 
+}
+.cdy_log_right a{
+	color: black;
+	font-size: 13px;
+}
+.cdy_log_right a:hover {
+	color: red;
+}
+/*红色背景区域*/
+.cdy_bg{
+	background:#e62318;
+	width: 100%;	
+	padding: 72px 0;
+}
+.cdy_content{
+	width: 1080px;
+	margin:0 auto; 
+	overflow:hidden;
+}
+.cdy_content>img{
+	float: left;
+}
+/*登录框部分*/
+.cdy_right{
+	float: right;
+	position: relative;
+    width: 306px;
+    min-height: 371px;
+    background: #fff;
+    padding: 22px 27px 20px 27px
+}
+.cdy_right_top{ /*登录框顶端文字*/
+	height: 42px;
+	border-bottom:1px solid #dedede;
+}
+#cdy_right01 .cdy_err{
+	font-size: 12px;
+	line-height: 20px;
+	border:1px solid #faccc6;
+	color:#e62318;	
+	background-color: #fef2f2;
+	text-indent: 25px;
+	/*display:none;*/
+	position: absolute;
+	top: -15px;
+}
+.cdy_err div{
+	width: 20px;
+	height: 20px;
+	background-image:url(../images/allPuzzle.png);
+	background-position:-153px -28px;
+	position: absolute;
+}
+#cdy_tel{/* 电话字体*/
+	cursor:pointer;
+	color: red;
+	font-size: 18px;
+}
+#cdy_num{/* 账号密码登陆*/
+	font-size: 18px;
+	cursor:pointer;
+	margin-left: 30px;
+}
+#cdy_tel01 input{/*第一个小框的输入框*/
+	width: 306px;
+	height: 40px;
+	margin:10px 0;
+	text-indent:35px;
+	outline: 0;
+}
+#cdy_checkbox input{
+	width: 15px;
+	height:15px;	
+	display: inline-block;
+}
+#cdy_checkbox p{
+	font-size: 13px;
+	display: inline-block;
+}
+#cdy_tel02 input{/*第二个小框的输入框*/
+	width: 306px;
+	height: 40px;
+	margin:10px 0;
+	text-indent:35px;
+	outline: 0;
+}
+#cdy_tel01{ /*第一个轮播小框*/
+	width: 306px;
+	position: absolute;
+	top: 60px;
+	left: 0px;
+}
+#cdy_tel02{/*第二个轮播小框*/
+	position: absolute;
+	top: 60px;
+	left:361px;
+}
+#cdy_tel02>div{
+	position:relative;
+}
+.cdy_tel011{/*手机号小图标*/
+	width: 22px;
+	height: 22px;
+	background:url(../images/allPuzzle.png);
+	background-position:-61px -30px;
+	position: absolute;
+	top: 22px;
+	left:5px;
+}
+.cdy_tel014{/*手机号小图标*/
+	width: 22px;
+	height: 22px;
+	background:url(../images/allPuzzle.png);
+	background-position:-40px -30px;
+	position: absolute;
+	top: 22px;
+	left:5px;
+}
+.cdy_tel021{/*账号登录小图标*/
+	width: 22px;
+	height: 22px;
+	background:url(../images/allPuzzle.png);
+	background-position:0 -30px;
+	position: absolute;
+	top: 22px;
+	left:8px;
+}
+.cdy_tel012,.cdy_tel022{/*密码登录小图标*/
+	width: 22px;
+	height: 22px;
+	background:url(../images/allPuzzle.png);
+	background-position:-19px -30px;
+	position: absolute;
+	top: 22px;
+	left:8px;
+}
+.cdy_tel023{ /*忘记密码位置*/
+	font-size:12px;
+	color: black;
+	position: absolute;
+	top: 55px;
+	right: 0; 
+}
+.cdy_tel013{/*发送手机验证码位置*/
+	display: block;
+	font-size: 10px;
+	width: 100px;
+	height: 25px;
+	color: black;
+	background:#dedede;
+	text-align: center;
+	line-height: 25px;
+	position: absolute;
+	top: 22px;
+	right: 20px;
+}
+#cdy_random{
+	width: 80px;
+	height: 25px;
+	border:1px solid #dedede; 
+	text-align: center;
+	line-height: 25px;
+	position: absolute;
+	top: 20px;
+	left: 190px;
+}
+#cdy_change{
+	position: absolute;
+	top: 22px;
+	left: 280px;
+	width: 25px;
+	height: 20px;
+	background: url(../images/allPuzzle.png);
+	background-position: -72px -152px;
+}
+.cdy_tel_button{/*登录框*/
+	width: 306px;
+	height: 40px;
+	background:red;
+	font-size: 18px;
+	text-align: center;
+	line-height: 40px;
+	color: white; 
+	margin-top:10px;
+	cursor:pointer;
+}
+#cdy_right01{
+	width: 306px;
+	position: absolute;
+}
+#cdy_tel01>div{
+	position: relative;
+}
+.cdy_right{
+	overflow:hidden;
+}
+.cdy_right_bottom{/*输入框底部*/
+	width: 306px;
+	height: 50px;
+	margin-top:360px;
+	overflow: hidden;
+	border-top: 1px solid #dedede;
+}
+#cdy_weixin,#cdy_app,#cdy_qq{
+	width:100px;
+	float: left;
+	font-size: 12px;
+	line-height: 60px;
+	cursor:pointer;
+}
+#cdy_view{
+	font-size: 12px;
+	line-height: 60px;
+	color: red;
+	cursor:pointer;
+}
+.cdy_weixin_img{
+	width: 28px;
+	height: 30px;
+	background:url(../images/allPuzzle.png);
+	background-position: 115px 0px;
+	margin-top: 16px;
+	float: left;
+}
+.cdy_app_img{
+	width: 29px;
+	height: 28px;
+	background:url(../images/allPuzzle.png);
+	background-position: 99px -80px;
+	margin-top: 16px;
+	float: left;
+}
+.cdy_qq_img{
+	width: 28px;
+	height: 30px;
+	background:url(../images/allPuzzle.png);
+	background-position: 171px 0px;
+	margin-top: 16px;
+	float: left;
+}
+#cdy_right_weixin{
+	padding: 20px;
+	width: 330px;
+	height: 340px;
+	position: absolute;
+	top: 0;
+	left: 360px;
+	font-size: 20px;
+	background: white;
+}
+#cdy_right_app{
+	padding: 20px;
+	width: 330px;
+	height:340px;
+	position: absolute;
+	top: 0;
+	left: 360px;
+	background: white;
+	font-size: 20px;
+}
+#cdy_right_app img{
+	width: 200px;
+	height: 200px;
+	margin:40px 0 0 60px; 
+}
+#cdy_right_weixin img{
+	width: 200px;
+	height: 200px;
+	margin:40px 0 0 60px; 
+}
+.cdy_type{
+	font-size: 12px;
+	text-align: center;
+}
+#cdy_checkbox,#cdy_check{
+	display: none;
+}

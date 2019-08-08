@@ -1,0 +1,175 @@
+a{
+	text-decoration: none;
+	color: black
+}
+.cdy_shop_box{
+	width: 1190px;
+	margin: 70px auto;
+}
+.cdy_shop_top{
+	overflow: hidden;
+}
+.cdy_shop_top img{
+	float: right;
+	margin: 10px 0;
+}
+.cdy_shop_kong{
+	padding:100px 0;
+	width:1190;
+	border:1px solid #dedede;
+}
+.cdy_shop_mid p{
+	font-size: 20px;
+}
+.cdy_shop_img{
+	width: 120px;
+	height: 100px;
+	background:url(../images/cdy_bg.png);
+	background-position:-840px -100px;
+	float: left;
+	margin-left: 200px;
+}
+.cdy_shop_mid{
+	margin-left: 120px;
+}
+.cdy_mid_one{
+	width: 150px;
+	height: 40px;
+	background: #f27512;
+	text-align: center;
+	line-height: 40px;
+	color: white;
+	float: left;
+}
+.cdy_shop_mid span{
+	line-height: 30px;
+	font-size: 14px;
+	float: left;
+}
+.cdy_shop_two{
+	width: 310px;
+	height: 30px;
+	border:1px solid #dedede;
+	float: left;
+}
+.cdy_shop_two input{
+	text-indent: 1em;
+	outline: 0;
+	border:0;
+}
+.cdy_shop_two a{
+	text-align: center;
+	line-height: 30px;
+	display: inline-block;
+	margin-left: 80px;
+	width: 60px;
+	height: 30px;
+	border-left: 1px solid #dedede;	
+}
+/*计算窗口内容*/
+.cdy_acc_box{
+	width: 1190px;
+	margin:70px auto;
+}
+.cdy_sum,.cdy_acc_box>p{
+	display: inline-block;
+}
+.cdy_sum{
+	width:80px;
+	margin-right: 20px;
+	margin-bottom: 5px;
+	height: 32px;
+	border-bottom: 2px solid red;
+}
+.cdy_acc_top{
+	width: 100%;
+	height: 40px;
+	background: #eeeeee;
+}
+.cdy_btn{
+	width: 20px;
+	height: 20px;
+	background: url(../images/cdy_bbg.png);
+	background-position: 0 0;
+	margin:13px 0 0 13px;
+	float: left;
+}
+.cdy_acc_top span{
+	line-height: 40px;
+	margin:0 20px;
+}
+.cdy_acc_top .cdy_btn01{
+	margin:0 300px;
+}
+.cdy_acc_mei{
+	height: 60px;
+}
+.cdy_acc_mei .cdy_btn{
+	margin-top: 24px;
+}
+.cdy_acc_mei span{
+	color:red;
+	line-height: 60px;
+}
+.cdy_ke{
+	display: inline-block;
+	width: 50px;
+	height: 20px;
+	margin-left: 20px;
+	text-align: center;
+	border-radius: 10px;
+	background: #f96b6f;
+}
+.cdy_acc_cot{
+	overflow: hidden;
+	padding: 50px 0 50px 0;
+	font-size: 14px;
+	border:1px solid #dedede;
+}
+.cdy_acc_one{
+	height: 135px;
+	border:1px solid red; 
+}
+.cdy_acc_one div{
+	margin:10px 16px;
+	float: left;
+}
+.cdy_acc_bom{
+	height: 60px;
+	overflow: hidden;
+	background: #eeeeee;
+}
+.cdy_acc_bom .cdy_btn{
+	margin-top:20px;
+}
+.cdy_acc_bom div{
+	line-height: 60px;
+	cursor: pointer;
+}
+.cdy_acc_lef div:hover {
+	color: red;
+}
+.cdy_acc_fin{
+	width: 120px;
+	height: 60px;
+	background:#e62318 ;
+	color:white;
+	line-height: 60px;
+	text-align: center;
+}
+.cdy_acc_acc0{
+	margin-left:50px; 
+}
+.cdy_acc_rig{
+	float: right;
+}
+.cdy_acc_lef, .cdy_acc_lef div{
+	float: left;
+}
+.cdy_acc_lef div{
+	margin-right: 20px;
+}
+.cdy_acc_rig div{
+	margin:0;
+	display: inline-block;
+}

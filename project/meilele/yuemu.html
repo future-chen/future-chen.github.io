@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>阅木</title>
+	<script src="js/jquery-1.8.3.js"></script>
+	<link rel="stylesheet" href="css/Index_header.css">
+	<link rel="stylesheet" href="css/xy_css1.css">
+	<link rel="stylesheet" href="css/xy_css2.css">
+	<link rel="stylesheet" href="css/xy_css3.css">
+	<link rel="stylesheet" href="css/xy_css4.css">
+	<link rel="stylesheet" href="css/xy_css5.css">
+	<link rel="stylesheet" href="css/xy_css6.css">
+	<link rel="stylesheet" href="css/Index_foot.css">
+	<link rel="stylesheet" href="css/cebian.css">
+</head>
+
+<body>
+
+	<div id="WJH_header">
+		<!-- 总栏 -->
+		<div class="WJH_menu">
+
+			<div class="WJH_area">
+				<!-- 地区栏 -->
+				<ul class="WJH_nav_left">
+					<li class="WJH_change">
+						<i class="i_coord"></i>
+						<span class="WJH_city">全国站</span>
+						<div class="WJH_changeCity">
+							[切换]
+							<ul id="WJH_cityBox">
+								<span class="WJH_arrowBg"></span>
+								<p></p>
+								<ul class="WJH_cityTitle">
+									<li>全国</li>
+									<li>北京</li>
+									<li>上海</li>
+									<li>广州</li>
+									<li>深圳</li>
+									<li>成都</li>
+									<li>西安</li>
+									<li>天津</li>
+									<li>武汉</li>
+									<li>重庆</li>
+									<li>南京</li>
+								</ul>
+								<div class="WJH_search">
+									<input type="text" placeholder="输入城市名"><button>搜索</button>
+								</div>
+								<!-- 首字母 -->
+								<ul id="WJH_firWord">
+
+								</ul>
+								<!-- 城市列表 -->
+								<div id="WJH_cityliebiao">
+
+								</div>
+							</ul>
+						</div>
+
+					</li>
+					<li class="WJH_login">
+						<a href="cdyLogin.html">请登录</a>
+					</li>
+					<li class="WJH_regist">
+						<a href="cdySign.html">免费注册</a>
+					</li>
+				</ul>
+				<!-- 我的美乐乐栏 -->
+				<ul class="WJH_nav_right">
+					<li class="WJH_mymeilele">
+						<a href="">我的美乐乐</a>
+						<div class="WJH_mymeilele_box">
+							<a href="">我的订单</a>
+							<a href="">我的金币</a>
+							<a href="">我的红包</a>
+							<a href="">我的收藏</a>
+							<a href="">我要评价</a>
+							<a href="">申请保价</a>
+						</div>
+						<i class="drop_arrow"></i>
+					</li>
+					<li class="WJH_good">
+						<i class="WJH_cart"></i>
+						<a href="hopping.html">购物车</a><span class="WJH_goodsCount">0</span>
+						<div class="shopCar_line"></div>
+						<div id="shopCar">
+							暂时没有商品
+						</div>
+						<i class="drop_arrow"></i>
+					</li>
+					<li class="WJH_guanzhu">
+						<i class="WJH_guanzhuicon"></i>
+						<a href="">关注美乐乐</a>
+						<i class="drop_arrow"></i>
+					</li>
+					<li class="WJH_helpcenter">
+						<a href="">帮助中心</a>
+						<i class="drop_arrow"></i>
+					</li>
+					<li class="WJH_collet">
+						<a href="">收藏本站</a>
+					</li>
+					<li>
+						<span class="WJH_help">全国帮助中心&nbsp;:</span><span class="WJH_tel">&nbsp;4000000000</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	
+	</div>
+
+
+
+
+
+
+	<!-- 第一层 阅木LOGO -->
+	<div id="xy_header">
+	
+		<img src="images/xy_logo.jpg" alt="">
+		<ul>
+			<li><a href="lqc.html">商城首页</a></li>
+			<li><a href="LH.html">家具城</a></li>
+			<li><a href="ch_jcCity.html">建材城</a></li>
+			<li><a href="#">家居家饰</a></li>
+			<li><a href="#">团购</a></li>
+			<li><a href="#">体验馆</a></li>
+			<li style="border-bottom: solid 6px #b6874f"><a href="">阅木</a></li>
+			<li><a href="jIndex.html">晒家</a></li>
+			<li><a href="TuLanJiaJu.html">图览家居</a></li>
+			<li><a href="#">装修网</a></li>
+		</ul>
+	</div>
+		<div class="clear"></div>
+	
+	<!-- 第二层 搜索栏-->
+	<div id="xy_bgpic">
+		<div class="xy_box">
+			<div id="xy_seach">
+				<label>
+					<input id="xy_input" type="text" value="搜索 白蜡木">
+					<img src="images/xy_seach.png" alt="">
+				</label>
+				<ul class="xy_index">
+					<li><a href="http://www.meilele.com/ym/detail-5.html">枫木</a></li>
+					<li><a href="http://www.meilele.com/ym/detail-6.html">奥古曼</a></li>
+					<li><a href="http://www.meilele.com/ym/detail-4.html">榆木</a></li>
+					<li><a href="http://www.meilele.com/ym/detail-111.html">白桉</a></li>
+					<li><a href="http://www.meilele.com/ym/detail-135.html">红枫</a></li>
+					<li><a href="http://www.meilele.com/ym/detail-12.html">橡胶木</a></li>
+					<li><a href="http://www.meilele.com/ym/detail-53.html">樟木</a></li>
+					<li><a href="http://www.meilele.com/ym/detail-99.html">冷杉</a></li>
+					<li><a href="http://www.meilele.com/ym/detail-70.html">云杉</a></li>
+				</ul>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- 第三层 搜索下方-->
+	<div id="xy_intro">
+		<ul>
+			<li class="first_list">
+				<div class="xy_intro_remen">
+					<img src="images/xy_icon1.jpg" alt="">
+					<p class="asd">热门木材</p>
+				</div>
+				<div class="xy_intro_mucai_first">
+					<a href="">麻栎属</a>
+					<a href="">杉木属</a>
+					<a href="">核桃属</a>
+					<a href="">桦木属</a>
+				</div>
+			</li>
+
+			<li>
+				<div class="xy_intro_remen">
+					<img src="images/xy_icon2.jpg" alt="">
+					<p>使用途径</p>
+				</div>
+				<div class="xy_intro_mucai_second">
+					<a href="">家居材料</a>
+					<a href="">地板材料</a>
+					<a href="">木工用品</a>
+					<a href="">其他用材</a>
+				</div>
+			</li>
+
+			<li>
+				<div class="xy_intro_remen">
+					<img src="images/xy_icon3.jpg" alt="">
+					<p>地域分布</p>
+				</div>
+				<div class="xy_intro_mucai_third">
+					<a href="">亚洲</a>
+					<a href="">欧洲</a>
+					<a href="">美洲</a>
+					<a href="">非洲</a>
+					<a href="">大洋洲</a>
+				</div>
+			</li>
+
+		</ul>
+	</div>
+
+	<!-- 分割线 -->
+	<div id="line"></div>
+	<!-- 第四层 猜你喜欢-->
+	<div id="xy_like">
+		<div id="xy_like_title">
+			<img src="images/xy_title1.png" alt="">
+			<div id="xy_title_line"></div>
+		</div>
+		<div id="xy_content_eve">
+			<div class="xy_content" id="xy_content_nomf">
+				<ul>
+					<li>
+						<a href="">
+							<img src="images/xy_show1.jpeg" alt="">
+							<span>奥古曼</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="xy_content">
+				<ul>
+					<li>
+						<a href="">
+							<img src="images/xy_show2.jpg" alt="">
+							<span>美国红橡木</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="xy_content">
+				<ul>
+					<li>
+						<a href="">
+							<img src="images/xy_show3.jpg" alt="">
+							<span>红柳桉</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="xy_content">
+				<ul>
+					<li>
+						<a href="">
+							<img src="images/xy_show4.jpg" alt="">
+							<span>樟木</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+
+			<div class="xy_content" id="xy_content_noms">
+				<ul>
+					<li>
+						<a href="">
+							<img src="images/xy_show5.jpg" alt="">
+							<span>柏木</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="xy_content">
+				<ul>
+					<li>
+						<a href="">
+							<img src="images/xy_show6.jpg" alt="">
+							<span>色木</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="xy_content">
+				<ul>
+					<li>
+						<a href="">
+							<img src="images/xy_show7.jpg" alt="">
+							<span>胡桃楸木</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="xy_content">
+				<ul>
+					<li>
+						<a href="">
+							<img src="images/xy_show8.jpg" alt="">
+							<span>柞木</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- 第五层 热门关注和推荐-->
+	<div class="xy_attent">
+		<div id="xy_attent_title">
+			<img src="images/xy_title2.png" alt="">
+			<div id="xy_title_line"></div>
+		</div>
+		<div class="xy_attent_describe">
+			<p class="xy_attent_describe_title1">什么样的木材适合做家具</p>
+			<p class="xy_attent_describe_info">
+				对人体健康无害，符合环保要求，易加工，韧性灵活，可满足多种造型需求。有较强的承重力和抗冲击能力，色彩优雅，花纹美观，涂饰性能好，木质结构稳定，不易腐蚀和遭受虫蛀，制成家具可长久使用，且不易变形开裂。</p>
+			<img src="images/xy_round.jpg" alt="">
+			<p class="xy_attent_describe_title2">小编推荐</p>
+			<ul>
+				<li class="xy_product">
+					<a href=""><img src="images/xy_recommend1.jpg" alt=""></a>
+					<div class="xy_product_box">
+						<a href="">白椿</a>
+						<p class="xy_product_box_p1">市场价：3600-4000元/m³</p>
+						<p class="xy_product_box_p2">档位级别：中档</p>
+						<div class="xy_evaluate"></div>
+					</div>
+				</li>
+				<li class="xy_product">
+					<a href=""><img src="images/xy_recommend2.jpg" alt=""></a>
+					<div class="xy_product_box">
+						<a href="">枫木</a>
+						<p class="xy_product_box_p1">市场价：7300-8000元/m³</p>
+						<p class="xy_product_box_p2">档位级别：中档</p>
+						<div class="xy_evaluate"></div>
+					</div>
+				</li>
+				<li class="xy_product">
+					<a href=""><img src="images/xy_recommend3.jpg" alt=""></a>
+					<div class="xy_product_box">
+						<a href="">黄杨</a>
+						<p class="xy_product_box_p1">市场价：3300-3700元/㎡</p>
+						<p class="xy_product_box_p2">档位级别：中档</p>
+						<div class="xy_evaluate"></div>
+					</div>
+				</li>
+				<li class="xy_product">
+					<a href=""><img src="images/xy_recommend4.jpg" alt=""></a>
+					<div class="xy_product_box">
+						<a href="">核桃木</a>
+						<p class="xy_product_box_p1">市场价：5700~6300元/㎡</p>
+						<p class="xy_product_box_p2">档位级别：中档</p>
+						<div class="xy_evaluate"></div>
+					</div>
+				</li>
+				<li class="xy_product">
+					<a href=""><img src="images/xy_recommend5.jpg" alt=""></a>
+					<div class="xy_product_box">
+						<a href="">桦木</a>
+						<p class="xy_product_box_p1">市场价：3700-4000元/m³</p>
+						<p class="xy_product_box_p2">档位级别：中档</p>
+						<div class="xy_evaluate"></div>
+					</div>
+				</li>
+				<li class="xy_product">
+					<a href=""><img src="images/xy_recommend6.jpg" alt=""></a>
+					<div class="xy_product_box">
+						<a href="">橡胶木</a>
+						<p class="xy_product_box_p1">市场价：3500-3800元/m³</p>
+						<p class="xy_product_box_p2">档位级别：中档</p>
+						<div class="xy_evaluate"></div>
+					</div>
+				</li>
+			</ul>
+			<div class="xy_attent_describe_check"><a
+					href="http://www.meilele.com/ym/a-29-1-1/?site_from=ymindex">查看更多</a></div>
+			<p class="xy_attent_describe_title3">相关家居推荐</p>
+			<div class="xy_attent_describe_show">
+				<a href=""><img src="images/xy_tuijian1.jpg" alt="">
+					<p>白蜡木1.8m双人床</p>
+				</a>
+				<a href=""><img src="images/xy_tuijian2.jpg" alt="">
+					<p>橡胶木原木色储物柜</p>
+				</a>
+				<a href=""><img src="images/xy_tuijian3.jpg" alt="">
+					<p>橡胶木可拉伸餐厅套装（1+4椅）</p>
+				</a>
+				<a href=""><img src="images/xy_tuijian4.jpg" alt="">
+					<p>橡胶木餐椅套装（1桌+4椅)</p>
+				</a>
+			</div>
+		</div>
+
+		<!-- 轮播图 -->
+		<div id="xy_banner">
+			<a id="xy_banner_view" href="">
+				<img src="images/xy_lunbo_bg1.png" alt="">
+				<img src="images/xy_lunbo_bg2.png" alt="">
+				<img src="images/xy_lunbo_bg3.png" alt="">
+				<img src="images/xy_lunbo_bg4.png" alt="">
+				<img src="images/xy_lunbo_bg5.png" alt="">
+				<img src="images/xy_lunbo_bg6.png" alt="">
+				<img src="images/xy_lunbo_bg7.png" alt="">
+			</a>
+			<div id="xy_banner_btn"></div>
+		</div>
+	</div>
+
+	<!-- 第六层 复用-->
+	<div class="xy_attent">
+		<div class="xy_attent_describe">
+			<p class="xy_attent_describe_title1">什么样的木材适合做家具</p>
+			<p class="xy_attent_describe_info">
+				对人体健康无害，符合环保要求，易加工，韧性灵活，可满足多种造型需求。有较强的承重力和抗冲击能力，色彩优雅，花纹美观，涂饰性能好，木质结构稳定，不易腐蚀和遭受虫蛀，制成家具可长久使用，且不易变形开裂。</p>
+			<img src="images/xy_round.jpg" alt="">
+			<p class="xy_attent_describe_title2">小编推荐</p>
+			<ul>
+				<li class="xy_product">
+					<a href=""><img src="images/xy_recommend7.jpg" alt=""></a>
+					<div class="xy_product_box">
+						<a href="">水曲柳</a>
+						<p class="xy_product_box_p1">市场价：3300-3700元/m³</p>
+						<p class="xy_product_box_p2">档位级别：中档</p>
+						<div class="xy_evaluate"></div>
+					</div>
+				</li>
+				<li class="xy_product">
+					<a href=""><img src="images/xy_recommend8.jpg" alt=""></a>
+					<div class="xy_product_box">
+						<a href="">柚木</a>
+						<p class="xy_product_box_p1">市场价：8400-9100元/m³</p>
+						<p class="xy_product_box_p2">档位级别：中档</p>
+						<div class="xy_evaluate"></div>
+					</div>
+				</li>
+				<li class="xy_product">
+					<a href=""><img src="images/xy_recommend9.jpg" alt=""></a>
+					<div class="xy_product_box">
+						<a href="">黑胡桃</a>
+						<p class="xy_product_box_p1">市场价：13000-14000元/m³</p>
+						<p class="xy_product_box_p2">档位级别：中档</p>
+						<div class="xy_evaluate"></div>
+					</div>
+				</li>
+				<li class="xy_product">
+					<a href=""><img src="images/xy_recommend10.jpg" alt=""></a>
+					<div class="xy_product_box">
+						<a href="">榉木</a>
+						<p class="xy_product_box_p1">市场价：4900-5500元/m³</p>
+						<p class="xy_product_box_p2">档位级别：中档</p>
+						<div class="xy_evaluate"></div>
+					</div>
+				</li>
+				<li class="xy_product">
+					<a href=""><img src="images/xy_recommend11.jpg" alt=""></a>
+					<div class="xy_product_box">
+						<a href="">榆木</a>
+						<p class="xy_product_box_p1">市场价：3750-4200元/m³</p>
+						<p class="xy_product_box_p2">档位级别：中档</p>
+						<div class="xy_evaluate"></div>
+					</div>
+				</li>
+				<li class="xy_product">
+					<a href=""><img src="images/xy_recommend12.jpg" alt=""></a>
+					<div class="xy_product_box">
+						<a href="">白蜡木</a>
+						<p class="xy_product_box_p1">市场价：7400-7900元/m³</p>
+						<p class="xy_product_box_p2">档位级别：中档</p>
+						<div class="xy_evaluate"></div>
+					</div>
+				</li>
+			</ul>
+			<div class="xy_attent_describe_check"><a
+					href="http://www.meilele.com/ym/a-30-1-1/?site_from=ymindex">查看更多</a></div>
+			<p class="xy_attent_describe_title3">相关家居推荐</p>
+			<div class="xy_attent_describe_show">
+				<a href=""><img src="images/xy_tuijian5.jpg" alt="">
+					<p>强化复合12mm地板</p>
+				</a>
+				<a href=""><img src="images/xy_tuijian6.jpg" alt="">
+					<p>免胶安装复合地板</p>
+				</a>
+				<a href=""><img src="images/xy_tuijian7.jpg" alt="">
+					<p>锁扣地热实木地板</p>
+				</a>
+				<a href=""><img src="images/xy_tuijian8.jpg" alt="">
+					<p>BE98613贝尔地板</p>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- 第七层 木材课堂-->
+	<div id="xy_last">
+		<div id="xy_last_box">
+			<div id="xy_last_title">
+				<img src="images/xy_title3.png" alt="">
+				<div id="xy_title_line"></div>
+			</div>
+			<div id="xy_last_content">
+				<a href=""><img src="images/xy_pic2.jpg" alt="">
+					<p>12种常见家具木材优缺点和用途</p>
+				</a>
+				<a href=""><img src="images/xy_pic3.jpg" alt="">
+					<p>实木、多层、强化复合哪家强？</p>
+				</a>
+				<a href=""><img src="images/xy_pic1.jpg" alt="">
+					<p>红木家具保养详解及知识介绍</p>
+				</a>
+				<a href=""><img src="images/xy_pic4.jpg" alt="">
+					<p>私人定制家具最全攻略</p>
+				</a>
+				<a href=""><img src="images/xy_pic5.jpg" alt="">
+					<p>实木家具发生开裂的原因及处理</p>
+				</a>
+				<a href=""><img src="images/xy_pic6.jpg" alt="">
+					<p>板材方面有哪些国家标准</p>
+				</a>
+			</div>
+		</div>
+	</div>
+
+
+
+
+<!-- 侧边栏 -->
+<ul class="j_right_box">
+        <li class="j_right1">
+            <a href="">客服</a>
+            <div class="j_right_txt">咨询在线客服</div>
+        </li>
+        <li class="j_right2">
+            <a href="">体验馆</a>
+            <img src="images/j_tiyan.png" alt="" class="j_gif">
+            <img src="images/address.gif" alt="" class="j_gif">
+        </li> 
+        <div class="j_right_txt" id="j_right_txt">发送体验馆地址</div>
+        <li class="j_right3">
+            <a href="hopping.html">购物车</a>
+            <div class="j_right_txt">查看购物车</div>
+            <div id="j_right_num">0</div>
+        </li>
+        <li class="j_right4">
+            <a href="">抽奖</a>
+            <div class="j_right_txt">参与本期抽奖</div>
+        </li>
+        <li class="j_right5">
+            <p href="" id="j_right_a"></p>
+            <div class="j_right_txt">返回顶部</div>
+        </li>
+    </ul>
+
+
+	<div class="WJH_footer">
+		<div class="footer-icon">
+			<div class="WJH_bot_icon">
+				<a href="" target="_blank" class="icon-map">
+					<p class="icon-bg i1"></p>
+					<p class="icon-title">美乐乐O2O</p>
+				</a><a href="" target="_blank" class="icon-map">
+					<p class="icon-bg i2"></p>
+					<p class="icon-title">全国体验馆</p>
+				</a><a href="" target="_blank" class="icon-map">
+					<p class="icon-bg i3"></p>
+					<p class="icon-title">双重质检</p>
+				</a><a href="" target="_blank" class="icon-map">
+					<p class="icon-bg i4"></p>
+					<p class="icon-title">售后无忧</p>
+				</a><a href="" target="_blank" class="icon-map">
+					<p class="icon-bg i5"></p>
+					<p class="icon-title">原创设计</p>
+				</a><a href="" target="_blank" class="icon-map">
+					<p class="icon-bg i6"></p>
+					<p class="icon-title">全球采购</p>
+				</a><a href="" target="_blank" class="icon-map">
+					<p class="icon-bg i7"></p>
+					<p class="icon-title">万千口碑</p>
+				</a><a href="" target="_blank" class="icon-map">
+					<p class="icon-bg i8"></p>
+					<p class="icon-title">团队优势</p>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="footer-copy">
+		<div class="link-container">
+
+			<div class="copy-index clearfix" style="padding-top:0">
+				<div class="fl">
+					<p>
+						<a href="" target="_blank">装修网</a> | <a href="" target="_blank">装修效果图</a> | <a href=""
+							target="_blank">家居资讯</a> |<a href="/list/" target="_blank">家具图片</a> | <a href=""
+							target="_blank">家居资讯</a> | <a href="" target="_blank">生活百科</a> | <a href=""
+							target="_blank">家私导购</a> | <a href="" target="_blank">品牌展厅</a> | <a href=""
+							target="_blank">装修论坛</a> | <a href="" target="_blank" title="客服中心">客服中心</a> | <a href=""
+							target="_blank">网站地图</a> | <a href="" target="_blank">友情链接</a> | <a href=""
+							target="_blank">更多</a>
+					</p>
+					<p>
+						<span class="yen">© 2005-2018 </span><span id="JS_footer_copyright">美乐乐</span> 天津美维信息技术有限公司
+						版权所有，并保留所有权利。<a href="" target="_blank" class="gray">ICP备案证书号：粤ICP备08008334号</a>
+					</p>
+				</div>
+				<div class="fr credit">
+					<a href="" target="_blank"><i class="c1"></i><span class="spec">诚信网站</span></a>
+					<a target="_blank" href=""><i class="c4"></i><span>认证联盟品牌官网</span></a>
+					<a target="_blank" href=""><i class="c2"></i><span>可信网站信用评价</span></a>
+					<i class="c3"></i><span>经营网站备案信息</span>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<script src="js/xy_js.js"></script>
+<script src="js/area.js"></script>
+<script src="js/Index_header.js"></script>
+<script src="js/cebian.js"></script>
+</html>

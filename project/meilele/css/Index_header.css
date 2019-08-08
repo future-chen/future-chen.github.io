@@ -1,0 +1,397 @@
+* {
+    padding: 0;
+    margin: 0;
+    /* font-size: 0; */
+
+}
+
+li {
+    list-style: none;
+}
+.WJH_area li{
+    display: inline-block;
+
+}
+a {
+    text-decoration: none;
+    color: #999;
+}
+
+.i_coord {
+
+    display: inline-block;
+    width: 11px;
+    height: 14px;
+    background: url(../images/WJH_site.png) -92px -34px no-repeat;
+    margin-right: 5px;
+
+}
+
+.WJH_nav_left {
+    float: left;
+    left: 0;
+    top: 0;
+}
+
+.WJH_nav_left .WJH_changeCity {
+    display: inline-block;
+    font-size: 12px;
+    color: #999;
+}
+
+.WJH_nav_left li {
+    margin-left: 3px;
+}
+
+.WJH_city {
+    font-size: 13px;
+    color: #cf000e;
+    font-weight: bolder;
+
+}
+
+.WJH_menu {
+    background-color: #f8f8f8;
+}
+
+.WJH_area {
+    width: 1190px;
+    height: 30px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 30px;
+}
+
+.WJH_login,
+.WJH_regist,
+.WJH_mymeilele,
+.WJH_good,
+.WJH_guanzhu,
+.WJH_helpcenter,
+.WJH_collet a {
+    font-size: 12px;
+    color: #999;
+    position: relative;
+
+}
+
+.WJH_mymeilele_box {
+    position: absolute;
+    border: 1px solid #E4E4E4;
+    top: 30px;
+    left: 0;
+    border-top: none;
+    line-height: 20px;
+    width: 79px;
+    background: white;
+    display: none;
+}
+
+.WJH_mymeilele_box a {
+
+    display: inline-block;
+}
+
+.drop_arrow {
+    display: inline-block;
+    width: 7px;
+    height: 4px;
+    background: url(../images/WJH_site.png) -92px 0 no-repeat;
+
+}
+
+.WJH_cart {
+    display: inline-block;
+    width: 17px;
+    height: 14px;
+    background: url(../images/WJH_site.png) -92px -48px no-repeat;
+}
+
+.WJH_guanzhuicon {
+    display: inline-block;
+    width: 12px;
+    height: 13px;
+    background: url(../images/WJH_site.png) -92px -8px no-repeat;
+}
+
+.WJH_nav_right li {
+    padding: 2px 5px 2px 5px;
+}
+
+.WJH_nav_right {
+    float: right;
+}
+
+.WJH_tel {
+    color: #cf000e;
+    font-size: 13px;
+    font-weight: bolder;
+}
+
+.WJH_help {
+    color: #999;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+/* 切换按钮 */
+.WJH_changeCity {
+    position: relative;
+    cursor: pointer;
+}
+
+.WJH_changeCity:hover .ccccc {
+    color: red;
+}
+
+.WJH_changeCity:hover #WJH_cityBox {
+    display: block;
+}
+
+/* hover切换,城市列表 */
+#WJH_cityBox {
+    width: 432px;
+    position: absolute;
+    border: 1px solid #E4E4E4;
+    text-align: left;
+    height: 330px;
+    padding: 10px 15px;
+    display: inline-block;
+    display: none;
+    cursor: pointer;
+    top: 28px;
+    left: -60px;
+    background: #fff;
+    z-index: 999;
+}
+
+.WJH_arrowBg {
+    position: absolute;
+    background: URL(../images/WJH_site.png) no-repeat -277px -5px;
+    width: 13px;
+    height: 7px;
+    top: -7px;
+    z-index: 2;
+}
+
+#WJH_cityBox div {
+    font-size: 13px;
+    color: #999999;
+}
+
+#WJH_cityBox div li {
+    margin: 0 3px;
+}
+
+/* 城市列表 */
+#WJH_cityBox div ul {
+
+    display: inline-block;
+    width: 340px;
+    vertical-align: text-top;
+    line-height: 20px;
+}
+
+#WJH_cityBox p {
+    width: 100%;
+    height: 0;
+    border-top: 1px solid #9999;
+    margin-top: 10px;
+}
+
+.WJH_cityTitle {
+    font-size: 13px;
+    color: #434343;
+}
+
+.WJH_search input {
+    border: 1px solid #999;
+    height: 25px;
+    text-indent: 1em;
+    border-right: none;
+    outline: none;
+
+    vertical-align: top;
+}
+
+.WJH_search {
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+}
+
+.WJH_search button {
+
+    height: 27px;
+    width: 44px;
+    vertical-align: top;
+    background: white;
+    outline: none;
+    border: 1px solid #999;
+}
+
+#WJH_firWord {
+    color: #D02E2C;
+
+    border-bottom: 1px solid #9999;
+    margin-bottom: 10px;
+
+}
+
+#WJH_firWord li {
+    width: 14px;
+    height: 16px;
+    font-size: 13px;
+    margin-right: 3px;
+    text-align: center;
+    line-height: 16px;
+}
+
+/* 有背景的字母 */
+.WJH_first {
+    display: inline-block;
+    background: URL(../images/WJH_bg.png) center center no-repeat;
+    width: 25px;
+    height: 20px;
+    color: white;
+    text-align: center;
+    line-height: 20px;
+    margin-right: 3px;
+
+    vertical-align: text-top;
+}
+
+#WJH_cityliebiao div {
+    display: inline-block;
+}
+
+#WJH_cityliebiao {
+    height: 180px;
+    overflow: auto;
+}
+
+/* 默认边框 */
+.WJH_mymeilele {
+    border: 1px solid transparent;
+}
+
+/* 箭头转动 */
+.WJH_nav_right :hover .drop_arrow {
+
+    transform: rotate(180deg);
+    transition: transform 0.2s;
+}
+
+.WJH_mymeilele:hover {
+
+    background-color: white;
+    border: 1px solid #E4E4E4;
+    border-bottom: none;
+}
+.WJH_good{
+    /* width: 50px; */
+    border: 1px solid transparent;
+}
+.WJH_good:hover {
+
+    background-color: white;
+    border: 1px solid #E4E4E4;
+    border-bottom: none;
+}
+.WJH_nav_right :hover .WJH_mymeilele_box {
+    display: block;
+}
+
+.WJH_nav_right :hover #shopCar{
+    display: block;
+}
+#shopCar {
+    display: none;
+    position: absolute;
+    width: 200px;
+    background:white;
+    border:1px solid #E4E4E4;
+    top: 28px;
+    left: 0;
+}
+.shopCar_line{
+    border-top:1px solid white;
+    height: 1px;
+    width: 85px;
+    position: absolute;
+    top:28px;
+    left:0;
+    z-index: 100;
+}
+/* 页面导航 */
+.WJH_header_nav {
+    width: 1190px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 20px;
+    text-align: center;
+    height: 80px;
+    line-height: 80px;
+    vertical-align: middle;
+}
+
+input {
+    outline: none;
+}
+
+.WJH_header_nav a {
+    float: left;
+    vertical-align: text-top;
+    margin-right: 50px;
+}
+
+.WJH_header_nav_search {
+    border: 2px solid #e62318;
+
+    color: #fff;
+    width: 478px;
+    height: 36px;
+    text-align: center;
+    cursor: pointer;
+    float: right;
+}
+
+.WJH_header_nav_search input {
+    float: left;
+    border: 0;
+    height: 36px;
+    font-size: 16px;
+    text-indent: 1em;
+}
+
+.WJH_header_nav_search button {
+    float: right;
+    border: 0;
+    height: 36px;
+    background: #e62318;
+    color: white;
+    width: 100px;
+    outline: none;
+}
+
+.WJH_header_nav_search div {
+    font-size: 13px;
+    float: left;
+    line-height: 30px;
+
+}
+
+.WJH_active :hover {
+    color: #FF6600;
+}
+
+.WJH_header_nav_search div a {
+    margin-right: 15px;
+}
+
+.clear {
+    clear: both;
+}
+
+
+

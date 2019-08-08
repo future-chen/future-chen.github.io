@@ -1,0 +1,128 @@
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "微软雅黑";
+}
+.j_right_box{
+    width: 77px;
+    position: fixed;
+    right:40px;
+    top:240px;
+    border:1px solid #dedede;
+    border-bottom: 0;
+    background:white;
+}
+.j_right_box li{
+    border-bottom: 1px solid #dedede;
+}
+.j_right_box a{
+    width: 77px;
+    height: 11px;
+    font-size: 11px;
+    padding:52px 0 9px 0;
+    text-align: center;
+    color:#808080;
+    display: block; 
+}
+.j_right1 {
+    background: url(../images/chat_icon.png) no-repeat 0px 0px;
+    position: relative;
+    top:-5px;
+}
+
+.j_right2 {
+    /* background: url(../images/chat_icon.png) no-repeat 0px -81px; */
+    position: relative;
+    overflow: hidden;
+}
+.j_gif{
+    position: absolute;
+    top:-45px;
+    left:50%;
+    margin-left:-27px;
+    /* display: none; */
+    
+}
+.j_right3 {
+    background: url(../images/chat_icon.png) no-repeat 0px -159px;
+    position: relative
+}
+#j_right_num{
+    position: absolute;
+    background: #e62318;
+    color:white;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+    border-radius:8px;
+    font-size: 13px;
+    top:11px;
+    left:45px;
+}
+.j_right4 {
+    background: url(../images/chat_icon.png) no-repeat 0px -236px;
+    position: relative;
+}
+.j_right5{
+      background: url(../images/chat_icon.png) no-repeat 0px -323px;
+      position: relative;
+      display: none;
+}
+#j_right_a{
+    display: block;
+    padding:45px 0 0 0;
+}
+#j_right_txt{
+    display: block;
+    top:116px;
+    display: none;
+}
+.j_right_txt{
+    display: none;
+    width: 153px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    position: absolute;
+    top:50%;
+    margin-top:-19px;
+    left:-160px;
+    font-size: 14px;
+    color:whitesmoke;
+    background: url(../images/chat_icon.png) no-repeat 1px -525px;
+}
+
+/* hover效果 */
+.j_right1:hover{
+    background:url(../images/chat_icon.png) no-repeat -78px 0px rgb(230, 35, 24);
+}
+.j_right1:hover a{
+    color:white;
+}
+.j_right2:hover{
+    background:url(../images/chat_icon.png) no-repeat -78px -81px rgb(230, 35, 24);
+}
+.j_right2:hover a{
+    color:white;
+}
+.j_right3:hover{
+    background:url(../images/chat_icon.png) no-repeat -78px -159px rgb(230, 35, 24);
+}
+.j_right3:hover a{
+    color:white;
+}
+.j_right4:hover{
+    background:url(../images/chat_icon.png) no-repeat -78px -236px rgb(230, 35, 24);
+}
+.j_right4:hover a{
+    color:white;
+}
+.j_right5:hover{
+    background:url(../images/chat_icon.png) no-repeat -78px -323px rgb(230, 35, 24);
+}
+.j_right5:hover a{
+    color:white;
+}

@@ -1,0 +1,46 @@
+/*第二层 搜索栏*/
+#xy_bgpic{
+	width: 100%;
+	height: 500px;
+	margin:0 auto;
+	background:url(../images/xy_bg.jpg) center center;
+	margin-top: 6px;
+
+}
+#xy_bgpic #xy_seach{
+	width: 580px;
+	height: 44px;
+	background: rgba(255,255,255,0.5);
+	margin:0 auto;
+	border-radius: 44px;
+	
+}
+#xy_seach input{
+	width: 492px;
+	height: 44px;
+	border-style: none;
+	outline: 0;
+	background:rgba(255,255,255,0);
+	margin-left: 22px;
+	font-size: 15px;
+	color:rgba(255,255,255,0.5);
+	vertical-align:top;
+}
+.xy_box{
+	padding-top: 300px
+}
+.xy_index{
+	width: 560px;
+	margin:0 auto 
+}
+.xy_index li a{
+	font-size: 15px;
+	color:white;
+	float: left;
+	cursor: pointer;
+	margin-left: 20px;
+	margin-top: 10px;			
+}
+.xy_index li:hover a{
+	color:#b6874f;
+}

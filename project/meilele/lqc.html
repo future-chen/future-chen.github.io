@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/jquery-1.8.3.js"></script>
+    <link rel="stylesheet" href="css/liebiao.css">
+    <link rel="stylesheet" href="css/Index_foot.css">
+    <link rel="stylesheet" href="css/Index_header.css">
+    <link rel="stylesheet" href="css/cebian.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: "微软雅黑"
+        }
+     
+    </style>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+     <!-- 页头 -->
+     <div id="WJH_header">
+            <!-- 总栏 -->
+            <div class="WJH_menu">
+    
+                <div class="WJH_area">
+                    <!-- 地区栏 -->
+                    <ul class="WJH_nav_left">
+                        <li class="WJH_change">
+                            <i class="i_coord"></i>
+                            <span class="WJH_city">全国站</span>
+                            <div class="WJH_changeCity">
+                                [切换]
+                                <ul id="WJH_cityBox">
+                                    <span class="WJH_arrowBg"></span>
+                                    <p></p>
+                                    <ul class="WJH_cityTitle">
+                                        <li>全国</li>
+                                        <li>北京</li>
+                                        <li>上海</li>
+                                        <li>广州</li>
+                                        <li>深圳</li>
+                                        <li>成都</li>
+                                        <li>西安</li>
+                                        <li>天津</li>
+                                        <li>武汉</li>
+                                        <li>重庆</li>
+                                        <li>南京</li>
+                                    </ul>
+                                    <div class="WJH_search">
+                                        <input type="text" placeholder="输入城市名"><button>搜索</button>
+                                    </div>
+                                    <!-- 首字母 -->
+                                    <ul id="WJH_firWord">
+    
+                                    </ul>
+                                    <!-- 城市列表 -->
+                                    <div id="WJH_cityliebiao">
+    
+                                    </div>
+                                </ul>
+                            </div>
+    
+                        </li>
+                        <li class="WJH_login">
+                            <a href="cdyLogin.html">请登录</a>
+                        </li>
+                        <li class="WJH_regist">
+                            <a href="cdySign.html">免费注册</a>
+                        </li>
+                    </ul>
+                    <!-- 我的美乐乐栏 -->
+                    <ul class="WJH_nav_right">
+                        <li class="WJH_mymeilele">
+                            <a href="">我的美乐乐</a>
+                            <div class="WJH_mymeilele_box">
+                                <a href="">我的订单</a>
+                                <a href="">我的金币</a>
+                                <a href="">我的红包</a>
+                                <a href="">我的收藏</a>
+                                <a href="">我要评价</a>
+                                <a href="">申请保价</a>
+                            </div>
+                            <i class="drop_arrow"></i>
+                        </li>
+                        <li class="WJH_good">
+                            <i class="WJH_cart"></i>
+                            <a href="hopping.html">购物车</a><span class="WJH_goodsCount">0</span>
+                            <div class="shopCar_line"></div>
+                            <div id="shopCar">
+                                暂时没有商品
+                            </div>
+                            <i class="drop_arrow"></i>
+                        </li>
+                        <li class="WJH_guanzhu">
+                            <i class="WJH_guanzhuicon"></i>
+                            <a href="">关注美乐乐</a>
+                            <i class="drop_arrow"></i>
+                        </li>
+                        <li class="WJH_helpcenter">
+                            <a href="">帮助中心</a>
+                            <i class="drop_arrow"></i>
+                        </li>
+                        <li class="WJH_collet">
+                            <a href="">收藏本站</a>
+                        </li>
+                        <li>
+                            <span class="WJH_help">全国帮助中心&nbsp;:</span><span class="WJH_tel">&nbsp;4000000000</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 页面导航栏 -->
+            <div class="WJH_header_nav">
+                <a href="">
+                    <img src="images\WJH_logo2.png" alt="">
+                </a>
+                <a href="">
+                    <img src="images\WJH_618.gif" alt="">
+                </a>
+                <div class="WJH_header_nav_search">
+                    <input type="text" placeholder="超值半价抢"><button>搜索</button>
+                    <div class="WJH_active">
+                        <a href="">10元抢半价</a>
+                        <a href="">床</a>
+                        <a href="">沙发</a>
+                        <a href="">餐桌椅</a>
+                        <a href="">实木床</a>
+                        <a href="">床垫大促</a>
+                        <a href="">转角沙发</a>
+                        <a href="">灯饰</a>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+
+
+    <!-- 商品分类 首页 家具城 -->
+    <div class="lqc_nav">
+        <div class="lqc_navv">
+            <div class="lqc_fen">商品分类
+            <ul class="lqc_fenul">
+                <li id="dalao">
+                   <a href=""><footer>家具</footer></a>
+                   <div>
+                       <section>
+                           <div>卧室</div>
+                           <div>
+                               <span><a href="">家具</a></span>
+                               <span><a href="">床</a></span>
+                               <span><a href="">床垫</a></span>
+                               <span><a href="">床头柜</a></span>
+                               <span><a href="">美国进口床垫</a></span>
+                               <span><a href="">美规床</a></span>
+                               <span><a href="">衣柜</a></span>
+                           </div>
+                       </section>
+                     
+                        <section>
+                                <div>卧室</div>
+                                <div>
+                                    <span><a href="">家具</a></span>
+                                    <span><a href="">床</a></span>
+                                    <span><a href="">床垫</a></span>
+                                    <span><a href="">床头柜</a></span>
+                                    <span><a href="">美国进口床垫</a></span>
+                                    <span><a href="">美规床</a></span>
+                                    <span><a href="">衣柜</a></span>
+                                </div>
+                            </section>
+                            <section>
+                                    <div>卧室</div>
+                                    <div>
+                                        <span><a href="">家具</a></span>
+                                        <span><a href="">床</a></span>
+                                        <span><a href="">床垫</a></span>
+                                        <span><a href="">床头柜</a></span>
+                                        <span><a href="">美国进口床垫</a></span>
+                                        <span><a href="">美规床</a></span>
+                                        <span><a href="">衣柜</a></span>
+                                    </div>
+                                </section>
+                                <section>
+                                        <div>卧室</div>
+                                        <div>
+                                            <span><a href="">家具</a></span>
+                                            <span><a href="">床</a></span>
+                                            <span><a href="">床垫</a></span>
+                                            <span><a href="">床头柜</a></span>
+                                            <span><a href="">美国进口床垫</a></span>
+                                            <span><a href="">美规床</a></span>
+                                            <span><a href="">衣柜</a></span>
+                                        </div>
+                                    </section>
+                                    <section>
+                                            <div>卧室</div>
+                                            <div>
+                                                <span><a href="">家具</a></span>
+                                                <span><a href="">床</a></span>
+                                                <span><a href="">床垫</a></span>
+                                                <span><a href="">床头柜</a></span>
+                                                <span><a href="">美国进口床垫</a></span>
+                                                <span><a href="">美规床</a></span>
+                                                <span><a href="">衣柜</a></span>
+                                            </div>
+                                    </section>
+                                    <section>
+                                        <div>卧室</div>
+                                        <div>
+                                            <span><a href="">家具</a></span>
+                                            <span><a href="">床</a></span>
+                                            <span><a href="">床垫</a></span>
+                                            <span><a href="">床头柜</a></span>
+                                            <span><a href="">美国进口床垫</a></span>
+                                            <span><a href="">美规床</a></span>
+                                            <span><a href="">衣柜</a></span>
+                                        </div>
+                                </section>
+                                <section>
+                                    <div>卧室</div>
+                                    <div>
+                                        <span><a href="">家具</a></span>
+                                        <span><a href="">床</a></span>
+                                        <span><a href="">床垫</a></span>
+                                        <span><a href="">床头柜</a></span>
+                                        <span><a href="">美国进口床垫</a></span>
+                                        <span><a href="">美规床</a></span>
+                                        <span><a href="">衣柜</a></span>
+                                    </div>
+                            </section>
+                            <section>
+                                <div>卧室</div>
+                                <div>
+                                    <span><a href="">家具</a></span>
+                                    <span><a href="">床</a></span>
+                                    <span><a href="">床垫</a></span>
+                                    <span><a href="">床头柜</a></span>
+                                    <span><a href="">美国进口床垫</a></span>
+                                    <span><a href="">美规床</a></span>
+                                    <span><a href="">衣柜</a></span>
+                                </div>
+                        </section>
+                   </div>
+                </li>
+                <li>
+                    <a href="">卧室</a>
+                    <span>/</span>
+                    <a href="">床床</a>
+                    <span>/</span>
+                    <a href="">床垫子</a>
+                    <div>
+                            <section>
+                                <div>沙发</div>
+                                <div>
+                                    <span><a href="">家具</a></span>
+                                    <span><a href="">床</a></span>
+                                    <span><a href="">床垫</a></span>
+                                    <span><a href="">床头柜</a></span>
+                                    <span><a href="">美国进口床垫</a></span>
+                                    <span><a href="">美规床</a></span>
+                                    <span><a href="">衣柜</a></span>
+                                </div>
+                            </section>
+                            <section>
+                                    <div>卧室</div>
+                                    <div>
+                                        <span><a href="">家具</a></span>
+                                        <span><a href="">床</a></span>
+                                        <span><a href="">床垫</a></span>
+                                        <span><a href="">床头柜</a></span>
+                                        <span><a href="">美国进口床垫</a></span>
+                                        <span><a href="">美规床</a></span>
+                                        <span><a href="">衣柜</a></span>
+                                        <span><a href="">家具</a></span>
+                                        
+                                    </div>
+                                </section>
+                                <section>
+                                        <div>卧室</div>
+                                        <div>
+                                            <span><a href="">家具</a></span>
+                                            <span><a href="">床</a></span>
+                                            <span><a href="">床垫</a></span>
+                                            <span><a href="">床头柜</a></span>
+                                            <span><a href="">美国进口床垫</a></span>
+                                            <span><a href="">美规床</a></span>
+                                            <span><a href="">衣柜</a></span>
+                                            <span><a href="">家具</a></span>
+                                            
+                                        </div>
+                                    </section>
+                                    <section>
+                                            <div>卧室</div>
+                                            <div>
+                                                <span><a href="">家具</a></span>
+                                                <span><a href="">床</a></span>
+                                                <span><a href="">床垫</a></span>
+                                                <span><a href="">床头柜</a></span>
+                                                <span><a href="">美国进口床垫</a></span>
+                                                <span><a href="">美规床</a></span>
+                                                <span><a href="">衣柜</a></span>
+                                                <span><a href="">家具</a></span>
+                                                
+                                            </div>
+                                        </section>
+                                        <section>
+                                                <div>卧室</div>
+                                                <div>
+                                                    <span><a href="">家具</a></span>
+                                                    <span><a href="">床</a></span>
+                                                    <span><a href="">床垫</a></span>
+                                                    <span><a href="">床头柜</a></span>
+                                                    <span><a href="">美国进口床垫</a></span>
+                                                    <span><a href="">美规床</a></span>
+                                                    <span><a href="">衣柜</a></span>
+                                                    <span><a href="">家具</a></span>
+                                                    
+                                                </div>
+                                            </section>
+                                            <section>
+                                                    <div>卧室</div>
+                                                    <div>
+                                                        <span><a href="">家具</a></span>
+                                                        <span><a href="">床</a></span>
+                                                        <span><a href="">床垫</a></span>
+                                                        <span><a href="">床头柜</a></span>
+                                                        <span><a href="">美国进口床垫</a></span>
+                                                        <span><a href="">美规床</a></span>
+                                                        <span><a href="">衣柜</a></span>
+                                                        <span><a href="">家具</a></span>
+                                                        
+                                                    </div>
+                                                </section>
+                        </div>
+                </li>
+                <li>
+                    <a href="">客厅</a>
+                    <span>/</span>
+                    <a href="">沙发</a>
+                    <span>/</span>
+                    <a href="">电视柜</a>
+                    <div>
+                            <section>
+                                <div>牛皮</div>
+                                <div>
+                                    <span><a href="">家具</a></span>
+                                    <span><a href="">床</a></span>
+                                    <span><a href="">床垫</a></span>
+                                    <span><a href="">床头柜</a></span>
+                                    <span><a href="">美国进口床垫</a></span>
+                                    <span><a href="">美规床</a></span>
+                                    <span><a href="">衣柜</a></span>
+                                </div>
+                            </section>
+                            <section>
+                                    <div>卧室</div>
+                                    <div>
+                                        <span><a href="">家具</a></span>
+                                        <span><a href="">床</a></span>
+                                        <span><a href="">床垫</a></span>
+                                        <span><a href="">床头柜</a></span>
+                                        <span><a href="">美国进口床垫</a></span>
+                                        <span><a href="">美规床</a></span>
+                                        <span><a href="">衣柜</a></span>
+                                        <span><a href="">家具</a></span>
+                                        
+                                    </div>
+                                </section>
+                                <section>
+                                        <div>卧室</div>
+                                        <div>
+                                            <span><a href="">家具</a></span>
+                                            <span><a href="">床</a></span>
+                                            <span><a href="">床垫</a></span>
+                                            <span><a href="">床头柜</a></span>
+                                            <span><a href="">美国进口床垫</a></span>
+                                            <span><a href="">美规床</a></span>
+                                            <span><a href="">衣柜</a></span>
+                                            <span><a href="">家具</a></span>
+                                            
+                                        </div>
+                                    </section>
+                                    <section>
+                                            <div>卧室</div>
+                                            <div>
+                                                <span><a href="">家具</a></span>
+                                                <span><a href="">床</a></span>
+                                                <span><a href="">床垫</a></span>
+                                                <span><a href="">床头柜</a></span>
+                                                <span><a href="">美国进口床垫</a></span>
+                                                <span><a href="">美规床</a></span>
+                                                <span><a href="">衣柜</a></span>
+                                                <span><a href="">家具</a></span>
+                                                
+                                            </div>
+                                        </section>
+                                        <section>
+                                                <div>卧室</div>
+                                                <div>
+                                                    <span><a href="">家具</a></span>
+                                                    <span><a href="">床</a></span>
+                                                    <span><a href="">床垫</a></span>
+                                                    <span><a href="">床头柜</a></span>
+                                                    <span><a href="">美国进口床垫</a></span>
+                                                    <span><a href="">美规床</a></span>
+                                                    <span><a href="">衣柜</a></span>
+                                                    <span><a href="">家具</a></span>
+                                                    
+                                    </div>
+                            </section>
+                        </div>
+                    
+                </li>
+                <li>
+                        <a href="">户外</a>
+                        <span>/</span>
+                        <a href="">阳台</a>
+                        <span>/</span>
+                        <a href="">家具</a>
+                        <div>
+                                <section  style="background: url(images/lqcdd.png) no-repeat 50px 0px; width: 800px;height:460px">
+                                    
+                                </section>
+                            </div>
+                        
+                </li>
+                <li>
+                        <a href="">客厅</a>
+                        <span>/</span>
+                        <a href="">沙发</a>
+                        <span>/</span>
+                        <a href="">电视柜</a>
+                        <div>
+                                <section  style="background: url(images/lqcbb.png) no-repeat 50px 0px; width: 800px;height:460px">
+                                   
+                                </section>
+                            </div>
+                        
+                </li>
+                <li>
+                        <a href="">床垫</a>
+                        <span>/</span>
+                        <a href="">中式</a>
+                        <span>/</span>
+                        <a href="">韩式</a>
+                        <div>
+                                <section  style="background: url(images/lqcaa.png) no-repeat 50px 0px; width: 800px;height:460px">
+                                   
+                                </section>
+                            </div>
+                        
+                </li>
+                <li>
+                    <a href="">卫浴</a>
+                    <span>/</span>
+                    <a href="">地板</a>
+                    <span>/</span>
+                    <a href="">电视柜</a>
+                    <div>
+                            <section  style="background: url(images/lqcee.png) no-repeat 50px 0px; width: 800px;height:460px">
+                               
+                            </section>
+                        </div>
+                    
+                </li>
+                <li>
+                    <a href="">餐厅</a>
+                    <span>/</span>
+                    <a href="">餐桌</a>
+                    <span>/</span>
+                    <a href="">餐椅</a>
+                    <div>
+                            <section  style="background: url(images/lqcff.png) no-repeat 50px 0px; width: 800px;height:460px">
+                               
+                            </section>
+                        </div>
+                    
+                </li>
+                <li>
+                    <a href="">书房</a>
+                    <span>/</span>
+                    <a href="">书桌</a>
+                    <span>/</span>
+                    <a href="">书柜</a>
+                    <div>
+                            <section  style="background: url(images/lqccc.png) no-repeat 50px 0px; width: 800px;height:460px">
+                               
+                            </section>
+                        </div>
+                    
+                </li>
+                <li>
+                    <a href="">美式</a>
+                    <span>/</span>
+                    <a href="">欧式</a>
+                    <span>/</span>
+                    <a href="">现代</a>
+                    <div>
+                            <section  style="background: url(images/lqcaa.png) no-repeat 50px 0px; width: 800px;height:460px">
+                               
+                            </section>
+                        </div>
+                    
+                </li>
+            </ul>
+            </div>
+            <ul class="lqc_lei">
+                    <li><a href="" target="_blank" title="首页" style="color:red">首页</a></li>
+                    <li><a href="LH.html" target="_blank" title="家具城">家具城</a></li>
+                    <li><a href="ch_jcCity.html" target="_blank" title="建材城">建材城</a></li>
+                    <li><a href="" target="_blank" title="家具家饰">家具家饰</a></li>
+                    <li><a href="" target="_blank" title="团购">团购</a></li>
+                    <li><a href="" target="_blank" title="体验馆">体验馆</a></li>
+                    <li><a href="yuemu.html" target="_blank" title="阅木">阅木</a></li>
+                    <li><a href="jIndex.html" target="_blank" title="晒家">晒家</a></li>
+                    <li><a href="TuLanJiaJu.html" target="_blank" title="图览家具">图览家具</a></li>
+                    <li><a href="" target="_blank" title="装饰网">装修网</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 轮播图 -->
+    <div id="lqc_lunbo">
+    <!-- 商品列表 -->
+        <ul id="lqc_lbk">
+            <li style="background:rgb(255, 172,132)"><a href=""><img src="images/a.jpg" alt=""></a></li>
+            <li style="background:rgb(238, 238,238)"><a href=""><img src="images/b.jpg" alt=""></a></li>
+            <li style="background:rgb(222, 52,53)"><a href=""><img src="images/c.jpg" alt=""></a></li>
+            <li style="background:rgb(255, 255,255)"><a href=""><img src="images/d.jpg" alt=""></a></li>
+            <li style="background:rgb(51, 60,28)"><a href=""><img src="images/e.jpg" alt=""></a></li>
+        </ul>
+    <!-- 轮播指示块 -->
+        <section id="lqc_xh">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+        </section>
+    <!-- 标记地图块 -->
+        <section id="lqc_ditu">
+            <div>
+                <h3 style="margin-top:15px">全国体验馆<span style="color:red;">136</span>家</h3>
+                <div id="lqcqie"></div>
+            </div>
+        </section>
+    </div>
+    <!-- 遮盖层 -->
+    <main id="lqc_zhe">
+        <div id="tu">
+            <button id="lqc_btn">x</button>
+        </div>
+    </main>
+    <!-- 导航栏 -->
+    <div id="lqc_xank">
+        <div class="lqc_juzh">
+            <div class="lqc_logo"><a href=""><img src="images/images/logo_02.jpg" alt=""></a></div>
+            <div class="lqc_shuru">
+                <input type="text" placeholder="超值组合四件7.5>>>"><a href=""><button></button></a>
+            </div>
+            <div class="lqc_wenzi">
+                <span><a href="">床</a></span>
+                <span><a href="">沙发</a></span>
+                <span><a href="">餐桌椅</a></span>
+                <span><a href="">实木床</a></span>
+                <span><a href="">床垫大促</a></span>
+            </div>
+        </div>
+    </div>
+    <!-- 滚动楼层标记 -->
+    <ul id="lqc_louti">
+      <li style="background:url(images/images/lqc02.jpg) no-repeat center center">
+          <div>新品首发</div>
+      </li>
+      <li style="background:url(images/images/lqc03.jpg) no-repeat center center">
+          <div>人气推荐</div>
+      </li>
+      <li style="background:url(images/images/lqc04.jpg) no-repeat center center">
+          <div>热销套系</div>
+      </li>
+      <li style="background:url(images/images/lqc05.jpg) no-repeat center center">
+          <div style="line-height:40px;">客厅</div>
+      </li>
+      <li style="background:url(images/images/lqc06.jpg) no-repeat center center">
+          <div style="line-height:40px;">卧室</div>
+      </li>
+      <li style="background:url(images/images/lqc07.jpg) no-repeat center center">
+          <div style="line-height:40px;">餐厅</div>
+      </li>
+      <li style="background:url(images/images/lqc08.jpg) no-repeat center center">
+          <div style="line-height:40px;">书房</div>
+      </li>
+      <li style="background:url(images/images/lqc09.jpg) no-repeat center center">
+          <div>儿童房</div>
+      </li>
+      <li style="background:url(images/images/lqc10.jpg) no-repeat center center">
+          <div>办公家具</div>
+      </li>
+      <li style="background:url(images/images/lqc11.jpg) no-repeat center center">
+          <div>建材家饰</div>
+      </li>
+      <li style="background:url(images/images/lqc02.jpg) no-repeat center center">
+          <div>家具家饰</div>
+      </li>
+    </ul>
+    <section id="lqc_pow" >
+       <div class="lqc_one">
+           <section style=" background: url(images/lqcimga.jpg) no-repeat center center">
+               <div style="background: white;border-radius: 10px">
+                   <a href="">
+                        <h3 style="border-bottom:1px double #dedede">团购</h3>
+                        <p>低价成团限时抢购</p>
+                   </a>
+               </div>
+           </section>
+           <section style=" background: url(images/lqcimgb.jpg) no-repeat center center">
+                <div>
+                    <a href="">
+                        <h3>低至2折</h3>
+                        <p>现货特卖中&emsp;数量有限</p>
+                    </a>
+                </div>
+            </section>
+            <section style=" background: url(images/lqcimgc.png) no-repeat center center">
+                    <div>
+                         <a href="">
+                            <h3>全屋优选</h3>
+                            <p>精挑好货&emsp;性价比超高</p>
+                        </a>
+                    </div>
+            </section>
+            <section style="margin-right:0; background: url(images/lqcimgd.jpg) no-repeat center center">
+                    <div>
+                        <a href="">
+                            <h3>家具热卖TOP榜</h3>
+                            <p>好家居&emsp;用数据说话</p>
+                        </a>
+                    </div>
+            </section>
+       </div>
+       <div id="lqc_two">
+           <div class="lqc_lca">
+               <h3>1f</h3>
+               <section>
+                  <a href="">
+                      <footer style="background:url(images/lqla.jpg) no-repeat center center">
+                            <div>
+                                <h3>优质白椿木沙发套装</h3>
+                                <hr>
+                                <p>4件7.5折<span>￥998</span></p>
+                            </div>
+                      </footer>
+                  </a>
+                  <a href="">
+                        <footer style="background:url(images/lqlb.jpg) no-repeat center center; margin: 0 30px 0 30px">
+                            <div>
+                                <h3>优质白椿木沙发套装</h3>
+                                <hr>
+                                <p>4件7.5折<span>￥998</span></p>
+                            </div>
+                      </footer>
+                  </a>
+                  <a href="">
+                        <footer style="background:url(images/lqlc.jpg) no-repeat center center">
+                            <div>
+                                <h3>优质白椿木沙发套装</h3>
+                                <hr>
+                                <p>4件7.5折<span>￥998</span></p>
+                            </div>
+                      </footer>
+                  </a>
+               </section>
+           </div>
+           <div class="lqc_lcb">
+                <h3>2f</h3>
+                <section>
+                   <a href="">
+                       <footer style="background:url(images/lqla.jpg) no-repeat center center">
+                             <div>
+                                 <h3>优质白椿木沙发套装</h3>
+                                 <hr>
+                                 <p>4件7.5折<span>￥998</span></p>
+                             </div>
+                       </footer>
+                   </a>
+                   <a href="">
+                         <footer style="background:url(images/lqlb.jpg) no-repeat center center; margin: 0 30px 0 30px">
+                             <div>
+                                 <h3>优质白椿木沙发套装</h3>
+                                 <hr>
+                                 <p>4件7.5折<span>￥998</span></p>
+                             </div>
+                       </footer>
+                   </a>
+                   <a href="">
+                         <footer style="background:url(images/lqlc.jpg) no-repeat center center">
+                             <div>
+                                 <h3>优质白椿木沙发套装</h3>
+                                 <hr>
+                                 <p>4件7.5折<span>￥998</span></p>
+                             </div>
+                       </footer>
+                   </a>
+                </section>
+           </div>
+           <div class="lqc_lcc">
+                <h3>3f</h3>
+                <section>
+                   <a href="">
+                       <footer style="background:url(images/lqla.jpg) no-repeat center center">
+                             <div>
+                                 <h3>优质白椿木沙发套装</h3>
+                                 <hr>
+                                 <p>4件7.5折<span>￥998</span></p>
+                             </div>
+                       </footer>
+                   </a>
+                   <a href="">
+                         <footer style="background:url(images/lqlb.jpg) no-repeat center center; margin: 0 30px 0 30px">
+                             <div>
+                                 <h3>优质白椿木沙发套装</h3>
+                                 <hr>
+                                 <p>4件7.5折<span>￥998</span></p>
+                             </div>
+                       </footer>
+                   </a>
+                   <a href="">
+                         <footer style="background:url(images/lqlc.jpg) no-repeat center center">
+                             <div>
+                                 <h3>优质白椿木沙发套装</h3>
+                                 <hr>
+                                 <p>4件7.5折<span>￥998</span></p>
+                             </div>
+                       </footer>
+                   </a>
+                </section>
+           </div>
+           <div class="lqc_lcd">
+                <h3>4f</h3>
+                <section>
+                   <a href="">
+                       <footer style="background:url(images/lqla.jpg) no-repeat center center">
+                             <div>
+                                 <h3>优质白椿木沙发套装</h3>
+                                 <hr>
+                                 <p>4件7.5折<span>￥998</span></p>
+                             </div>
+                       </footer>
+                   </a>
+                   <a href="">
+                         <footer style="background:url(images/lqlb.jpg) no-repeat center center; margin: 0 30px 0 30px">
+                             <div>
+                                 <h3>优质白椿木沙发套装</h3>
+                                 <hr>
+                                 <p>4件7.5折<span>￥998</span></p>
+                             </div>
+                       </footer>
+                   </a>
+                   <a href="">
+                         <footer style="background:url(images/lqlc.jpg) no-repeat center center">
+                             <div>
+                                 <h3>优质白椿木沙发套装</h3>
+                                 <hr>
+                                 <p>4件7.5折<span>￥998</span></p>
+                             </div>
+                       </footer>
+                   </a>
+                </section>
+           </div>
+           <div class="lqc_lce">
+                <h3>5f</h3>
+                <section>
+                   <a href="">
+                       <footer style="background:url(images/lqla.jpg) no-repeat center center">
+                             <div>
+                                 <h3>优质白椿木沙发套装</h3>
+                                 <hr>
+                                 <p>4件7.5折<span>￥998</span></p>
+                             </div>
+                       </footer>
+                   </a>
+                   <a href="">
+                         <footer style="background:url(images/lqlb.jpg) no-repeat center center; margin: 0 30px 0 30px">
+                             <div>
+                                 <h3>优质白椿木沙发套装</h3>
+                                 <hr>
+                                 <p>4件7.5折<span>￥998</span></p>
+                             </div>
+                       </footer>
+                   </a>
+                   <a href="">
+                         <footer style="background:url(images/lqlc.jpg) no-repeat center center">
+                             <div>
+                                 <h3>优质白椿木沙发套装</h3>
+                                 <hr>
+                                 <p>4件7.5折<span>￥998</span></p>
+                             </div>
+                       </footer>
+                   </a>
+                </section>
+           </div>
+           <div class="lqc_lcf">
+                <h3>6f</h3>
+                <section>
+                   <a href="">
+                       <footer style="background:url(images/lqla.jpg) no-repeat center center">
+                             <div>
+                                 <h3>优质白椿木沙发套装</h3>
+                                 <hr>
+                                 <p>4件7.5折<span>￥998</span></p>
+                             </div>
+                       </footer>
+                   </a>
+                   <a href="">
+                         <footer style="background:url(images/lqlb.jpg) no-repeat center center; margin: 0 30px 0 30px">
+                             <div>
+                                 <h3>优质白椿木沙发套装</h3>
+                                 <hr>
+                                 <p>4件7.5折<span>￥998</span></p>
+                             </div>
+                       </footer>
+                   </a>
+                   <a href="">
+                         <footer style="background:url(images/lqlc.jpg) no-repeat center center">
+                             <div>
+                                 <h3>优质白椿木沙发套装</h3>
+                                 <hr>
+                                 <p>4件7.5折<span>￥998</span></p>
+                             </div>
+                       </footer>
+                   </a>
+                </section>
+           </div>
+           <div class="lqc_lcg">
+                <h3>7f</h3>
+                <section>
+                   <a href="">
+                       <footer style="background:url(images/lqla.jpg) no-repeat center center">
+                             <div>
+                                 <h3>优质白椿木沙发套装</h3>
+                                 <hr>
+                                 <p>4件7.5折<span>￥998</span></p>
+                             </div>
+                       </footer>
+                   </a>
+                   <a href="">
+                         <footer style="background:url(images/lqlb.jpg) no-repeat center center; margin: 0 30px 0 30px">
+                             <div>
+                                 <h3>优质白椿木沙发套装</h3>
+                                 <hr>
+                                 <p>4件7.5折<span>￥998</span></p>
+                             </div>
+                       </footer>
+                   </a>
+                   <a href="">
+                         <footer style="background:url(images/lqlc.jpg) no-repeat center center">
+                             <div>
+                                 <h3>优质白椿木沙发套装</h3>
+                                 <hr>
+                                 <p>4件7.5折<span>￥998</span></p>
+                             </div>
+                       </footer>
+                   </a>
+                </section>
+           </div>
+           <div class="lqc_lch">
+                <h3>8f</h3>
+                <section>
+                   <a href="">
+                       <footer style="background:url(images/lqla.jpg) no-repeat center center">
+                             <div>
+                                 <h3>优质白椿木沙发套装</h3>
+                                 <hr>
+                                 <p>4件7.5折<span>￥998</span></p>
+                             </div>
+                       </footer>
+                   </a>
+                   <a href="">
+                         <footer style="background:url(images/lqlb.jpg) no-repeat center center; margin: 0 30px 0 30px">
+                             <div>
+                                 <h3>优质白椿木沙发套装</h3>
+                                 <hr>
+                                 <p>4件7.5折<span>￥998</span></p>
+                             </div>
+                       </footer>
+                   </a>
+                   <a href="">
+                         <footer style="background:url(images/lqlc.jpg) no-repeat center center">
+                             <div>
+                                 <h3>优质白椿木沙发套装</h3>
+                                 <hr>
+                                 <p>4件7.5折<span>￥998</span></p>
+                             </div>
+                       </footer>
+                   </a>
+                </section>
+           </div>
+           <div class="lqc_lci">
+                <h3>9f</h3>
+                <section>
+                   <a href="">
+                       <footer style="background:url(images/lqla.jpg) no-repeat center center">
+                             <div>
+                                 <h3>优质白椿木沙发套装</h3>
+                                 <hr>
+                                 <p>4件7.5折<span>￥998</span></p>
+                             </div>
+                       </footer>
+                   </a>
+                   <a href="">
+                         <footer style="background:url(images/lqlb.jpg) no-repeat center center; margin: 0 30px 0 30px">
+                             <div>
+                                 <h3>优质白椿木沙发套装</h3>
+                                 <hr>
+                                 <p>4件7.5折<span>￥998</span></p>
+                             </div>
+                       </footer>
+                   </a>
+                   <a href="">
+                         <footer style="background:url(images/lqlc.jpg) no-repeat center center">
+                             <div>
+                                 <h3>优质白椿木沙发套装</h3>
+                                 <hr>
+                                 <p>4件7.5折<span>￥998</span></p>
+                             </div>
+                       </footer>
+                   </a>
+                </section>
+           </div>
+           <div class="lqc_lcj">
+                <h3>10f</h3>
+                <section>
+                   <a href="">
+                       <footer style="background:url(images/lqla.jpg) no-repeat center center">
+                             <div>
+                                 <h3>优质白椿木沙发套装</h3>
+                                 <hr>
+                                 <p>4件7.5折<span>￥998</span></p>
+                             </div>
+                       </footer>
+                   </a>
+                   <a href="">
+                         <footer style="background:url(images/lqlb.jpg) no-repeat center center; margin: 0 30px 0 30px">
+                             <div>
+                                 <h3>优质白椿木沙发套装</h3>
+                                 <hr>
+                                 <p>4件7.5折<span>￥998</span></p>
+                             </div>
+                       </footer>
+                   </a>
+                   <a href="">
+                         <footer style="background:url(images/lqlc.jpg) no-repeat center center">
+                             <div>
+                                 <h3>优质白椿木沙发套装</h3>
+                                 <hr>
+                                 <p>4件7.5折<span>￥998</span></p>
+                             </div>
+                       </footer>
+                   </a>
+                </section>
+           </div>
+           <div class="lqc_lck">
+                <h3>11f</h3>
+                <section>
+                   <a href="">
+                       <footer style="background:url(images/lqla.jpg) no-repeat center center">
+                             <div>
+                                 <h3>优质白椿木沙发套装</h3>
+                                 <hr>
+                                 <p>4件7.5折<span>￥998</span></p>
+                             </div>
+                       </footer>
+                   </a>
+                   <a href="">
+                         <footer style="background:url(images/lqlb.jpg) no-repeat center center; margin: 0 30px 0 30px">
+                             <div>
+                                 <h3>优质白椿木沙发套装</h3>
+                                 <hr>
+                                 <p>4件7.5折<span>￥998</span></p>
+                             </div>
+                       </footer>
+                   </a>
+                   <a href="">
+                         <footer style="background:url(images/lqlc.jpg) no-repeat center center">
+                             <div>
+                                 <h3>优质白椿木沙发套装</h3>
+                                 <hr>
+                                 <p>4件7.5折<span>￥998</span></p>
+                             </div>
+                       </footer>
+                   </a>
+                </section>
+           </div>
+       </div>
+       
+    </section>
+     <!-- 页脚 -->
+     <div class="WJH_footer">
+            <div class="footer-icon">
+                <div class="WJH_bot_icon">
+                    <a href="" target="_blank" class="icon-map">
+                        <p class="icon-bg i1"></p>
+                        <p class="icon-title">美乐乐O2O</p>
+                    </a><a href="" target="_blank" class="icon-map">
+                        <p class="icon-bg i2"></p>
+                        <p class="icon-title">全国体验馆</p>
+                    </a><a href="" target="_blank" class="icon-map">
+                        <p class="icon-bg i3"></p>
+                        <p class="icon-title">双重质检</p>
+                    </a><a href="" target="_blank" class="icon-map">
+                        <p class="icon-bg i4"></p>
+                        <p class="icon-title">售后无忧</p>
+                    </a><a href="" target="_blank" class="icon-map">
+                        <p class="icon-bg i5"></p>
+                        <p class="icon-title">原创设计</p>
+                    </a><a href="" target="_blank" class="icon-map">
+                        <p class="icon-bg i6"></p>
+                        <p class="icon-title">全球采购</p>
+                    </a><a href="" target="_blank" class="icon-map">
+                        <p class="icon-bg i7"></p>
+                        <p class="icon-title">万千口碑</p>
+                    </a><a href="" target="_blank" class="icon-map">
+                        <p class="icon-bg i8"></p>
+                        <p class="icon-title">团队优势</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copy">
+            <div class="link-container">
+    
+                <div class="copy-index clearfix" style="padding-top:0">
+                    <div class="fl">
+                        <p>
+                            <a href="" target="_blank">装修网</a> | <a href="" target="_blank">装修效果图</a> | <a href=""
+                                target="_blank">家居资讯</a> |<a href="/list/" target="_blank">家具图片</a> | <a href=""
+                                target="_blank">家居资讯</a> | <a href="" target="_blank">生活百科</a> | <a href=""
+                                target="_blank">家私导购</a> | <a href="" target="_blank">品牌展厅</a> | <a href=""
+                                target="_blank">装修论坛</a> | <a href="" target="_blank" title="客服中心">客服中心</a> | <a href=""
+                                target="_blank">网站地图</a> | <a href="" target="_blank">友情链接</a> | <a href=""
+                                target="_blank">更多</a>
+                        </p>
+                        <p>
+                            <span class="yen">© 2005-2018 </span><span id="JS_footer_copyright">美乐乐</span> 天津美维信息技术有限公司
+                            版权所有，并保留所有权利。<a href="" target="_blank" class="gray">ICP备案证书号：粤ICP备08008334号</a>
+                        </p>
+                    </div>
+                    <div class="fr credit">
+                        <a href="" target="_blank"><i class="c1"></i><span class="spec">诚信网站</span></a>
+                        <a target="_blank" href=""><i class="c4"></i><span>认证联盟品牌官网</span></a>
+                        <a target="_blank" href=""><i class="c2"></i><span>可信网站信用评价</span></a>
+                        <i class="c3"></i><span>经营网站备案信息</span>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+        <!-- 侧边栏 -->
+    <ul class="j_right_box">
+            <li class="j_right1">
+                <a href="">客服</a>
+                <div class="j_right_txt">咨询在线客服</div>
+            </li>
+            <li class="j_right2">
+                <a href="">体验馆</a>
+                <img src="images/j_tiyan.png" alt="" class="j_gif">
+                <img src="images/address.gif" alt="" class="j_gif">
+            </li> 
+            <div class="j_right_txt" id="j_right_txt">发送体验馆地址</div>
+            <li class="j_right3">
+                <a href="hopping.html">购物车</a>
+                <div class="j_right_txt">查看购物车</div>
+                <div id="j_right_num">0</div>
+            </li>
+            <li class="j_right4">
+                <a href="">抽奖</a>
+                <div class="j_right_txt">参与本期抽奖</div>
+            </li>
+            <li class="j_right5">
+                <p href="" id="j_right_a"></p>
+                <div class="j_right_txt">返回顶部</div>
+            </li>
+        </ul>
+</body>
+<script src="js/lqc.js"></script>
+<script src="js/area.js"></script>
+<script src="js/Index_header.js"></script>
+<script src="js/cebian.js"></script>
+</html>

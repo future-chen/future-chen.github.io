@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    min-width: 1400px;
+}
+
+.wj-box {
+    min-width: 800px;
+}
+
+@media screen and (max-width:1480px) {
+    .wj-count {
+        display: none;
+    }
+}
+
+.wj-imgs {
+    width: 1000px;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    left: 10vw;
+    float: left;
+    margin-top: 90px;
+}
+
+.wj-img {
+    width: 100%;
+    height: 600px;
+    margin: 0 auto;
+}
+
+.wj-btn {
+    width: 1000px;
+    height: 600px;
+    position: fixed;
+    font-size: 80px;
+    color: gray;
+    float: left;
+    cursor: pointer;
+}
+
+.wj-btnpre {
+    width: 500px;
+    height: 600px;
+    line-height: 500px;
+    float: left;
+}
+
+.wj-btnnext {
+    width: 495px;
+    height: 600px;
+    line-height: 500px;
+    float: left;
+}
+
+.wj-btnpre span {
+    margin-left: -40vw;
+}
+
+.wj-btnpre span:hover {
+    color: red;
+}
+
+.wj-btnnext span {
+
+    margin-right: -40vw;
+
+}
+
+.wj-btnnext span:hover {
+    color: red;
+}
+
+
+
+/* 查看详情等等的  列表样式 */
+.wj-tab {
+    width: 800px;
+    height: 40px;
+    position: absolute;
+    left: 100px;
+    bottom: 0px;
+}
+
+.wj-tabul li {
+    float: left;
+    list-style: none;
+    line-height: 30px;
+    margin-left: 60px;
+    background: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    padding: 0px 10px 0px 10px;
+}
+
+.wj-tabul li span {
+    font-size: 20px;
+   
+}
+.wj-tabul li a{
+    text-decoration:none;
+    color:#3e3a36;
+
+}
+
+.wj-tabul li:hover {
+    background: red;
+    color: white;
+    cursor: pointer;
+}
+.wj-tabul li:hover a{
+    color: white;
+}
+.wj-count {
+    z-index: 100;
+    float: left;
+    position: fixed;
+    right: 2vw;
+    top: 30px;
+}
+
+.wj-p {
+    font-size: 10px;
+    color: gray;
+}
+
+.wj-p2 {
+    font-size: 10px;
+}
+
+.wj-clear {
+    margin-top: 20px;
+    background: #c9033b;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    font-weight: bolder;
+    border: 1px solid red;
+    width: 230px;
+    line-height: 40px;
+    height: 40px;
+    text-align: center;
+}
+
+.wj-listt {
+    margin-top: 20px;
+}
+
+.wj-listt li {
+    list-style: none;
+    float: left;
+    /* border:1px solid red; */
+    width: 50px;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 8px;
+    text-align: center;
+}
+
+.wj-tree ul li {
+    font-size: 13px;
+    margin: 0px 5px;
+    text-align: center;
+    padding: 3px 5px;
+    background: #f8f8f8;
+    color: #999999;
+}
+
+.wj-likep {
+    position: relative;
+}
+
+.wj-likep #wj-p1 {
+    float: left;
+    margin-top: 5px;
+
+}
+
+.wj-likep #wj-p2 {
+    position: absolute;
+    float: right;
+    margin-right: 10px;
+    font-size: 12px;
+    color: gray;
+    right: 10px;
+    top: 5px;
+    cursor: pointer;
+}
+
+.wj-likep #wj-p2:hover {
+    color: red;
+}
+
+.wj-likep #wj-span2 {
+    float: right;
+    font-size: 18px;
+}
+
+.wj-more {
+    width: 210px;
+    margin-top: 40px;
+}
+
+.wj-more img {
+    width: 103px;
+    height: 100px;
+    margin-top: 3px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.wj-more img:hover {
+    border: 2px solid red;
+}
+
+.wj-footer {
+    position: absolute;
+    top: 85vh;
+    width: 1350px;
+    ;
+    height: 80px;
+    background: grey;
+    overflow: hidden;
+}
+
+.wj-footer ul li {
+    padding: 5px;
+    width: 67px;
+    height: 70px;
+    float: left;
+    list-style-type: none;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.wj-footer ul li img:hover {
+    border: 1px solid red;
+}
+
+.wj-footer ul li img {
+    width: 100%;
+    height: 100%;
+}
+
+.wj-footer ul li span {
+    font-size: 50px;
+    color:#a7a7a7;
+
+}
+.wj-footer ul li span:hover{
+    color: red;
+}
+.wj-footer ul li #wjspans {
+    font-size: 15px;
+    color: black;
+    position: absolute;
+    left: 55px;
+    top: 55px;
+}
+.wj-clear a{
+    text-decoration: none;
+    color: white;
+}
+.wj-listt li a{
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+.wj-listt li a:hover{
+    background: #999999;
+    color: white;
+}

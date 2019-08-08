@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "微软雅黑";
+    list-style: none;
+    text-decoration: none;
+}
+.j_view{
+    padding-top:10px;
+    margin-bottom: 80px;
+    overflow: hidden;
+}
+#j_view_img{
+    width: 100%;
+}
+/*设置安全区域*/
+.j_view .j_content{
+    width: 1190px;
+    margin: 0 auto;
+    padding-top: 11px;
+}
+
+/*晒家精品*/
+.j_conTop{
+    width: 1190px;
+    height: 60px;
+    line-height: 60px;
+}
+.j_conTop_left{
+    float: left;
+    font-size: 22px;
+    color:#333333;
+}
+.j_conTop_right{
+    float: right;
+}
+#j_bigCode{
+    position: absolute;
+    left:-30px;
+    top:37px;
+    z-index: 1;
+    display: none;
+}
+#code{
+    position: relative;
+    display: inline-block;
+    background: url(../images/j_code.png) no-repeat left center;
+}
+#code:hover a{
+    color:#cf000e;
+}
+#code:hover img{
+    display: block;
+}
+#code a{
+    padding-left: 25px;
+    font-size: 13px;
+    color:#666666;
+    margin-right: 10px;
+}
+.clear{
+    clear:both;
+}
+#sunHome{
+    display: inline-block;
+    width: 102px;
+    height: 33px;
+    background: #cf000e;
+    font-size: 15px;
+    color: white;
+    line-height: 33px;
+    text-align: center;
+    border-radius: 2px;
+}
+
+
+/*导航栏*/
+.j_conMid{
+    width: 1190px;
+    height:40px;
+    border:1px solid #e6e6e6; 
+    background:#fafafa;
+    line-height: 40px;
+}
+.j_conMid span{
+    font-size: 14px;
+    color:#444444;
+    padding: 0 4px;
+    cursor:pointer;
+}
+.j_conMid li{
+    display: inline-block;
+    padding:0 10px;
+}
+.j_conMid li a{
+    font-size: 14px;
+    color:#444444;
+    padding: 0 4px;
+    cursor:pointer;
+}
+.j_conMid_goods{
+    
+    overflow: hidden;
+    /* display: none; */
+
+}
+.j_conMid_goods .num{
+    display: none;
+    width: 1190px;
+    height: 40px;
+    border:1px solid #e6e6e6; 
+    background:#fafafa;
+    line-height: 40px;
+}
+#num2,#num3{
+    display: none;
+    width: 1190;
+    height: 0;
+    border:0;
+}
+.j_conMid_goods a{
+    margin:0 10px;
+    font-size: 14px;
+    color:#444444;
+    padding: 0 4px;
+} 
+
+/* 瀑布流布局 */
+.j_waterFall{
+
+    width: 1190px;
+    margin:20px 0;
+    position: relative;
+    /* border:1px solid orange; */
+}
+.j_waterFall_box{
+    position: absolute;
+    border:1px solid #dedede;
+}
+.j_waterFall_img{
+    /* width: 275px; */
+    position: relative;
+}
+.j_waterFall_img img{
+    width: 275px;
+}
+.j_waterFall_img span{
+    position: absolute;
+    padding: 5px;
+    color: white;
+    top:10px;
+    right:10px;;
+    background: rgba(0,0,0,0.4)
+}
+.j_waterFall_img a{
+    position: absolute;
+    color:white;
+    font-size: 14px;
+    line-height: 35px;
+    text-align: center;
+    width: 275px;
+    height: 35px;
+    bottom:5px;
+    left: 0;
+    background: rgba(0,0,0,0.4);
+    display: none;
+}
+.j_waterFall_img a:hover{
+   color:#cf000e;
+}
+.j_waterFall_img:hover a{
+    display: block;
+}
+/* 评论 */
+.j_comment{
+    width: 275px;
+    overflow: hidden;
+}
+.j_comment img{
+    width: 58px;
+    height: 58px;
+    margin:10px;
+    border-radius: 29px;
+    float: left;
+}
+.j_comment_num{
+    margin:10px;
+    width: 170px;
+    float: right;
+    color:#888888;
+    font-size: 12px;
+    position: relative;
+}
+.j_comment_num span{
+    font-size: 14px;
+    color:black;
+}
+.j_comment_num a{
+    padding: 0 20px;
+    margin:50px;
+    background: url(../images/j_like2.png) no-repeat -2px center;
+    cursor:pointer;
+}
+/* 底部分页 */
+.j_botPages{
+    width: 530px;
+    margin:0 auto;
+}
+.content{
+    float: left;
+}
+.j_botPages a,.j_next{
+    display: inline-block;
+    font-size: 15px;
+    width: 40px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    margin:0 10px;
+    border:1px solid #dedede;
+    color:#999;
+}
+.j_botPages a:hover{
+    background: red;
+    color:white;
+}
+.j_next{
+    width: 60px;
+    float: left;
+    cursor:pointer;
+}
+.j_next:hover{
+    background: red;
+    color:white;
+}
+

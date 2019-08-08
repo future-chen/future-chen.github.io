@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/Index_foot.css">
+	<link rel="stylesheet" href="css/Index_header.css">
+    <link rel="stylesheet" href="css/ch_jcCity.css">
+    <link rel="stylesheet" href="css/jIndex.css">
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery_lazyload.min.js"></script>
+
+	
+	<link rel="stylesheet" href="css/cebian.css">
+	
+</head>
+
+<body>
+	
+
+
+	
+
+
+	<!-- 页头 -->
+    <div id="WJH_header">
+			<!-- 总栏 -->
+			<div class="WJH_menu">
+	
+				<div class="WJH_area">
+					<!-- 地区栏 -->
+					<ul class="WJH_nav_left">
+						<li class="WJH_change">
+							<i class="i_coord"></i>
+							<span class="WJH_city">全国站</span>
+							<div class="WJH_changeCity">
+								[切换]
+								<ul id="WJH_cityBox">
+									<span class="WJH_arrowBg"></span>
+									<p></p>
+									<ul class="WJH_cityTitle">
+										<li>全国</li>
+										<li>北京</li>
+										<li>上海</li>
+										<li>广州</li>
+										<li>深圳</li>
+										<li>成都</li>
+										<li>西安</li>
+										<li>天津</li>
+										<li>武汉</li>
+										<li>重庆</li>
+										<li>南京</li>
+									</ul>
+									<div class="WJH_search">
+										<input type="text" placeholder="输入城市名"><button>搜索</button>
+									</div>
+									<!-- 首字母 -->
+									<ul id="WJH_firWord">
+	
+									</ul>
+									<!-- 城市列表 -->
+									<div id="WJH_cityliebiao">
+	
+									</div>
+								</ul>
+							</div>
+	
+						</li>
+						<li class="WJH_login">
+							<a href="cdyLogin.html">请登录</a>
+						</li>
+						<li class="WJH_regist">
+							<a href="cdySign.html">免费注册</a>
+						</li>
+					</ul>
+					<!-- 我的美乐乐栏 -->
+					<ul class="WJH_nav_right">
+						<li class="WJH_mymeilele">
+							<a href="">我的美乐乐</a>
+							<div class="WJH_mymeilele_box">
+								<a href="">我的订单</a>
+								<a href="">我的金币</a>
+								<a href="">我的红包</a>
+								<a href="">我的收藏</a>
+								<a href="">我要评价</a>
+								<a href="">申请保价</a>
+							</div>
+							<i class="drop_arrow"></i>
+						</li>
+						<li class="WJH_good">
+							<i class="WJH_cart"></i>
+							<a href="hopping.html">购物车</a><span class="WJH_goodsCount">0</span>
+							<div class="shopCar_line"></div>
+							<div id="shopCar">
+								暂时没有商品
+							</div>
+							<i class="drop_arrow"></i>
+						</li>
+						<li class="WJH_guanzhu">
+							<i class="WJH_guanzhuicon"></i>
+							<a href="">关注美乐乐</a>
+							<i class="drop_arrow"></i>
+						</li>
+						<li class="WJH_helpcenter">
+							<a href="">帮助中心</a>
+							<i class="drop_arrow"></i>
+						</li>
+						<li class="WJH_collet">
+							<a href="">收藏本站</a>
+						</li>
+						<li>
+							<span class="WJH_help">全国帮助中心&nbsp;:</span><span class="WJH_tel">&nbsp;4000000000</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- 页面导航栏 -->
+			<div class="WJH_header_nav">
+				<a href="">
+					<img src="images\WJH_logo2.png" alt="">
+				</a>
+				<a href="">
+					<img src="images\WJH_618.gif" alt="">
+				</a>
+				<div class="WJH_header_nav_search">
+					<input type="text" placeholder="超值半价抢"><button>搜索</button>
+					<div class="WJH_active">
+						<a href="">10元抢半价</a>
+						<a href="">床</a>
+						<a href="">沙发</a>
+						<a href="">餐桌椅</a>
+						<a href="">实木床</a>
+						<a href="">床垫大促</a>
+						<a href="">转角沙发</a>
+						<a href="">灯饰</a>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+	
+
+
+    <!-- 顶部导航栏 -->
+	<div class="ch_bigtitle">
+
+		
+            <div class="ch_title">
+			<h2 class="ch_sph2"><span>商品分类</span>
+				<div class="ch_ycMenu">
+					<div class="ch_aa">
+						<a class="ch_lei" href="">家具</a>
+						<ul>
+							<li class="ch_xxxx">
+								<p style="color: red">>卧室</p>
+								<p>>客厅</p>
+								<p>>餐厅</p>
+								<p>>书房</p>
+								<p>>儿童房</p>
+								<p>>户外/阳台</p>
+								<p>>办公家居</p>
+							</li><!-- 
+							 --><li class="ch_vvvv">
+								<p>床 床垫 床头柜 美国进口床垫 美规床 衣柜 斗柜 妆台镜/妆凳 穿衣镜/衣帽架 床尾凳 卧室套装</p>
+								<p>沙发 电视柜 茶几/边桌 酒柜/装饰柜 鞋柜 间厅/玄关柜 休闲椅/凳 花架/装饰架 屏风 客厅套装</p>
+								<p>餐桌 餐椅 餐边柜 餐厅套装</p>
+								<p>书桌/工作台 书椅/转椅 书柜/书架 书房套装</p>
+								<p>儿童床 儿童床垫 儿童床头柜 儿童衣柜 儿童桌 儿童椅 儿童柜类</p>
+								<p>户外柜 遮阳伞 户外套装 吊篮/吊椅 折叠床 户外椅 藤艺家具</p>
+								<p>办公桌 办公椅 办公沙发 文件柜 保险柜</p>
+							 </li><!-- 
+							  --><li class="ch_bbbb">
+									<div>
+										<h2>推荐新品</h2>
+										<p>凯撒豪庭 北欧悠歌 白金宫殿 法兰西玫瑰 韩菲儿 卡富亚 蓝旗家具 卡洛阁 青春城堡 宜华</p>
+									</div>
+									<img src="images/ch_azaz.jpg" alt="">
+							  </li>
+						</ul>
+					</div>
+
+					<div class="ch_bb">
+						<a href="">卧室</a>/
+						<a href="">床</a>/
+						<a href="">床垫</a>/
+						<a href="">衣柜</a>
+						<ul>
+							<li class="ch_xxxx">
+								<p>>卧室</p>
+								<p style="color: red">>客厅</p>
+								<p>>餐厅</p>
+								<p>>书房</p>
+								<p>>儿童房</p>
+								<p>>户外/阳台</p>
+								<p>>办公家居</p>
+							</li><!-- 
+							 --><li class="ch_vvvv">
+								<p>床 床垫 床头柜 美国进口床垫 美规床 衣柜 斗柜 妆台镜/妆凳 穿衣镜/衣帽架 床尾凳 卧室套装</p>
+								<p>沙发 电视柜 茶几/边桌 酒柜/装饰柜 鞋柜 间厅/玄关柜 休闲椅/凳 花架/装饰架 屏风 客厅套装</p>
+								<p>餐桌 餐椅 餐边柜 餐厅套装</p>
+								<p>书桌/工作台 书椅/转椅 书柜/书架 书房套装</p>
+								<p>儿童床 儿童床垫 儿童床头柜 儿童衣柜 儿童桌 儿童椅 儿童柜类</p>
+								<p>户外柜 遮阳伞 户外套装 吊篮/吊椅 折叠床 户外椅 藤艺家具</p>
+								<p>办公桌 办公椅 办公沙发 文件柜 保险柜</p>
+							 </li><!-- 
+							  --><li class="ch_bbbb">
+									<div>
+										<h2>推荐新品</h2>
+										<p>凯撒豪庭 北欧悠歌 白金宫殿 法兰西玫瑰 韩菲儿 卡富亚 蓝旗家具 卡洛阁 青春城堡 宜华</p>
+									</div>
+									<img src="images/ch_azaz.jpg" alt="">
+							  </li>
+						</ul>
+					</div>
+
+					<div class="ch_cc">
+						<a href="">客厅</a>/
+						<a href="">沙发</a>/
+						<a href="">电视柜</a>
+						<ul>
+							<li class="ch_xxxx">
+								<p>>卧室</p>
+								<p>>客厅</p>
+								<p style="color: red">>餐厅</p>
+								<p>>书房</p>
+								<p>>儿童房</p>
+								<p>>户外/阳台</p>
+								<p>>办公家居</p>
+							</li><!-- 
+							 --><li class="ch_vvvv">
+								<p>床 床垫 床头柜 美国进口床垫 美规床 衣柜 斗柜 妆台镜/妆凳 穿衣镜/衣帽架 床尾凳 卧室套装</p>
+								<p>沙发 电视柜 茶几/边桌 酒柜/装饰柜 鞋柜 间厅/玄关柜 休闲椅/凳 花架/装饰架 屏风 客厅套装</p>
+								<p>餐桌 餐椅 餐边柜 餐厅套装</p>
+								<p>书桌/工作台 书椅/转椅 书柜/书架 书房套装</p>
+								<p>儿童床 儿童床垫 儿童床头柜 儿童衣柜 儿童桌 儿童椅 儿童柜类</p>
+								<p>户外柜 遮阳伞 户外套装 吊篮/吊椅 折叠床 户外椅 藤艺家具</p>
+								<p>办公桌 办公椅 办公沙发 文件柜 保险柜</p>
+							 </li><!-- 
+							  --><li class="ch_bbbb">
+									<div>
+										<h2>推荐新品</h2>
+										<p>凯撒豪庭 北欧悠歌 白金宫殿 法兰西玫瑰 韩菲儿 卡富亚 蓝旗家具 卡洛阁 青春城堡 宜华</p>
+									</div>
+									<img src="images/ch_azaz.jpg" alt="">
+							  </li>
+						</ul>
+					</div>
+
+					<div class="ch_dd">
+						<a href="">餐厅</a>/
+						<a href="">餐桌</a>/
+						<a href="">餐椅</a>
+						<ul>
+							<li class="ch_xxxx">
+								<p>>卧室</p>
+								<p>>客厅</p>
+								<p>>餐厅</p>
+								<p style="color: red">>书房</p>
+								<p>>儿童房</p>
+								<p>>户外/阳台</p>
+								<p>>办公家居</p>
+							</li><!-- 
+							 --><li class="ch_vvvv">
+								<p>床 床垫 床头柜 美国进口床垫 美规床 衣柜 斗柜 妆台镜/妆凳 穿衣镜/衣帽架 床尾凳 卧室套装</p>
+								<p>沙发 电视柜 茶几/边桌 酒柜/装饰柜 鞋柜 间厅/玄关柜 休闲椅/凳 花架/装饰架 屏风 客厅套装</p>
+								<p>餐桌 餐椅 餐边柜 餐厅套装</p>
+								<p>书桌/工作台 书椅/转椅 书柜/书架 书房套装</p>
+								<p>儿童床 儿童床垫 儿童床头柜 儿童衣柜 儿童桌 儿童椅 儿童柜类</p>
+								<p>户外柜 遮阳伞 户外套装 吊篮/吊椅 折叠床 户外椅 藤艺家具</p>
+								<p>办公桌 办公椅 办公沙发 文件柜 保险柜</p>
+							 </li><!-- 
+							  --><li class="ch_bbbb">
+									<div>
+										<h2>推荐新品</h2>
+										<p>凯撒豪庭 北欧悠歌 白金宫殿 法兰西玫瑰 韩菲儿 卡富亚 蓝旗家具 卡洛阁 青春城堡 宜华</p>
+									</div>
+									<img src="images/ch_azaz.jpg" alt="">
+							  </li>
+						</ul>
+					</div>
+
+					<div class="ch_ee">
+						<a href="">书房</a>/
+						<a href="">书桌</a>/
+						<a href="">书柜</a>
+						<ul>
+							<li class="ch_xxxx">
+								<p>>卧室</p>
+								<p>>客厅</p>
+								<p>>餐厅</p>
+								<p>>书房</p>
+								<p style="color: red">>儿童房</p>
+								<p>>户外/阳台</p>
+								<p>>办公家居</p>
+							</li><!-- 
+							 --><li class="ch_vvvv">
+								<p>床 床垫 床头柜 美国进口床垫 美规床 衣柜 斗柜 妆台镜/妆凳 穿衣镜/衣帽架 床尾凳 卧室套装</p>
+								<p>沙发 电视柜 茶几/边桌 酒柜/装饰柜 鞋柜 间厅/玄关柜 休闲椅/凳 花架/装饰架 屏风 客厅套装</p>
+								<p>餐桌 餐椅 餐边柜 餐厅套装</p>
+								<p>书桌/工作台 书椅/转椅 书柜/书架 书房套装</p>
+								<p>儿童床 儿童床垫 儿童床头柜 儿童衣柜 儿童桌 儿童椅 儿童柜类</p>
+								<p>户外柜 遮阳伞 户外套装 吊篮/吊椅 折叠床 户外椅 藤艺家具</p>
+								<p>办公桌 办公椅 办公沙发 文件柜 保险柜</p>
+							 </li><!-- 
+							  --><li class="ch_bbbb">
+									<div>
+										<h2>推荐新品</h2>
+										<p>凯撒豪庭 北欧悠歌 白金宫殿 法兰西玫瑰 韩菲儿 卡富亚 蓝旗家具 卡洛阁 青春城堡 宜华</p>
+									</div>
+									<img src="images/ch_azaz.jpg" alt="">
+							  </li>
+						</ul>
+					</div>
+
+					<div class="ch_ff">
+						<a href="">儿童房</a>/
+						<a href="">儿童床</a>/
+						<a href="">儿童桌</a>
+						<ul>
+							<li class="ch_xxxx">
+								<p>>卧室</p>
+								<p>>客厅</p>
+								<p>>餐厅</p>
+								<p>>书房</p>
+								<p>>儿童房</p>
+								<p style="color: red">>户外/阳台</p>
+								<p>>办公家居</p>
+							</li><!-- 
+							 --><li class="ch_vvvv">
+								<p>床 床垫 床头柜 美国进口床垫 美规床 衣柜 斗柜 妆台镜/妆凳 穿衣镜/衣帽架 床尾凳 卧室套装</p>
+								<p>沙发 电视柜 茶几/边桌 酒柜/装饰柜 鞋柜 间厅/玄关柜 休闲椅/凳 花架/装饰架 屏风 客厅套装</p>
+								<p>餐桌 餐椅 餐边柜 餐厅套装</p>
+								<p>书桌/工作台 书椅/转椅 书柜/书架 书房套装</p>
+								<p>儿童床 儿童床垫 儿童床头柜 儿童衣柜 儿童桌 儿童椅 儿童柜类</p>
+								<p>户外柜 遮阳伞 户外套装 吊篮/吊椅 折叠床 户外椅 藤艺家具</p>
+								<p>办公桌 办公椅 办公沙发 文件柜 保险柜</p>
+							 </li><!-- 
+							  --><li class="ch_bbbb">
+									<div>
+										<h2>推荐新品</h2>
+										<p>凯撒豪庭 北欧悠歌 白金宫殿 法兰西玫瑰 韩菲儿 卡富亚 蓝旗家具 卡洛阁 青春城堡 宜华</p>
+									</div>
+									<img src="images/ch_azaz.jpg" alt="">
+							  </li>
+						</ul>
+					</div>
+					<div class="ch_gg">
+						<a href="">户外</a>/
+						<a href="">阳台</a>/
+						<a href="">办公家具</a>
+						<ul>
+							<li class="ch_xxxx">
+								<p>>卧室</p>
+								<p>>客厅</p>
+								<p>>餐厅</p>
+								<p>>书房</p>
+								<p>>儿童房</p>
+								<p>>户外/阳台</p>
+								<p style="color: red">>办公家居</p>
+							</li><!-- 
+							 --><li class="ch_vvvv">
+								<p>床 床垫 床头柜 美国进口床垫 美规床 衣柜 斗柜 妆台镜/妆凳 穿衣镜/衣帽架 床尾凳 卧室套装</p>
+								<p>沙发 电视柜 茶几/边桌 酒柜/装饰柜 鞋柜 间厅/玄关柜 休闲椅/凳 花架/装饰架 屏风 客厅套装</p>
+								<p>餐桌 餐椅 餐边柜 餐厅套装</p>
+								<p>书桌/工作台 书椅/转椅 书柜/书架 书房套装</p>
+								<p>儿童床 儿童床垫 儿童床头柜 儿童衣柜 儿童桌 儿童椅 儿童柜类</p>
+								<p>户外柜 遮阳伞 户外套装 吊篮/吊椅 折叠床 户外椅 藤艺家具</p>
+								<p>办公桌 办公椅 办公沙发 文件柜 保险柜</p>
+							 </li><!-- 
+							  --><li class="ch_bbbb">
+									<div>
+										<h2>推荐新品</h2>
+										<p>凯撒豪庭 北欧悠歌 白金宫殿 法兰西玫瑰 韩菲儿 卡富亚 蓝旗家具 卡洛阁 青春城堡 宜华</p>
+									</div>
+									<img src="images/ch_azaz.jpg" alt="">
+							  </li>
+						</ul>
+					</div>
+
+					<div class="ch_hh">
+						<a class="ch_lei ch_2" href="">家居建材</a>
+						<ul>
+							<li class="ch_xxxx">
+								<p style="color: red">>卧室</p>
+								<p>>客厅</p>
+								<p>>餐厅</p>
+								<p>>书房</p>
+								<p>>儿童房</p>
+								<p>>户外/阳台</p>
+								<p>>办公家居</p>
+							</li><!-- 
+							 --><li class="ch_vvvv">
+								<p>床 床垫 床头柜 美国进口床垫 美规床 衣柜 斗柜 妆台镜/妆凳 穿衣镜/衣帽架 床尾凳 卧室套装</p>
+								<p>沙发 电视柜 茶几/边桌 酒柜/装饰柜 鞋柜 间厅/玄关柜 休闲椅/凳 花架/装饰架 屏风 客厅套装</p>
+								<p>餐桌 餐椅 餐边柜 餐厅套装</p>
+								<p>书桌/工作台 书椅/转椅 书柜/书架 书房套装</p>
+								<p>儿童床 儿童床垫 儿童床头柜 儿童衣柜 儿童桌 儿童椅 儿童柜类</p>
+								<p>户外柜 遮阳伞 户外套装 吊篮/吊椅 折叠床 户外椅 藤艺家具</p>
+								<p>办公桌 办公椅 办公沙发 文件柜 保险柜</p>
+							 </li><!-- 
+							  --><li class="ch_bbbb">
+									<div>
+										<h2>推荐新品</h2>
+										<p>凯撒豪庭 北欧悠歌 白金宫殿 法兰西玫瑰 韩菲儿 卡富亚 蓝旗家具 卡洛阁 青春城堡 宜华</p>
+									</div>
+									<img src="images/ch_azaz.jpg" alt="">
+							  </li>
+						</ul>
+					</div>
+
+					<div class="ch_ii">
+						<a href="">灯饰照明</a>/
+						<a href="">吊灯</a>/
+						<a href="">吸顶灯</a>
+						<ul>
+							<li class="ch_xxxx">
+								<p>>卧室</p>
+								<p style="color: red">>客厅</p>
+								<p>>餐厅</p>
+								<p>>书房</p>
+								<p>>儿童房</p>
+								<p>>户外/阳台</p>
+								<p>>办公家居</p>
+							</li><!-- 
+							 --><li class="ch_vvvv">
+								<p>床 床垫 床头柜 美国进口床垫 美规床 衣柜 斗柜 妆台镜/妆凳 穿衣镜/衣帽架 床尾凳 卧室套装</p>
+								<p>沙发 电视柜 茶几/边桌 酒柜/装饰柜 鞋柜 间厅/玄关柜 休闲椅/凳 花架/装饰架 屏风 客厅套装</p>
+								<p>餐桌 餐椅 餐边柜 餐厅套装</p>
+								<p>书桌/工作台 书椅/转椅 书柜/书架 书房套装</p>
+								<p>儿童床 儿童床垫 儿童床头柜 儿童衣柜 儿童桌 儿童椅 儿童柜类</p>
+								<p>户外柜 遮阳伞 户外套装 吊篮/吊椅 折叠床 户外椅 藤艺家具</p>
+								<p>办公桌 办公椅 办公沙发 文件柜 保险柜</p>
+							 </li><!-- 
+							  --><li class="ch_bbbb">
+									<div>
+										<h2>推荐新品</h2>
+										<p>凯撒豪庭 北欧悠歌 白金宫殿 法兰西玫瑰 韩菲儿 卡富亚 蓝旗家具 卡洛阁 青春城堡 宜华</p>
+									</div>
+									<img src="images/ch_azaz.jpg" alt="">
+							  </li>
+						</ul>
+					</div>
+
+					<div class="ch_jj">
+						<a href="">卫浴</a>/
+						<a href="">墙地面</a>/
+						<a href="">地板</a>
+						<ul>
+							<li class="ch_xxxx">
+								<p>>卧室</p>
+								<p>>客厅</p>
+								<p style="color: red">>餐厅</p>
+								<p>>书房</p>
+								<p>>儿童房</p>
+								<p>>户外/阳台</p>
+								<p>>办公家居</p>
+							</li><!-- 
+							 --><li class="ch_vvvv">
+								<p>床 床垫 床头柜 美国进口床垫 美规床 衣柜 斗柜 妆台镜/妆凳 穿衣镜/衣帽架 床尾凳 卧室套装</p>
+								<p>沙发 电视柜 茶几/边桌 酒柜/装饰柜 鞋柜 间厅/玄关柜 休闲椅/凳 花架/装饰架 屏风 客厅套装</p>
+								<p>餐桌 餐椅 餐边柜 餐厅套装</p>
+								<p>书桌/工作台 书椅/转椅 书柜/书架 书房套装</p>
+								<p>儿童床 儿童床垫 儿童床头柜 儿童衣柜 儿童桌 儿童椅 儿童柜类</p>
+								<p>户外柜 遮阳伞 户外套装 吊篮/吊椅 折叠床 户外椅 藤艺家具</p>
+								<p>办公桌 办公椅 办公沙发 文件柜 保险柜</p>
+							 </li><!-- 
+							  --><li class="ch_bbbb">
+									<div>
+										<h2>推荐新品</h2>
+										<p>凯撒豪庭 北欧悠歌 白金宫殿 法兰西玫瑰 韩菲儿 卡富亚 蓝旗家具 卡洛阁 青春城堡 宜华</p>
+									</div>
+									<img src="images/ch_azaz.jpg" alt="">
+							  </li>
+						</ul>
+					</div>
+
+					<div class="ch_kk">
+						<a class="ch_lei ch_3" href="">优选风格</a>
+						<ul>
+							<li class="ch_xxxx">
+								<p>>卧室</p>
+								<p>>客厅</p>
+								<p>>餐厅</p>
+								<p style="color: red">>书房</p>
+								<p>>儿童房</p>
+								<p>>户外/阳台</p>
+								<p>>办公家居</p>
+							</li><!-- 
+							 --><li class="ch_vvvv">
+								<p>床 床垫 床头柜 美国进口床垫 美规床 衣柜 斗柜 妆台镜/妆凳 穿衣镜/衣帽架 床尾凳 卧室套装</p>
+								<p>沙发 电视柜 茶几/边桌 酒柜/装饰柜 鞋柜 间厅/玄关柜 休闲椅/凳 花架/装饰架 屏风 客厅套装</p>
+								<p>餐桌 餐椅 餐边柜 餐厅套装</p>
+								<p>书桌/工作台 书椅/转椅 书柜/书架 书房套装</p>
+								<p>儿童床 儿童床垫 儿童床头柜 儿童衣柜 儿童桌 儿童椅 儿童柜类</p>
+								<p>户外柜 遮阳伞 户外套装 吊篮/吊椅 折叠床 户外椅 藤艺家具</p>
+								<p>办公桌 办公椅 办公沙发 文件柜 保险柜</p>
+							 </li><!-- 
+							  --><li class="ch_bbbb">
+									<div>
+										<h2>推荐新品</h2>
+										<p>凯撒豪庭 北欧悠歌 白金宫殿 法兰西玫瑰 韩菲儿 卡富亚 蓝旗家具 卡洛阁 青春城堡 宜华</p>
+									</div>
+									<img src="images/ch_azaz.jpg" alt="">
+							  </li>
+						</ul>
+					</div>
+
+					<div class="ch_ll">
+						<a href="">美式</a>/
+						<a href="">欧式</a>/
+						<a href="">现代</a>/
+						<a href="">中式</a>
+						<ul>
+							<li class="ch_xxxx">
+								<p>>卧室</p>
+								<p>>客厅</p>
+								<p>>餐厅</p>
+								<p>>书房</p>
+								<p style="color: red">>儿童房</p>
+								<p>>户外/阳台</p>
+								<p>>办公家居</p>
+							</li><!-- 
+							 --><li class="ch_vvvv">
+								<p>床 床垫 床头柜 美国进口床垫 美规床 衣柜 斗柜 妆台镜/妆凳 穿衣镜/衣帽架 床尾凳 卧室套装</p>
+								<p>沙发 电视柜 茶几/边桌 酒柜/装饰柜 鞋柜 间厅/玄关柜 休闲椅/凳 花架/装饰架 屏风 客厅套装</p>
+								<p>餐桌 餐椅 餐边柜 餐厅套装</p>
+								<p>书桌/工作台 书椅/转椅 书柜/书架 书房套装</p>
+								<p>儿童床 儿童床垫 儿童床头柜 儿童衣柜 儿童桌 儿童椅 儿童柜类</p>
+								<p>户外柜 遮阳伞 户外套装 吊篮/吊椅 折叠床 户外椅 藤艺家具</p>
+								<p>办公桌 办公椅 办公沙发 文件柜 保险柜</p>
+							 </li><!-- 
+							  --><li class="ch_bbbb">
+									<div>
+										<h2>推荐新品</h2>
+										<p>凯撒豪庭 北欧悠歌 白金宫殿 法兰西玫瑰 韩菲儿 卡富亚 蓝旗家具 卡洛阁 青春城堡 宜华</p>
+									</div>
+									<img src="images/ch_azaz.jpg" alt="">
+							  </li>
+						</ul>
+					</div>
+
+					<div class="ch_mm">
+						<a href="">北欧</a>/
+						<a href="">新古典</a>/
+						<a href="">法式</a>/
+						<a href="">地中海</a>
+						<ul>
+							<li class="ch_xxxx">
+								<p>>卧室</p>
+								<p>>客厅</p>
+								<p>>餐厅</p>
+								<p>>书房</p>
+								<p>>儿童房</p>
+								<p style="color: red">>户外/阳台</p>
+								<p>>办公家居</p>
+							</li><!-- 
+							 --><li class="ch_vvvv">
+								<p>床 床垫 床头柜 美国进口床垫 美规床 衣柜 斗柜 妆台镜/妆凳 穿衣镜/衣帽架 床尾凳 卧室套装</p>
+								<p>沙发 电视柜 茶几/边桌 酒柜/装饰柜 鞋柜 间厅/玄关柜 休闲椅/凳 花架/装饰架 屏风 客厅套装</p>
+								<p>餐桌 餐椅 餐边柜 餐厅套装</p>
+								<p>书桌/工作台 书椅/转椅 书柜/书架 书房套装</p>
+								<p>儿童床 儿童床垫 儿童床头柜 儿童衣柜 儿童桌 儿童椅 儿童柜类</p>
+								<p>户外柜 遮阳伞 户外套装 吊篮/吊椅 折叠床 户外椅 藤艺家具</p>
+								<p>办公桌 办公椅 办公沙发 文件柜 保险柜</p>
+							 </li><!-- 
+							  --><li class="ch_bbbb">
+									<div>
+										<h2>推荐新品</h2>
+										<p>凯撒豪庭 北欧悠歌 白金宫殿 法兰西玫瑰 韩菲儿 卡富亚 蓝旗家具 卡洛阁 青春城堡 宜华</p>
+									</div>
+									<img src="images/ch_azaz.jpg" alt="">
+							  </li>
+						</ul>
+					</div>
+
+					<div class="ch_nn">
+						<a href="">床垫</a>/
+						<a href="">新中式</a>/
+						<a href="">韩式</a>
+						<ul>
+							<li class="ch_xxxx">
+								<p>>卧室</p>
+								<p>>客厅</p>
+								<p>>餐厅</p>
+								<p>>书房</p>
+								<p>>儿童房</p>
+								<p>>户外/阳台</p>
+								<p style="color: red">>办公家居</p>
+							</li><!-- 
+							 --><li class="ch_vvvv">
+								<p>床 床垫 床头柜 美国进口床垫 美规床 衣柜 斗柜 妆台镜/妆凳 穿衣镜/衣帽架 床尾凳 卧室套装</p>
+								<p>沙发 电视柜 茶几/边桌 酒柜/装饰柜 鞋柜 间厅/玄关柜 休闲椅/凳 花架/装饰架 屏风 客厅套装</p>
+								<p>餐桌 餐椅 餐边柜 餐厅套装</p>
+								<p>书桌/工作台 书椅/转椅 书柜/书架 书房套装</p>
+								<p>儿童床 儿童床垫 儿童床头柜 儿童衣柜 儿童桌 儿童椅 儿童柜类</p>
+								<p>户外柜 遮阳伞 户外套装 吊篮/吊椅 折叠床 户外椅 藤艺家具</p>
+								<p>办公桌 办公椅 办公沙发 文件柜 保险柜</p>
+							 </li><!-- 
+							  --><li class="ch_bbbb">
+									<div>
+										<h2>推荐新品</h2>
+										<p>凯撒豪庭 北欧悠歌 白金宫殿 法兰西玫瑰 韩菲儿 卡富亚 蓝旗家具 卡洛阁 青春城堡 宜华</p>
+									</div>
+									<img src="images/ch_azaz.jpg" alt="">
+							  </li>
+						</ul>
+					</div>
+
+				</div>
+			</h2>
+			<!-- 以下A标签未添加跳转链接 -->
+			<li><a href="lqc.html">首页</a> </li>
+			<li><a href="LH.html">家具城</a></li>
+			<li><a href="gdnsem.html">建材城</a></li>
+			<li><a href="#">家具家饰</a></li>
+			<li><a href="#">团购</a></li>
+			<li><a href="#">体验馆</a></li>
+			<li><a href="yuemu.html">阅木</a></li>
+			<li><a href="" style="color: #e62318">晒家</a></li>
+			<li><a href="TuLanJiaJu.html">图览家具</a></li>
+	
+        </div>
+
+		
+	</div>
+    <!-- 整体大盒子 -->
+    <div class="j_view">
+
+        <!-- 顶部大图 -->
+        <img src="images/jtop.jpg" alt="" id="j_view_img">
+
+        <!-- 安全区域 -->
+        <div class="j_content">
+
+            <div class="j_conTop">
+                <!-- 顶部二维码部分 -->
+                <div class="j_conTop_left">
+                    <span>往期晒家精品</span>
+                </div>
+                <div class="j_conTop_right">
+                    <div id="code">
+                        <a href="">手机晒家更方便</a>
+
+                        <img src="images/j_bigCode.png" alt="" id="j_bigCode"> <!-- 二维码 -->
+                    </div>
+                    <a href="" id="sunHome">我要晒家</a>
+                </div>
+                <div class="clear"></div>
+            </div>
+
+            <!-- 导航栏 -->
+            <ul class="j_conMid"></ul>
+
+            <!-- 隐藏栏 -->
+            <div class="j_conMid_goods">
+                <div class="num " id="num3"></div>
+                <div class="num">
+                    <a href="">床</a>
+                    <a href="">床头柜</a>
+                    <a href="">衣柜</a>
+                    <a href="">床尾凳</a>
+                    <a href="">床垫</a>
+                    <a href="">卧室套装</a>
+                </div>
+                <div class="num">
+                    <a href="">沙发</a>
+                    <a href="">茶几</a>
+                    <a href="">电视柜</a>
+                    <a href="">鞋柜</a>
+                    <a href="">间厅</a>
+                    <a href="">客厅套装</a>
+                    <a href="">屏风</a>
+                </div>
+                <div class="num">
+                    <a href="">餐桌</a>
+                    <a href="">餐椅</a>
+                    <a href="">餐边桌</a>
+                    <a href="">餐厅套装</a>
+                </div>
+                <div class="num">
+                    <a href="">书桌</a>
+                    <a href="">书椅</a>
+                    <a href="">书柜</a>
+                    <a href="">书房套装</a>
+                </div>
+                <div class="num">
+                    <a href="">儿童床</a>
+                    <a href="">儿童桌</a>
+                    <a href="">儿童椅</a>
+                    <a href="">儿童衣柜</a>
+                    <a href="">儿童床垫</a>
+                </div>
+                <div class="num" id="num2"></div>
+            </div>
+            <!-- 瀑布流 -->
+            <div class="j_waterFall">
+            </div>
+            <!-- 分页 -->
+            <div class="j_botPages">
+                <div class="content">
+                </div>
+                <div class="j_next">下一页<span>▸</span></div>
+            </div>
+        </div>
+
+	</div>
+	
+
+
+	<div class="WJH_footer">
+			<div class="footer-icon">
+				<div class="WJH_bot_icon">
+					<a href="" target="_blank" class="icon-map">
+						<p class="icon-bg i1"></p>
+						<p class="icon-title">美乐乐O2O</p>
+					</a><a href="" target="_blank" class="icon-map">
+						<p class="icon-bg i2"></p>
+						<p class="icon-title">全国体验馆</p>
+					</a><a href="" target="_blank" class="icon-map">
+						<p class="icon-bg i3"></p>
+						<p class="icon-title">双重质检</p>
+					</a><a href="" target="_blank" class="icon-map">
+						<p class="icon-bg i4"></p>
+						<p class="icon-title">售后无忧</p>
+					</a><a href="" target="_blank" class="icon-map">
+						<p class="icon-bg i5"></p>
+						<p class="icon-title">原创设计</p>
+					</a><a href="" target="_blank" class="icon-map">
+						<p class="icon-bg i6"></p>
+						<p class="icon-title">全球采购</p>
+					</a><a href="" target="_blank" class="icon-map">
+						<p class="icon-bg i7"></p>
+						<p class="icon-title">万千口碑</p>
+					</a><a href="" target="_blank" class="icon-map">
+						<p class="icon-bg i8"></p>
+						<p class="icon-title">团队优势</p>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copy">
+			<div class="link-container">
+	
+				<div class="copy-index clearfix" style="padding-top:0">
+					<div class="fl">
+						<p>
+							<a href="" target="_blank">装修网</a> | <a href="" target="_blank">装修效果图</a> | <a href=""
+								target="_blank">家居资讯</a> |<a href="/list/" target="_blank">家具图片</a> | <a href=""
+								target="_blank">家居资讯</a> | <a href="" target="_blank">生活百科</a> | <a href=""
+								target="_blank">家私导购</a> | <a href="" target="_blank">品牌展厅</a> | <a href=""
+								target="_blank">装修论坛</a> | <a href="" target="_blank" title="客服中心">客服中心</a> | <a href=""
+								target="_blank">网站地图</a> | <a href="" target="_blank">友情链接</a> | <a href=""
+								target="_blank">更多</a>
+						</p>
+						<p>
+							<span class="yen">© 2005-2018 </span><span id="JS_footer_copyright">美乐乐</span> 天津美维信息技术有限公司
+							版权所有，并保留所有权利。<a href="" target="_blank" class="gray">ICP备案证书号：粤ICP备08008334号</a>
+						</p>
+					</div>
+					<div class="fr credit">
+						<a href="" target="_blank"><i class="c1"></i><span class="spec">诚信网站</span></a>
+						<a target="_blank" href=""><i class="c4"></i><span>认证联盟品牌官网</span></a>
+						<a target="_blank" href=""><i class="c2"></i><span>可信网站信用评价</span></a>
+						<i class="c3"></i><span>经营网站备案信息</span>
+					</div>
+				</div>
+	
+			</div>
+		</div>
+
+<!-- 侧边栏 -->
+<ul class="j_right_box">
+        <li class="j_right1">
+            <a href="">客服</a>
+            <div class="j_right_txt">咨询在线客服</div>
+        </li>
+        <li class="j_right2">
+            <a href="">体验馆</a>
+            <img src="images/j_tiyan.png" alt="" class="j_gif">
+            <img src="images/address.gif" alt="" class="j_gif">
+        </li> 
+        <div class="j_right_txt" id="j_right_txt">发送体验馆地址</div>
+        <li class="j_right3">
+            <a href="hopping.html">购物车</a>
+            <div class="j_right_txt">查看购物车</div>
+            <div id="j_right_num">0</div>
+        </li>
+        <li class="j_right4">
+            <a href="">抽奖</a>
+            <div class="j_right_txt">参与本期抽奖</div>
+        </li>
+        <li class="j_right5">
+            <p href="" id="j_right_a"></p>
+            <div class="j_right_txt">返回顶部</div>
+        </li>
+    </ul>
+</body>
+
+<script src="js/area.js"></script>
+<script src="js/Index_header.js"></script>
+
+<script src="js/content_index.js"></script>
+<script src="js/jIndex.js"></script>
+<script src="js/cebian.js"></script>
+</html>

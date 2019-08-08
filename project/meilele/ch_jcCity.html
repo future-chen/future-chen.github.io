@@ -1,0 +1,1758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/ch_jcCity.css">
+	<link rel="stylesheet" href="css/cebian.css">
+	<script src="js/jquery-1.8.3.js"></script>
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<link rel="stylesheet" href="css/Index_header.css">
+	<link rel="stylesheet" href="css/Index_foot.css">
+	
+
+</head>
+<body>
+
+	 <!-- 页头 -->
+	 <div id="WJH_header">
+			<!-- 总栏 -->
+			<div class="WJH_menu">
+	
+				<div class="WJH_area">
+					<!-- 地区栏 -->
+					<ul class="WJH_nav_left">
+						<li class="WJH_change">
+							<i class="i_coord"></i>
+							<span class="WJH_city">全国站</span>
+							<div class="WJH_changeCity">
+								[切换]
+								<ul id="WJH_cityBox">
+									<span class="WJH_arrowBg"></span>
+									<p></p>
+									<ul class="WJH_cityTitle">
+										<li>全国</li>
+										<li>北京</li>
+										<li>上海</li>
+										<li>广州</li>
+										<li>深圳</li>
+										<li>成都</li>
+										<li>西安</li>
+										<li>天津</li>
+										<li>武汉</li>
+										<li>重庆</li>
+										<li>南京</li>
+									</ul>
+									<div class="WJH_search">
+										<input type="text" placeholder="输入城市名"><button>搜索</button>
+									</div>
+									<!-- 首字母 -->
+									<ul id="WJH_firWord">
+	
+									</ul>
+									<!-- 城市列表 -->
+									<div id="WJH_cityliebiao">
+	
+									</div>
+								</ul>
+							</div>
+	
+						</li>
+						<li class="WJH_login">
+							<a href="cdyLogin.html">请登录</a>
+						</li>
+						<li class="WJH_regist">
+							<a href="cdySign.html">免费注册</a>
+						</li>
+					</ul>
+					<!-- 我的美乐乐栏 -->
+					<ul class="WJH_nav_right">
+						<li class="WJH_mymeilele">
+							<a href="">我的美乐乐</a>
+							<div class="WJH_mymeilele_box">
+								<a href="">我的订单</a>
+								<a href="">我的金币</a>
+								<a href="">我的红包</a>
+								<a href="">我的收藏</a>
+								<a href="">我要评价</a>
+								<a href="">申请保价</a>
+							</div>
+							<i class="drop_arrow"></i>
+						</li>
+						<li class="WJH_good">
+							<i class="WJH_cart"></i>
+							<a href="hopping.html">购物车</a><span class="WJH_goodsCount">0</span>
+							<div class="shopCar_line"></div>
+							<div id="shopCar">
+								暂时没有商品
+							</div>
+							<i class="drop_arrow"></i>
+						</li>
+						<li class="WJH_guanzhu">
+							<i class="WJH_guanzhuicon"></i>
+							<a href="">关注美乐乐</a>
+							<i class="drop_arrow"></i>
+						</li>
+						<li class="WJH_helpcenter">
+							<a href="">帮助中心</a>
+							<i class="drop_arrow"></i>
+						</li>
+						<li class="WJH_collet">
+							<a href="">收藏本站</a>
+						</li>
+						<li>
+							<span class="WJH_help">全国帮助中心&nbsp;:</span><span class="WJH_tel">&nbsp;4000000000</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- 页面导航栏 -->
+			<div class="WJH_header_nav">
+				<a href="">
+					<img src="images\WJH_logo2.png" alt="">
+				</a>
+				<a href="">
+					<img src="images\WJH_618.gif" alt="">
+				</a>
+				<div class="WJH_header_nav_search">
+					<input type="text" placeholder="超值半价抢"><button>搜索</button>
+					<div class="WJH_active">
+						<a href="">10元抢半价</a>
+						<a href="">床</a>
+						<a href="">沙发</a>
+						<a href="">餐桌椅</a>
+						<a href="">实木床</a>
+						<a href="">床垫大促</a>
+						<a href="">转角沙发</a>
+						<a href="">灯饰</a>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+
+
+
+	
+	<!-- 导航菜单 -->
+	<div class="ch_bigtitle">
+
+		
+
+		<div class="ch_title">
+			<h2 class="ch_sph2"><span>商品分类</span>
+				<div class="ch_ycMenu">
+					<div class="ch_aa">
+						<a class="ch_lei" href="">家具</a>
+						<ul>
+							<li class="ch_xxxx">
+								<p style="color: red">>卧室</p>
+								<p>>客厅</p>
+								<p>>餐厅</p>
+								<p>>书房</p>
+								<p>>儿童房</p>
+								<p>>户外/阳台</p>
+								<p>>办公家居</p>
+							</li><!-- 
+							 --><li class="ch_vvvv">
+								<p>床 床垫 床头柜 美国进口床垫 美规床 衣柜 斗柜 妆台镜/妆凳 穿衣镜/衣帽架 床尾凳 卧室套装</p>
+								<p>沙发 电视柜 茶几/边桌 酒柜/装饰柜 鞋柜 间厅/玄关柜 休闲椅/凳 花架/装饰架 屏风 客厅套装</p>
+								<p>餐桌 餐椅 餐边柜 餐厅套装</p>
+								<p>书桌/工作台 书椅/转椅 书柜/书架 书房套装</p>
+								<p>儿童床 儿童床垫 儿童床头柜 儿童衣柜 儿童桌 儿童椅 儿童柜类</p>
+								<p>户外柜 遮阳伞 户外套装 吊篮/吊椅 折叠床 户外椅 藤艺家具</p>
+								<p>办公桌 办公椅 办公沙发 文件柜 保险柜</p>
+							 </li><!-- 
+							  --><li class="ch_bbbb">
+									<div>
+										<h2>推荐新品</h2>
+										<p>凯撒豪庭 北欧悠歌 白金宫殿 法兰西玫瑰 韩菲儿 卡富亚 蓝旗家具 卡洛阁 青春城堡 宜华</p>
+									</div>
+									<img src="images/ch_azaz.jpg" alt="">
+							  </li>
+						</ul>
+					</div>
+
+					<div class="ch_bb">
+						<a href="">卧室</a>/
+						<a href="">床</a>/
+						<a href="">床垫</a>/
+						<a href="">衣柜</a>
+						<ul>
+							<li class="ch_xxxx">
+								<p>>卧室</p>
+								<p style="color: red">>客厅</p>
+								<p>>餐厅</p>
+								<p>>书房</p>
+								<p>>儿童房</p>
+								<p>>户外/阳台</p>
+								<p>>办公家居</p>
+							</li><!-- 
+							 --><li class="ch_vvvv">
+								<p>床 床垫 床头柜 美国进口床垫 美规床 衣柜 斗柜 妆台镜/妆凳 穿衣镜/衣帽架 床尾凳 卧室套装</p>
+								<p>沙发 电视柜 茶几/边桌 酒柜/装饰柜 鞋柜 间厅/玄关柜 休闲椅/凳 花架/装饰架 屏风 客厅套装</p>
+								<p>餐桌 餐椅 餐边柜 餐厅套装</p>
+								<p>书桌/工作台 书椅/转椅 书柜/书架 书房套装</p>
+								<p>儿童床 儿童床垫 儿童床头柜 儿童衣柜 儿童桌 儿童椅 儿童柜类</p>
+								<p>户外柜 遮阳伞 户外套装 吊篮/吊椅 折叠床 户外椅 藤艺家具</p>
+								<p>办公桌 办公椅 办公沙发 文件柜 保险柜</p>
+							 </li><!-- 
+							  --><li class="ch_bbbb">
+									<div>
+										<h2>推荐新品</h2>
+										<p>凯撒豪庭 北欧悠歌 白金宫殿 法兰西玫瑰 韩菲儿 卡富亚 蓝旗家具 卡洛阁 青春城堡 宜华</p>
+									</div>
+									<img src="images/ch_azaz.jpg" alt="">
+							  </li>
+						</ul>
+					</div>
+
+					<div class="ch_cc">
+						<a href="">客厅</a>/
+						<a href="">沙发</a>/
+						<a href="">电视柜</a>
+						<ul>
+							<li class="ch_xxxx">
+								<p>>卧室</p>
+								<p>>客厅</p>
+								<p style="color: red">>餐厅</p>
+								<p>>书房</p>
+								<p>>儿童房</p>
+								<p>>户外/阳台</p>
+								<p>>办公家居</p>
+							</li><!-- 
+							 --><li class="ch_vvvv">
+								<p>床 床垫 床头柜 美国进口床垫 美规床 衣柜 斗柜 妆台镜/妆凳 穿衣镜/衣帽架 床尾凳 卧室套装</p>
+								<p>沙发 电视柜 茶几/边桌 酒柜/装饰柜 鞋柜 间厅/玄关柜 休闲椅/凳 花架/装饰架 屏风 客厅套装</p>
+								<p>餐桌 餐椅 餐边柜 餐厅套装</p>
+								<p>书桌/工作台 书椅/转椅 书柜/书架 书房套装</p>
+								<p>儿童床 儿童床垫 儿童床头柜 儿童衣柜 儿童桌 儿童椅 儿童柜类</p>
+								<p>户外柜 遮阳伞 户外套装 吊篮/吊椅 折叠床 户外椅 藤艺家具</p>
+								<p>办公桌 办公椅 办公沙发 文件柜 保险柜</p>
+							 </li><!-- 
+							  --><li class="ch_bbbb">
+									<div>
+										<h2>推荐新品</h2>
+										<p>凯撒豪庭 北欧悠歌 白金宫殿 法兰西玫瑰 韩菲儿 卡富亚 蓝旗家具 卡洛阁 青春城堡 宜华</p>
+									</div>
+									<img src="images/ch_azaz.jpg" alt="">
+							  </li>
+						</ul>
+					</div>
+
+					<div class="ch_dd">
+						<a href="">餐厅</a>/
+						<a href="">餐桌</a>/
+						<a href="">餐椅</a>
+						<ul>
+							<li class="ch_xxxx">
+								<p>>卧室</p>
+								<p>>客厅</p>
+								<p>>餐厅</p>
+								<p style="color: red">>书房</p>
+								<p>>儿童房</p>
+								<p>>户外/阳台</p>
+								<p>>办公家居</p>
+							</li><!-- 
+							 --><li class="ch_vvvv">
+								<p>床 床垫 床头柜 美国进口床垫 美规床 衣柜 斗柜 妆台镜/妆凳 穿衣镜/衣帽架 床尾凳 卧室套装</p>
+								<p>沙发 电视柜 茶几/边桌 酒柜/装饰柜 鞋柜 间厅/玄关柜 休闲椅/凳 花架/装饰架 屏风 客厅套装</p>
+								<p>餐桌 餐椅 餐边柜 餐厅套装</p>
+								<p>书桌/工作台 书椅/转椅 书柜/书架 书房套装</p>
+								<p>儿童床 儿童床垫 儿童床头柜 儿童衣柜 儿童桌 儿童椅 儿童柜类</p>
+								<p>户外柜 遮阳伞 户外套装 吊篮/吊椅 折叠床 户外椅 藤艺家具</p>
+								<p>办公桌 办公椅 办公沙发 文件柜 保险柜</p>
+							 </li><!-- 
+							  --><li class="ch_bbbb">
+									<div>
+										<h2>推荐新品</h2>
+										<p>凯撒豪庭 北欧悠歌 白金宫殿 法兰西玫瑰 韩菲儿 卡富亚 蓝旗家具 卡洛阁 青春城堡 宜华</p>
+									</div>
+									<img src="images/ch_azaz.jpg" alt="">
+							  </li>
+						</ul>
+					</div>
+
+					<div class="ch_ee">
+						<a href="">书房</a>/
+						<a href="">书桌</a>/
+						<a href="">书柜</a>
+						<ul>
+							<li class="ch_xxxx">
+								<p>>卧室</p>
+								<p>>客厅</p>
+								<p>>餐厅</p>
+								<p>>书房</p>
+								<p style="color: red">>儿童房</p>
+								<p>>户外/阳台</p>
+								<p>>办公家居</p>
+							</li><!-- 
+							 --><li class="ch_vvvv">
+								<p>床 床垫 床头柜 美国进口床垫 美规床 衣柜 斗柜 妆台镜/妆凳 穿衣镜/衣帽架 床尾凳 卧室套装</p>
+								<p>沙发 电视柜 茶几/边桌 酒柜/装饰柜 鞋柜 间厅/玄关柜 休闲椅/凳 花架/装饰架 屏风 客厅套装</p>
+								<p>餐桌 餐椅 餐边柜 餐厅套装</p>
+								<p>书桌/工作台 书椅/转椅 书柜/书架 书房套装</p>
+								<p>儿童床 儿童床垫 儿童床头柜 儿童衣柜 儿童桌 儿童椅 儿童柜类</p>
+								<p>户外柜 遮阳伞 户外套装 吊篮/吊椅 折叠床 户外椅 藤艺家具</p>
+								<p>办公桌 办公椅 办公沙发 文件柜 保险柜</p>
+							 </li><!-- 
+							  --><li class="ch_bbbb">
+									<div>
+										<h2>推荐新品</h2>
+										<p>凯撒豪庭 北欧悠歌 白金宫殿 法兰西玫瑰 韩菲儿 卡富亚 蓝旗家具 卡洛阁 青春城堡 宜华</p>
+									</div>
+									<img src="images/ch_azaz.jpg" alt="">
+							  </li>
+						</ul>
+					</div>
+
+					<div class="ch_ff">
+						<a href="">儿童房</a>/
+						<a href="">儿童床</a>/
+						<a href="">儿童桌</a>
+						<ul>
+							<li class="ch_xxxx">
+								<p>>卧室</p>
+								<p>>客厅</p>
+								<p>>餐厅</p>
+								<p>>书房</p>
+								<p>>儿童房</p>
+								<p style="color: red">>户外/阳台</p>
+								<p>>办公家居</p>
+							</li><!-- 
+							 --><li class="ch_vvvv">
+								<p>床 床垫 床头柜 美国进口床垫 美规床 衣柜 斗柜 妆台镜/妆凳 穿衣镜/衣帽架 床尾凳 卧室套装</p>
+								<p>沙发 电视柜 茶几/边桌 酒柜/装饰柜 鞋柜 间厅/玄关柜 休闲椅/凳 花架/装饰架 屏风 客厅套装</p>
+								<p>餐桌 餐椅 餐边柜 餐厅套装</p>
+								<p>书桌/工作台 书椅/转椅 书柜/书架 书房套装</p>
+								<p>儿童床 儿童床垫 儿童床头柜 儿童衣柜 儿童桌 儿童椅 儿童柜类</p>
+								<p>户外柜 遮阳伞 户外套装 吊篮/吊椅 折叠床 户外椅 藤艺家具</p>
+								<p>办公桌 办公椅 办公沙发 文件柜 保险柜</p>
+							 </li><!-- 
+							  --><li class="ch_bbbb">
+									<div>
+										<h2>推荐新品</h2>
+										<p>凯撒豪庭 北欧悠歌 白金宫殿 法兰西玫瑰 韩菲儿 卡富亚 蓝旗家具 卡洛阁 青春城堡 宜华</p>
+									</div>
+									<img src="images/ch_azaz.jpg" alt="">
+							  </li>
+						</ul>
+					</div>
+					<div class="ch_gg">
+						<a href="">户外</a>/
+						<a href="">阳台</a>/
+						<a href="">办公家具</a>
+						<ul>
+							<li class="ch_xxxx">
+								<p>>卧室</p>
+								<p>>客厅</p>
+								<p>>餐厅</p>
+								<p>>书房</p>
+								<p>>儿童房</p>
+								<p>>户外/阳台</p>
+								<p style="color: red">>办公家居</p>
+							</li><!-- 
+							 --><li class="ch_vvvv">
+								<p>床 床垫 床头柜 美国进口床垫 美规床 衣柜 斗柜 妆台镜/妆凳 穿衣镜/衣帽架 床尾凳 卧室套装</p>
+								<p>沙发 电视柜 茶几/边桌 酒柜/装饰柜 鞋柜 间厅/玄关柜 休闲椅/凳 花架/装饰架 屏风 客厅套装</p>
+								<p>餐桌 餐椅 餐边柜 餐厅套装</p>
+								<p>书桌/工作台 书椅/转椅 书柜/书架 书房套装</p>
+								<p>儿童床 儿童床垫 儿童床头柜 儿童衣柜 儿童桌 儿童椅 儿童柜类</p>
+								<p>户外柜 遮阳伞 户外套装 吊篮/吊椅 折叠床 户外椅 藤艺家具</p>
+								<p>办公桌 办公椅 办公沙发 文件柜 保险柜</p>
+							 </li><!-- 
+							  --><li class="ch_bbbb">
+									<div>
+										<h2>推荐新品</h2>
+										<p>凯撒豪庭 北欧悠歌 白金宫殿 法兰西玫瑰 韩菲儿 卡富亚 蓝旗家具 卡洛阁 青春城堡 宜华</p>
+									</div>
+									<img src="images/ch_azaz.jpg" alt="">
+							  </li>
+						</ul>
+					</div>
+
+					<div class="ch_hh">
+						<a class="ch_lei ch_2" href="">家居建材</a>
+						<ul>
+							<li class="ch_xxxx">
+								<p style="color: red">>卧室</p>
+								<p>>客厅</p>
+								<p>>餐厅</p>
+								<p>>书房</p>
+								<p>>儿童房</p>
+								<p>>户外/阳台</p>
+								<p>>办公家居</p>
+							</li><!-- 
+							 --><li class="ch_vvvv">
+								<p>床 床垫 床头柜 美国进口床垫 美规床 衣柜 斗柜 妆台镜/妆凳 穿衣镜/衣帽架 床尾凳 卧室套装</p>
+								<p>沙发 电视柜 茶几/边桌 酒柜/装饰柜 鞋柜 间厅/玄关柜 休闲椅/凳 花架/装饰架 屏风 客厅套装</p>
+								<p>餐桌 餐椅 餐边柜 餐厅套装</p>
+								<p>书桌/工作台 书椅/转椅 书柜/书架 书房套装</p>
+								<p>儿童床 儿童床垫 儿童床头柜 儿童衣柜 儿童桌 儿童椅 儿童柜类</p>
+								<p>户外柜 遮阳伞 户外套装 吊篮/吊椅 折叠床 户外椅 藤艺家具</p>
+								<p>办公桌 办公椅 办公沙发 文件柜 保险柜</p>
+							 </li><!-- 
+							  --><li class="ch_bbbb">
+									<div>
+										<h2>推荐新品</h2>
+										<p>凯撒豪庭 北欧悠歌 白金宫殿 法兰西玫瑰 韩菲儿 卡富亚 蓝旗家具 卡洛阁 青春城堡 宜华</p>
+									</div>
+									<img src="images/ch_azaz.jpg" alt="">
+							  </li>
+						</ul>
+					</div>
+
+					<div class="ch_ii">
+						<a href="">灯饰照明</a>/
+						<a href="">吊灯</a>/
+						<a href="">吸顶灯</a>
+						<ul>
+							<li class="ch_xxxx">
+								<p>>卧室</p>
+								<p style="color: red">>客厅</p>
+								<p>>餐厅</p>
+								<p>>书房</p>
+								<p>>儿童房</p>
+								<p>>户外/阳台</p>
+								<p>>办公家居</p>
+							</li><!-- 
+							 --><li class="ch_vvvv">
+								<p>床 床垫 床头柜 美国进口床垫 美规床 衣柜 斗柜 妆台镜/妆凳 穿衣镜/衣帽架 床尾凳 卧室套装</p>
+								<p>沙发 电视柜 茶几/边桌 酒柜/装饰柜 鞋柜 间厅/玄关柜 休闲椅/凳 花架/装饰架 屏风 客厅套装</p>
+								<p>餐桌 餐椅 餐边柜 餐厅套装</p>
+								<p>书桌/工作台 书椅/转椅 书柜/书架 书房套装</p>
+								<p>儿童床 儿童床垫 儿童床头柜 儿童衣柜 儿童桌 儿童椅 儿童柜类</p>
+								<p>户外柜 遮阳伞 户外套装 吊篮/吊椅 折叠床 户外椅 藤艺家具</p>
+								<p>办公桌 办公椅 办公沙发 文件柜 保险柜</p>
+							 </li><!-- 
+							  --><li class="ch_bbbb">
+									<div>
+										<h2>推荐新品</h2>
+										<p>凯撒豪庭 北欧悠歌 白金宫殿 法兰西玫瑰 韩菲儿 卡富亚 蓝旗家具 卡洛阁 青春城堡 宜华</p>
+									</div>
+									<img src="images/ch_azaz.jpg" alt="">
+							  </li>
+						</ul>
+					</div>
+
+					<div class="ch_jj">
+						<a href="">卫浴</a>/
+						<a href="">墙地面</a>/
+						<a href="">地板</a>
+						<ul>
+							<li class="ch_xxxx">
+								<p>>卧室</p>
+								<p>>客厅</p>
+								<p style="color: red">>餐厅</p>
+								<p>>书房</p>
+								<p>>儿童房</p>
+								<p>>户外/阳台</p>
+								<p>>办公家居</p>
+							</li><!-- 
+							 --><li class="ch_vvvv">
+								<p>床 床垫 床头柜 美国进口床垫 美规床 衣柜 斗柜 妆台镜/妆凳 穿衣镜/衣帽架 床尾凳 卧室套装</p>
+								<p>沙发 电视柜 茶几/边桌 酒柜/装饰柜 鞋柜 间厅/玄关柜 休闲椅/凳 花架/装饰架 屏风 客厅套装</p>
+								<p>餐桌 餐椅 餐边柜 餐厅套装</p>
+								<p>书桌/工作台 书椅/转椅 书柜/书架 书房套装</p>
+								<p>儿童床 儿童床垫 儿童床头柜 儿童衣柜 儿童桌 儿童椅 儿童柜类</p>
+								<p>户外柜 遮阳伞 户外套装 吊篮/吊椅 折叠床 户外椅 藤艺家具</p>
+								<p>办公桌 办公椅 办公沙发 文件柜 保险柜</p>
+							 </li><!-- 
+							  --><li class="ch_bbbb">
+									<div>
+										<h2>推荐新品</h2>
+										<p>凯撒豪庭 北欧悠歌 白金宫殿 法兰西玫瑰 韩菲儿 卡富亚 蓝旗家具 卡洛阁 青春城堡 宜华</p>
+									</div>
+									<img src="images/ch_azaz.jpg" alt="">
+							  </li>
+						</ul>
+					</div>
+
+					<div class="ch_kk">
+						<a class="ch_lei ch_3" href="">优选风格</a>
+						<ul>
+							<li class="ch_xxxx">
+								<p>>卧室</p>
+								<p>>客厅</p>
+								<p>>餐厅</p>
+								<p style="color: red">>书房</p>
+								<p>>儿童房</p>
+								<p>>户外/阳台</p>
+								<p>>办公家居</p>
+							</li><!-- 
+							 --><li class="ch_vvvv">
+								<p>床 床垫 床头柜 美国进口床垫 美规床 衣柜 斗柜 妆台镜/妆凳 穿衣镜/衣帽架 床尾凳 卧室套装</p>
+								<p>沙发 电视柜 茶几/边桌 酒柜/装饰柜 鞋柜 间厅/玄关柜 休闲椅/凳 花架/装饰架 屏风 客厅套装</p>
+								<p>餐桌 餐椅 餐边柜 餐厅套装</p>
+								<p>书桌/工作台 书椅/转椅 书柜/书架 书房套装</p>
+								<p>儿童床 儿童床垫 儿童床头柜 儿童衣柜 儿童桌 儿童椅 儿童柜类</p>
+								<p>户外柜 遮阳伞 户外套装 吊篮/吊椅 折叠床 户外椅 藤艺家具</p>
+								<p>办公桌 办公椅 办公沙发 文件柜 保险柜</p>
+							 </li><!-- 
+							  --><li class="ch_bbbb">
+									<div>
+										<h2>推荐新品</h2>
+										<p>凯撒豪庭 北欧悠歌 白金宫殿 法兰西玫瑰 韩菲儿 卡富亚 蓝旗家具 卡洛阁 青春城堡 宜华</p>
+									</div>
+									<img src="images/ch_azaz.jpg" alt="">
+							  </li>
+						</ul>
+					</div>
+
+					<div class="ch_ll">
+						<a href="">美式</a>/
+						<a href="">欧式</a>/
+						<a href="">现代</a>/
+						<a href="">中式</a>
+						<ul>
+							<li class="ch_xxxx">
+								<p>>卧室</p>
+								<p>>客厅</p>
+								<p>>餐厅</p>
+								<p>>书房</p>
+								<p style="color: red">>儿童房</p>
+								<p>>户外/阳台</p>
+								<p>>办公家居</p>
+							</li><!-- 
+							 --><li class="ch_vvvv">
+								<p>床 床垫 床头柜 美国进口床垫 美规床 衣柜 斗柜 妆台镜/妆凳 穿衣镜/衣帽架 床尾凳 卧室套装</p>
+								<p>沙发 电视柜 茶几/边桌 酒柜/装饰柜 鞋柜 间厅/玄关柜 休闲椅/凳 花架/装饰架 屏风 客厅套装</p>
+								<p>餐桌 餐椅 餐边柜 餐厅套装</p>
+								<p>书桌/工作台 书椅/转椅 书柜/书架 书房套装</p>
+								<p>儿童床 儿童床垫 儿童床头柜 儿童衣柜 儿童桌 儿童椅 儿童柜类</p>
+								<p>户外柜 遮阳伞 户外套装 吊篮/吊椅 折叠床 户外椅 藤艺家具</p>
+								<p>办公桌 办公椅 办公沙发 文件柜 保险柜</p>
+							 </li><!-- 
+							  --><li class="ch_bbbb">
+									<div>
+										<h2>推荐新品</h2>
+										<p>凯撒豪庭 北欧悠歌 白金宫殿 法兰西玫瑰 韩菲儿 卡富亚 蓝旗家具 卡洛阁 青春城堡 宜华</p>
+									</div>
+									<img src="images/ch_azaz.jpg" alt="">
+							  </li>
+						</ul>
+					</div>
+
+					<div class="ch_mm">
+						<a href="">北欧</a>/
+						<a href="">新古典</a>/
+						<a href="">法式</a>/
+						<a href="">地中海</a>
+						<ul>
+							<li class="ch_xxxx">
+								<p>>卧室</p>
+								<p>>客厅</p>
+								<p>>餐厅</p>
+								<p>>书房</p>
+								<p>>儿童房</p>
+								<p style="color: red">>户外/阳台</p>
+								<p>>办公家居</p>
+							</li><!-- 
+							 --><li class="ch_vvvv">
+								<p>床 床垫 床头柜 美国进口床垫 美规床 衣柜 斗柜 妆台镜/妆凳 穿衣镜/衣帽架 床尾凳 卧室套装</p>
+								<p>沙发 电视柜 茶几/边桌 酒柜/装饰柜 鞋柜 间厅/玄关柜 休闲椅/凳 花架/装饰架 屏风 客厅套装</p>
+								<p>餐桌 餐椅 餐边柜 餐厅套装</p>
+								<p>书桌/工作台 书椅/转椅 书柜/书架 书房套装</p>
+								<p>儿童床 儿童床垫 儿童床头柜 儿童衣柜 儿童桌 儿童椅 儿童柜类</p>
+								<p>户外柜 遮阳伞 户外套装 吊篮/吊椅 折叠床 户外椅 藤艺家具</p>
+								<p>办公桌 办公椅 办公沙发 文件柜 保险柜</p>
+							 </li><!-- 
+							  --><li class="ch_bbbb">
+									<div>
+										<h2>推荐新品</h2>
+										<p>凯撒豪庭 北欧悠歌 白金宫殿 法兰西玫瑰 韩菲儿 卡富亚 蓝旗家具 卡洛阁 青春城堡 宜华</p>
+									</div>
+									<img src="images/ch_azaz.jpg" alt="">
+							  </li>
+						</ul>
+					</div>
+
+					<div class="ch_nn">
+						<a href="">床垫</a>/
+						<a href="">新中式</a>/
+						<a href="">韩式</a>
+						<ul>
+							<li class="ch_xxxx">
+								<p>>卧室</p>
+								<p>>客厅</p>
+								<p>>餐厅</p>
+								<p>>书房</p>
+								<p>>儿童房</p>
+								<p>>户外/阳台</p>
+								<p style="color: red">>办公家居</p>
+							</li><!-- 
+							 --><li class="ch_vvvv">
+								<p>床 床垫 床头柜 美国进口床垫 美规床 衣柜 斗柜 妆台镜/妆凳 穿衣镜/衣帽架 床尾凳 卧室套装</p>
+								<p>沙发 电视柜 茶几/边桌 酒柜/装饰柜 鞋柜 间厅/玄关柜 休闲椅/凳 花架/装饰架 屏风 客厅套装</p>
+								<p>餐桌 餐椅 餐边柜 餐厅套装</p>
+								<p>书桌/工作台 书椅/转椅 书柜/书架 书房套装</p>
+								<p>儿童床 儿童床垫 儿童床头柜 儿童衣柜 儿童桌 儿童椅 儿童柜类</p>
+								<p>户外柜 遮阳伞 户外套装 吊篮/吊椅 折叠床 户外椅 藤艺家具</p>
+								<p>办公桌 办公椅 办公沙发 文件柜 保险柜</p>
+							 </li><!-- 
+							  --><li class="ch_bbbb">
+									<div>
+										<h2>推荐新品</h2>
+										<p>凯撒豪庭 北欧悠歌 白金宫殿 法兰西玫瑰 韩菲儿 卡富亚 蓝旗家具 卡洛阁 青春城堡 宜华</p>
+									</div>
+									<img src="images/ch_azaz.jpg" alt="">
+							  </li>
+						</ul>
+					</div>
+
+				</div>
+			</h2>
+			<ul>	
+			<!-- 以下A标签未添加跳转链接 -->
+			<li><a href="lqc.html">首页</a> </li>
+			<li><a href="LH.html">家具城</a></li>
+			<li><a href="#" style="color: #e62318">建材城</a></li>
+			<li><a href="#">家具家饰</a></li>
+			<li><a href="#">团购</a></li>
+			<li><a href="#">体验馆</a></li>
+			<li><a href="yuemu.html">阅木</a></li>
+			<li><a href="jIndex.html">晒家</a></li>
+			<li><a href="TuLanJiaJu.html">图览家具</a></li>
+			<li><a href="">装修网</a></li>
+			</ul>
+		</div>
+	</div>
+<div id="biganquan">
+	<div class="ch_lun">
+	<div class="ch_lunview">
+		<img src="images/ch_lun1.jpg" alt="">
+		<img src="images/ch_lun2.jpg" alt="">
+		<img src="images/ch_lun3.jpg" alt="">
+		<img src="images/ch_lun4.jpg" alt="">
+		<img src="images/ch_lun5.jpg" alt="">
+		<img src="images/ch_lun6.jpg" alt="">
+	</div>
+	<div class="ch_lunbtn">
+		<button style="width: 130px;margin-left:0px">美式风格馆</button><!-- 
+	 --><button>凯撒豪庭*灯饰</button><!-- 
+	 --><button>赏心悦目 质感生活</button><!-- 
+	 --><button>厨房用品专场</button><!-- 
+	 --><button>卫浴生活馆</button><!-- 
+	 --><button>氛围灯饰馆</button>	
+	</div>
+
+	<div class="ch_shu">
+		<div class="ch_qiang ch_qiang1">
+			抢
+		</div>
+		<div class="ch_qiang ch_qiang2">
+			抢
+		</div>
+		<h2>本周特惠</h2>
+		<!-- a标签 -->
+		<a href="Seedetails.html">
+		<img src="images/ch_deng.jpg" alt="">
+		<p class="ch_dsd">创意个性铁艺吊灯</p>
+		<p>
+			特惠价:
+			<span  class="ch_th">￥188.00</span>
+			<p>仅剩<span> 0 </span>时<span> 0 </span>分<span> 0 </span>秒</p>
+		</p>
+		</a>
+		<hr/>
+		<a href="Seedetails.html">
+		<img src="images/ch_gui.jpg" alt="">
+		<p  class="ch_dsd">进口橡木实木浴室柜</p>
+		<p>
+			特惠价:
+			<span class="ch_th">￥4280.00</span>
+			<p>仅剩<span> 0 </span>时<span> 0 </span>分<span> 0 </span>秒</p>
+		</p>
+		</a>
+	</div>
+
+	</div>
+
+	<div id="ch_qwe">
+		<div id="ch_qwer">
+			<h2>所有建材商品分类</h2>
+
+			<div>
+				<h3 class="jcbg1">灯饰照明</h3>
+				<span>吊灯</span>
+				<span>吸顶灯</span>
+				<span>台灯</span>
+				<span>壁灯</span>
+			</div>
+
+			<div class="azz">
+				<h3 class="jcbg2">厨房用品</h3>
+				<span>厨盆/水槽</span>
+				<span>厨房水龙头</span>
+				<span>厨房挂</span>
+			</div>
+
+			<div>
+				<h3  class="jcbg3">卫浴用品</h3>
+				<span>浴缸</span>
+				<span>浴室柜</span>
+				<span>坐便器</span>
+				<span>花洒</span>
+			</div>
+
+			<div class="azz">
+				<h3  class="jcbg4">家装五金</h3>
+				<span>开关插座</span>
+				<span>配电箱</span>
+			</div>
+
+			<div>
+				<h3  class="jcbg5">墙地面</h3>
+				<span>地板</span>
+				<span>瓷砖</span>
+				<span>墙纸</span>
+				<span>墙布</span>
+			</div>
+
+			<div class="azz">
+				<h3  class="jcbg6">生活电器</h3>
+				<span>热水器</span>
+				<span>吸尘器/除螨仪</span>
+			</div>
+			<img src="images/ch_erweima.jpg" alt="">
+		</div>
+
+	</div>
+</div>
+
+<div id="ch_aq1">
+	<div class="ch_little">
+		<h2>
+			<span class="chfont1">今日团购</span>
+			<span>更多>></span>
+		</h2>
+		<img class="chimg1" src="images/ch_little.jpg" alt="">
+		<p>现代 水晶吊灯 镂空拼花 卧室</p>
+		<a href="Seedetails.html">
+			<img src="images/ch_dazhe.jpg" alt="">
+		</a>
+		<p> 原价：¥63 | 折扣：7.8折</p>
+	</div>
+	<div class="ch_vvv">
+		<div class="ch_vvv1">
+			<h2>人气热销 hot</h2>
+			<h3>新品推荐 new</h3>
+			<h6><a href="lqc.html">更多热销>></a></h6>
+		</div>
+		<div class="ch_vvv2">
+			<div class="ch_box1">
+				<div class="ch_box11"><img src="images/ch_yishou.jpg" alt=""></div>
+				
+				<img src="images/ch_deng.jpg" alt="">
+				<p>欧式新古典 6头吊灯 树脂雕花</p>
+				<p>本站价： <span>¥ 905</span></p>
+			</div>
+			<div class="ch_box1">
+				<div class="ch_box11"><img src="images/ch_yishou.jpg" alt=""></div>
+				
+				<img src="images/ch_gui.jpg" alt="">
+				<p>欧式新古典 6头吊灯 树脂雕花</p>
+				<p>本站价： <span>¥ 905</span></p>
+			</div>
+			<div class="ch_box1">
+				<div class="ch_box11"><img src="images/ch_yishou.jpg" alt=""></div>
+				
+				<img src="images/ch_deng.jpg" alt="">
+				<p>欧式新古典 6头吊灯 树脂雕花</p>
+				<p>本站价： <span>¥ 905</span></p>
+			</div>
+			<div class="ch_box1">
+				<div class="ch_box11"><img src="images/ch_yishou.jpg" alt=""></div>
+				
+				<img src="images/ch_gui.jpg" alt="">
+				<p>欧式新古典 6头吊灯 树脂雕花</p>
+				<p>本站价： <span>¥ 905</span></p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="ch_aq2">
+
+	<div class="ch_floor1">
+		<h1>1F照明灯饰</h1>
+
+		<p class="ch_ppppp">热门推荐：
+
+			<span><a href="Seedetails.html">吊灯 </a></span>|
+			<span><a href="Seedetails.html">落地灯 </a></span>|
+			<span><a href="Seedetails.html">壁灯 </a></span>|
+			<span><a href="Seedetails.html">吸顶灯 </a></span>|
+			<span><a href="Seedetails.html">台灯 </a></span>|
+			<span><a href="Seedetails.html">LED灯/光源 </a></span>|
+			<span><a href="Seedetails.html">水晶灯</a></span>
+		</p>
+		<h6><a href="lqc.html">更多>></a></h6>
+		<div class="ch_floor11">
+			<div class="ch_floor22">
+				<div class="ch_flun">
+					<img src="images/ch_flun1.jpg" alt="">
+					<img src="images/ch_flun2.jpg" alt="">
+					<img src="images/ch_flun3.jpg" alt="">
+				</div>
+
+				<div class="ch_fbtn">
+					<button></button>
+					<button></button>
+					<button></button>
+				</div>
+
+			</div>
+			<ul class="ch_fk1">
+				<li>
+					<a href=""><img src="images/ch_fk1.jpg" alt=""></a>
+					<div>
+						<a href="Seedetails.html"><h2>欧式田园设计</h2></a>
+						<h3>白玉芳兰系列5头吊灯</h3>
+						<h4>包邮价： <span>¥ 199</span></h4>
+					</div>
+				</li>
+				<li>
+					<a href="Seedetails.html"><img src="images/ch_fk2.jpg" alt=""></a>
+					<div>
+						<a href="Seedetails.html"><h2>欧式田园设计</h2></a>
+						<h3>白玉芳兰系列5头吊灯</h3>
+						<h4>包邮价： <span>¥ 199</span></h4>
+					</div>
+				</li>
+				<li>
+					<a href="Seedetails.html"><img src="images/ch_fk3.jpg" alt=""></a>
+					<div>
+						<a href="Seedetails.html"><h2>欧式田园设计</h2></a>
+						<h3>白玉芳兰系列5头吊灯</h3>
+						<h4>包邮价： <span>¥ 199</span></h4>
+					</div>
+				</li>
+				<li>
+					<a href="Seedetails.html"><img src="images/ch_fk4.jpg" alt=""></a>
+					<div>
+						<a href=""><h2>欧式田园设计</h2></a>
+						<h3>白玉芳兰系列5头吊灯</h3>
+						<h4>包邮价： <span>¥ 199</span></h4>
+					</div>
+				</li>
+			</ul>
+			<div class="ch_lastbox">
+				<h2>&nbsp;&nbsp;销量排行榜</h2>
+
+
+				<h3 class="ch_zhu"><span class="ch_aaaaa">&nbsp;1&nbsp;</span> 现代 分段式吸顶灯&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="ch_lllll">￥599</span></h3>
+				<div class="ch_fu">
+					<img src="images/ch_aazz.jpg" alt="">
+					<div>
+						<p>本站价：<span>¥ 599</span></p>
+						<p>销量：11391件</p>
+					</div>
+				</div>
+				<h3 class="ch_zhu"><span class="ch_aaaaa">&nbsp;1&nbsp;</span> 现代 分段式吸顶灯&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="ch_lllll">￥599</span></h3>
+				<div class="ch_fu">
+					<img src="images/ch_aazz.jpg" alt="">
+					<div>
+						<p>本站价：<span>¥ 599</span></p>
+						<p>销量：11391件</p>
+					</div>
+				</div>
+				<h3 class="ch_zhu"><span class="ch_aaaaa">&nbsp;1&nbsp;</span> 现代 分段式吸顶灯&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="ch_lllll">￥599</span></h3>
+				<div class="ch_fu">
+					<img src="images/ch_aazz.jpg" alt="">
+					<div>
+						<p>本站价：<span>¥ 599</span></p>
+						<p>销量：11391件</p>
+					</div>
+				</div>
+				<h3 class="ch_zhu"><span class="ch_aaaaa">&nbsp;1&nbsp;</span> 现代 分段式吸顶灯&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="ch_lllll">￥599</span></h3>
+				<div class="ch_fu">
+					<img src="images/ch_aazz.jpg" alt="">
+					<div>
+						<p>本站价：<span>¥ 599</span></p>
+						<p>销量：11391件</p>
+					</div>
+				</div>
+				<h3 class="ch_zhu"><span class="ch_aaaaa">&nbsp;1&nbsp;</span> 现代 分段式吸顶灯&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="ch_lllll">￥599</span></h3>
+				<div class="ch_fu">
+					<img src="images/ch_aazz.jpg" alt="">
+					<div>
+						<p>本站价：<span>¥ 599</span></p>
+						<p>销量：11391件</p>
+					</div>
+				</div>
+				<h3 class="ch_zhu"><span class="ch_aaaaa">&nbsp;1&nbsp;</span> 现代 分段式吸顶灯&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="ch_lllll">￥599</span></h3>
+				<div class="ch_fu">
+					<img src="images/ch_aazz.jpg" alt="">
+					<div>
+						<p>本站价：<span>¥ 599</span></p>
+						<!-- <p>销量：11391件</p> -->
+					</div>
+				</div>
+				
+				</div>
+			
+			</div>
+			<div class="ch_lpic">
+				<h2>灯饰选购常识</h2>
+				<div><br>
+						<a href="Seedetails.html"><span>灯饰加盟 火热招商</span></a>
+						<br/>
+						<a href="Seedetails.html"><span>台灯选购技巧</span></a>
+						<br/>
+						<a href="Seedetails.html"><span>LED灯安装知识</span></a>
+						<br/>
+						<a href="Seedetails.html"><span>十大无极灯品牌</span></a>
+						<br/>
+						<a href="Seedetails.html"><span>家居灯具选购技巧</span></a>
+						<br/>
+						<a href="Seedetails.html"><span>客厅吊灯安装知识</span></a>
+				</div>
+				<a href="Seedetails.html">
+					<img src="images/ch_lpic1.jpg" alt="">
+				</a>
+				<a href="Seedetails.html">
+					<img src="images/ch_lpic2.jpg" alt="">
+				</a>
+				<a href="Seedetails.html">
+					<img src="images/ch_lpic3.jpg" alt="">
+				</a>
+				
+			</div>
+		</div>
+
+
+	<div class="ch_floor1">
+		<h1>1F照明灯饰</h1>
+
+		<p class="ch_ppppp">热门推荐：
+
+			<span><a href="Seedetails.html">吊灯 </a></span>|
+			<span><a href="Seedetails.html">落地灯 </a></span>|
+			<span><a href="Seedetails.html">壁灯 </a></span>|
+			<span><a href="Seedetails.html">吸顶灯 </a></span>|
+			<span><a href="Seedetails.html">台灯 </a></span>|
+			<span><a href="Seedetails.html">LED灯/光源 </a></span>|
+			<span><a href="Seedetails.html">水晶灯</a></span>
+		</p>
+		<h6><a href="lqc.html">更多>></a></h6>
+		<div class="ch_floor11">
+			<div class="ch_floor22">
+				<div class="ch_flun">
+					<img src="images/ch_flun1.jpg" alt="">
+					<img src="images/ch_flun2.jpg" alt="">
+					<img src="images/ch_flun3.jpg" alt="">
+				</div>
+
+				<div class="ch_fbtn">
+					<button></button>
+					<button></button>
+					<button></button>
+				</div>
+
+			</div>
+			<ul class="ch_fk1">
+				<li>
+					<a href="Seedetails.html"><img src="images/ch_fk1.jpg" alt=""></a>
+					<div>
+						<a href="Seedetails.html"><h2>欧式田园设计</h2></a>
+						<h3>白玉芳兰系列5头吊灯</h3>
+						<h4>包邮价： <span>¥ 199</span></h4>
+					</div>
+				</li>
+				<li>
+					<a href="Seedetails.html"><img src="images/ch_fk2.jpg" alt=""></a>
+					<div>
+						<a href="Seedetails.html"><h2>欧式田园设计</h2></a>
+						<h3>白玉芳兰系列5头吊灯</h3>
+						<h4>包邮价： <span>¥ 199</span></h4>
+					</div>
+				</li>
+				<li>
+					<a href="Seedetails.html"><img src="images/ch_fk3.jpg" alt=""></a>
+					<div>
+						<a href="Seedetails.html"><h2>欧式田园设计</h2></a>
+						<h3>白玉芳兰系列5头吊灯</h3>
+						<h4>包邮价： <span>¥ 199</span></h4>
+					</div>
+				</li>
+				<li>
+					<a href="Seedetails.html"><img src="images/ch_fk4.jpg" alt=""></a>
+					<div>
+						<a href="Seedetails.html"><h2>欧式田园设计</h2></a>
+						<h3>白玉芳兰系列5头吊灯</h3>
+						<h4>包邮价： <span>¥ 199</span></h4>
+					</div>
+				</li>
+			</ul>
+			<div class="ch_lastbox">
+				<h2>&nbsp;&nbsp;销量排行榜</h2>
+
+
+				<h3 class="ch_zhu"><span class="ch_aaaaa">&nbsp;1&nbsp;</span> 现代 分段式吸顶灯&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="ch_lllll">￥599</span></h3>
+				<div class="ch_fu">
+					<img src="images/ch_aazz.jpg" alt="">
+					<div>
+						<p>本站价：<span>¥ 599</span></p>
+						<p>销量：11391件</p>
+					</div>
+				</div>
+				<h3 class="ch_zhu"><span class="ch_aaaaa">&nbsp;1&nbsp;</span> 现代 分段式吸顶灯&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="ch_lllll">￥599</span></h3>
+				<div class="ch_fu">
+					<img src="images/ch_aazz.jpg" alt="">
+					<div>
+						<p>本站价：<span>¥ 599</span></p>
+						<p>销量：11391件</p>
+					</div>
+				</div>
+				<h3 class="ch_zhu"><span class="ch_aaaaa">&nbsp;1&nbsp;</span> 现代 分段式吸顶灯&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="ch_lllll">￥599</span></h3>
+				<div class="ch_fu">
+					<img src="images/ch_aazz.jpg" alt="">
+					<div>
+						<p>本站价：<span>¥ 599</span></p>
+						<p>销量：11391件</p>
+					</div>
+				</div>
+				<h3 class="ch_zhu"><span class="ch_aaaaa">&nbsp;1&nbsp;</span> 现代 分段式吸顶灯&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="ch_lllll">￥599</span></h3>
+				<div class="ch_fu">
+					<img src="images/ch_aazz.jpg" alt="">
+					<div>
+						<p>本站价：<span>¥ 599</span></p>
+						<p>销量：11391件</p>
+					</div>
+				</div>
+				<h3 class="ch_zhu"><span class="ch_aaaaa">&nbsp;1&nbsp;</span> 现代 分段式吸顶灯&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="ch_lllll">￥599</span></h3>
+				<div class="ch_fu">
+					<img src="images/ch_aazz.jpg" alt="">
+					<div>
+						<p>本站价：<span>¥ 599</span></p>
+						<p>销量：11391件</p>
+					</div>
+				</div>
+				<h3 class="ch_zhu"><span class="ch_aaaaa">&nbsp;1&nbsp;</span> 现代 分段式吸顶灯&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="ch_lllll">￥599</span></h3>
+				<div class="ch_fu">
+					<img src="images/ch_aazz.jpg" alt="">
+					<div>
+						<p>本站价：<span>¥ 599</span></p>
+						<!-- <p>销量：11391件</p> -->
+					</div>
+				</div>
+				
+				</div>
+			
+			</div>
+			<div class="ch_lpic">
+				<h2>灯饰选购常识</h2>
+				<div><br>
+						<a href=""><span>灯饰加盟 火热招商</span></a>
+						<br/>
+						<a href=""><span>台灯选购技巧</span></a>
+						<br/>
+						<a href=""><span>LED灯安装知识</span></a>
+						<br/>
+						<a href=""><span>十大无极灯品牌</span></a>
+						<br/>
+						<a href=""><span>家居灯具选购技巧</span></a>
+						<br/>
+						<a href=""><span>客厅吊灯安装知识</span></a>
+				</div>
+				<a href="">
+					<img src="images/ch_lpic1.jpg" alt="">
+				</a>
+				<a href="">
+					<img src="images/ch_lpic2.jpg" alt="">
+				</a>
+				<a href="">
+					<img src="images/ch_lpic3.jpg" alt="">
+				</a>
+				
+			</div>
+		</div><div class="ch_floor1">
+		<h1>1F照明灯饰</h1>
+
+		<p class="ch_ppppp">热门推荐：
+
+			<span><a href="">吊灯 </a></span>|
+			<span><a href="">落地灯 </a></span>|
+			<span><a href="">壁灯 </a></span>|
+			<span><a href="">吸顶灯 </a></span>|
+			<span><a href="">台灯 </a></span>|
+			<span><a href="">LED灯/光源 </a></span>|
+			<span><a href="">水晶灯</a></span>
+		</p>
+		<h6><a href="">更多>></a></h6>
+		<div class="ch_floor11">
+			<div class="ch_floor22">
+				<div class="ch_flun">
+					<img src="images/ch_flun1.jpg" alt="">
+					<img src="images/ch_flun2.jpg" alt="">
+					<img src="images/ch_flun3.jpg" alt="">
+				</div>
+
+				<div class="ch_fbtn">
+					<button></button>
+					<button></button>
+					<button></button>
+				</div>
+
+			</div>
+			<ul class="ch_fk1">
+				<li>
+					<a href=""><img src="images/ch_fk1.jpg" alt=""></a>
+					<div>
+						<a href=""><h2>欧式田园设计</h2></a>
+						<h3>白玉芳兰系列5头吊灯</h3>
+						<h4>包邮价： <span>¥ 199</span></h4>
+					</div>
+				</li>
+				<li>
+					<a href=""><img src="images/ch_fk2.jpg" alt=""></a>
+					<div>
+						<a href=""><h2>欧式田园设计</h2></a>
+						<h3>白玉芳兰系列5头吊灯</h3>
+						<h4>包邮价： <span>¥ 199</span></h4>
+					</div>
+				</li>
+				<li>
+					<a href=""><img src="images/ch_fk3.jpg" alt=""></a>
+					<div>
+						<a href=""><h2>欧式田园设计</h2></a>
+						<h3>白玉芳兰系列5头吊灯</h3>
+						<h4>包邮价： <span>¥ 199</span></h4>
+					</div>
+				</li>
+				<li>
+					<a href=""><img src="images/ch_fk4.jpg" alt=""></a>
+					<div>
+						<a href=""><h2>欧式田园设计</h2></a>
+						<h3>白玉芳兰系列5头吊灯</h3>
+						<h4>包邮价： <span>¥ 199</span></h4>
+					</div>
+				</li>
+			</ul>
+			<div class="ch_lastbox">
+				<h2>&nbsp;&nbsp;销量排行榜</h2>
+
+
+				<h3 class="ch_zhu"><span class="ch_aaaaa">&nbsp;1&nbsp;</span> 现代 分段式吸顶灯&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="ch_lllll">￥599</span></h3>
+				<div class="ch_fu">
+					<img src="images/ch_aazz.jpg" alt="">
+					<div>
+						<p>本站价：<span>¥ 599</span></p>
+						<p>销量：11391件</p>
+					</div>
+				</div>
+				<h3 class="ch_zhu"><span class="ch_aaaaa">&nbsp;1&nbsp;</span> 现代 分段式吸顶灯&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="ch_lllll">￥599</span></h3>
+				<div class="ch_fu">
+					<img src="images/ch_aazz.jpg" alt="">
+					<div>
+						<p>本站价：<span>¥ 599</span></p>
+						<p>销量：11391件</p>
+					</div>
+				</div>
+				<h3 class="ch_zhu"><span class="ch_aaaaa">&nbsp;1&nbsp;</span> 现代 分段式吸顶灯&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="ch_lllll">￥599</span></h3>
+				<div class="ch_fu">
+					<img src="images/ch_aazz.jpg" alt="">
+					<div>
+						<p>本站价：<span>¥ 599</span></p>
+						<p>销量：11391件</p>
+					</div>
+				</div>
+				<h3 class="ch_zhu"><span class="ch_aaaaa">&nbsp;1&nbsp;</span> 现代 分段式吸顶灯&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="ch_lllll">￥599</span></h3>
+				<div class="ch_fu">
+					<img src="images/ch_aazz.jpg" alt="">
+					<div>
+						<p>本站价：<span>¥ 599</span></p>
+						<p>销量：11391件</p>
+					</div>
+				</div>
+				<h3 class="ch_zhu"><span class="ch_aaaaa">&nbsp;1&nbsp;</span> 现代 分段式吸顶灯&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="ch_lllll">￥599</span></h3>
+				<div class="ch_fu">
+					<img src="images/ch_aazz.jpg" alt="">
+					<div>
+						<p>本站价：<span>¥ 599</span></p>
+						<p>销量：11391件</p>
+					</div>
+				</div>
+				<h3 class="ch_zhu"><span class="ch_aaaaa">&nbsp;1&nbsp;</span> 现代 分段式吸顶灯&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="ch_lllll">￥599</span></h3>
+				<div class="ch_fu">
+					<img src="images/ch_aazz.jpg" alt="">
+					<div>
+						<p>本站价：<span>¥ 599</span></p>
+						<!-- <p>销量：11391件</p> -->
+					</div>
+				</div>
+				
+				</div>
+			
+			</div>
+			<div class="ch_lpic">
+				<h2>灯饰选购常识</h2>
+				<div><br>
+						<a href=""><span>灯饰加盟 火热招商</span></a>
+						<br/>
+						<a href=""><span>台灯选购技巧</span></a>
+						<br/>
+						<a href=""><span>LED灯安装知识</span></a>
+						<br/>
+						<a href=""><span>十大无极灯品牌</span></a>
+						<br/>
+						<a href=""><span>家居灯具选购技巧</span></a>
+						<br/>
+						<a href=""><span>客厅吊灯安装知识</span></a>
+				</div>
+				<a href="">
+					<img src="images/ch_lpic1.jpg" alt="">
+				</a>
+				<a href="">
+					<img src="images/ch_lpic2.jpg" alt="">
+				</a>
+				<a href="">
+					<img src="images/ch_lpic3.jpg" alt="">
+				</a>
+				
+			</div>
+		</div><div class="ch_floor1">
+		<h1>1F照明灯饰</h1>
+
+		<p class="ch_ppppp">热门推荐：
+
+			<span><a href="">吊灯 </a></span>|
+			<span><a href="">落地灯 </a></span>|
+			<span><a href="">壁灯 </a></span>|
+			<span><a href="">吸顶灯 </a></span>|
+			<span><a href="">台灯 </a></span>|
+			<span><a href="">LED灯/光源 </a></span>|
+			<span><a href="">水晶灯</a></span>
+		</p>
+		<h6><a href="">更多>></a></h6>
+		<div class="ch_floor11">
+			<div class="ch_floor22">
+				<div class="ch_flun">
+					<img src="images/ch_flun1.jpg" alt="">
+					<img src="images/ch_flun2.jpg" alt="">
+					<img src="images/ch_flun3.jpg" alt="">
+				</div>
+
+				<div class="ch_fbtn">
+					<button></button>
+					<button></button>
+					<button></button>
+				</div>
+
+			</div>
+			<ul class="ch_fk1">
+				<li>
+					<a href=""><img src="images/ch_fk1.jpg" alt=""></a>
+					<div>
+						<a href=""><h2>欧式田园设计</h2></a>
+						<h3>白玉芳兰系列5头吊灯</h3>
+						<h4>包邮价： <span>¥ 199</span></h4>
+					</div>
+				</li>
+				<li>
+					<a href=""><img src="images/ch_fk2.jpg" alt=""></a>
+					<div>
+						<a href=""><h2>欧式田园设计</h2></a>
+						<h3>白玉芳兰系列5头吊灯</h3>
+						<h4>包邮价： <span>¥ 199</span></h4>
+					</div>
+				</li>
+				<li>
+					<a href=""><img src="images/ch_fk3.jpg" alt=""></a>
+					<div>
+						<a href=""><h2>欧式田园设计</h2></a>
+						<h3>白玉芳兰系列5头吊灯</h3>
+						<h4>包邮价： <span>¥ 199</span></h4>
+					</div>
+				</li>
+				<li>
+					<a href=""><img src="images/ch_fk4.jpg" alt=""></a>
+					<div>
+						<a href=""><h2>欧式田园设计</h2></a>
+						<h3>白玉芳兰系列5头吊灯</h3>
+						<h4>包邮价： <span>¥ 199</span></h4>
+					</div>
+				</li>
+			</ul>
+			<div class="ch_lastbox">
+				<h2>&nbsp;&nbsp;销量排行榜</h2>
+
+
+				<h3 class="ch_zhu"><span class="ch_aaaaa">&nbsp;1&nbsp;</span> 现代 分段式吸顶灯&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="ch_lllll">￥599</span></h3>
+				<div class="ch_fu">
+					<img src="images/ch_aazz.jpg" alt="">
+					<div>
+						<p>本站价：<span>¥ 599</span></p>
+						<p>销量：11391件</p>
+					</div>
+				</div>
+				<h3 class="ch_zhu"><span class="ch_aaaaa">&nbsp;1&nbsp;</span> 现代 分段式吸顶灯&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="ch_lllll">￥599</span></h3>
+				<div class="ch_fu">
+					<img src="images/ch_aazz.jpg" alt="">
+					<div>
+						<p>本站价：<span>¥ 599</span></p>
+						<p>销量：11391件</p>
+					</div>
+				</div>
+				<h3 class="ch_zhu"><span class="ch_aaaaa">&nbsp;1&nbsp;</span> 现代 分段式吸顶灯&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="ch_lllll">￥599</span></h3>
+				<div class="ch_fu">
+					<img src="images/ch_aazz.jpg" alt="">
+					<div>
+						<p>本站价：<span>¥ 599</span></p>
+						<p>销量：11391件</p>
+					</div>
+				</div>
+				<h3 class="ch_zhu"><span class="ch_aaaaa">&nbsp;1&nbsp;</span> 现代 分段式吸顶灯&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="ch_lllll">￥599</span></h3>
+				<div class="ch_fu">
+					<img src="images/ch_aazz.jpg" alt="">
+					<div>
+						<p>本站价：<span>¥ 599</span></p>
+						<p>销量：11391件</p>
+					</div>
+				</div>
+				<h3 class="ch_zhu"><span class="ch_aaaaa">&nbsp;1&nbsp;</span> 现代 分段式吸顶灯&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="ch_lllll">￥599</span></h3>
+				<div class="ch_fu">
+					<img src="images/ch_aazz.jpg" alt="">
+					<div>
+						<p>本站价：<span>¥ 599</span></p>
+						<p>销量：11391件</p>
+					</div>
+				</div>
+				<h3 class="ch_zhu"><span class="ch_aaaaa">&nbsp;1&nbsp;</span> 现代 分段式吸顶灯&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="ch_lllll">￥599</span></h3>
+				<div class="ch_fu">
+					<img src="images/ch_aazz.jpg" alt="">
+					<div>
+						<p>本站价：<span>¥ 599</span></p>
+						<!-- <p>销量：11391件</p> -->
+					</div>
+				</div>
+				
+				</div>
+			
+			</div>
+			<div class="ch_lpic">
+				<h2>灯饰选购常识</h2>
+				<div><br>
+						<a href=""><span>灯饰加盟 火热招商</span></a>
+						<br/>
+						<a href=""><span>台灯选购技巧</span></a>
+						<br/>
+						<a href=""><span>LED灯安装知识</span></a>
+						<br/>
+						<a href=""><span>十大无极灯品牌</span></a>
+						<br/>
+						<a href=""><span>家居灯具选购技巧</span></a>
+						<br/>
+						<a href=""><span>客厅吊灯安装知识</span></a>
+				</div>
+				<a href="">
+					<img src="images/ch_lpic1.jpg" alt="">
+				</a>
+				<a href="">
+					<img src="images/ch_lpic2.jpg" alt="">
+				</a>
+				<a href="">
+					<img src="images/ch_lpic3.jpg" alt="">
+				</a>
+				
+			</div>
+		</div><div class="ch_floor1">
+		<h1>1F照明灯饰</h1>
+
+		<p class="ch_ppppp">热门推荐：
+
+			<span><a href="">吊灯 </a></span>|
+			<span><a href="">落地灯 </a></span>|
+			<span><a href="">壁灯 </a></span>|
+			<span><a href="">吸顶灯 </a></span>|
+			<span><a href="">台灯 </a></span>|
+			<span><a href="">LED灯/光源 </a></span>|
+			<span><a href="">水晶灯</a></span>
+		</p>
+		<h6><a href="">更多>></a></h6>
+		<div class="ch_floor11">
+			<div class="ch_floor22">
+				<div class="ch_flun">
+					<img src="images/ch_flun1.jpg" alt="">
+					<img src="images/ch_flun2.jpg" alt="">
+					<img src="images/ch_flun3.jpg" alt="">
+				</div>
+
+				<div class="ch_fbtn">
+					<button></button>
+					<button></button>
+					<button></button>
+				</div>
+
+			</div>
+			<ul class="ch_fk1">
+				<li>
+					<a href=""><img src="images/ch_fk1.jpg" alt=""></a>
+					<div>
+						<a href=""><h2>欧式田园设计</h2></a>
+						<h3>白玉芳兰系列5头吊灯</h3>
+						<h4>包邮价： <span>¥ 199</span></h4>
+					</div>
+				</li>
+				<li>
+					<a href=""><img src="images/ch_fk2.jpg" alt=""></a>
+					<div>
+						<a href=""><h2>欧式田园设计</h2></a>
+						<h3>白玉芳兰系列5头吊灯</h3>
+						<h4>包邮价： <span>¥ 199</span></h4>
+					</div>
+				</li>
+				<li>
+					<a href=""><img src="images/ch_fk3.jpg" alt=""></a>
+					<div>
+						<a href=""><h2>欧式田园设计</h2></a>
+						<h3>白玉芳兰系列5头吊灯</h3>
+						<h4>包邮价： <span>¥ 199</span></h4>
+					</div>
+				</li>
+				<li>
+					<a href=""><img src="images/ch_fk4.jpg" alt=""></a>
+					<div>
+						<a href=""><h2>欧式田园设计</h2></a>
+						<h3>白玉芳兰系列5头吊灯</h3>
+						<h4>包邮价： <span>¥ 199</span></h4>
+					</div>
+				</li>
+			</ul>
+			<div class="ch_lastbox">
+				<h2>&nbsp;&nbsp;销量排行榜</h2>
+
+
+				<h3 class="ch_zhu"><span class="ch_aaaaa">&nbsp;1&nbsp;</span> 现代 分段式吸顶灯&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="ch_lllll">￥599</span></h3>
+				<div class="ch_fu">
+					<img src="images/ch_aazz.jpg" alt="">
+					<div>
+						<p>本站价：<span>¥ 599</span></p>
+						<p>销量：11391件</p>
+					</div>
+				</div>
+				<h3 class="ch_zhu"><span class="ch_aaaaa">&nbsp;1&nbsp;</span> 现代 分段式吸顶灯&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="ch_lllll">￥599</span></h3>
+				<div class="ch_fu">
+					<img src="images/ch_aazz.jpg" alt="">
+					<div>
+						<p>本站价：<span>¥ 599</span></p>
+						<p>销量：11391件</p>
+					</div>
+				</div>
+				<h3 class="ch_zhu"><span class="ch_aaaaa">&nbsp;1&nbsp;</span> 现代 分段式吸顶灯&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="ch_lllll">￥599</span></h3>
+				<div class="ch_fu">
+					<img src="images/ch_aazz.jpg" alt="">
+					<div>
+						<p>本站价：<span>¥ 599</span></p>
+						<p>销量：11391件</p>
+					</div>
+				</div>
+				<h3 class="ch_zhu"><span class="ch_aaaaa">&nbsp;1&nbsp;</span> 现代 分段式吸顶灯&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="ch_lllll">￥599</span></h3>
+				<div class="ch_fu">
+					<img src="images/ch_aazz.jpg" alt="">
+					<div>
+						<p>本站价：<span>¥ 599</span></p>
+						<p>销量：11391件</p>
+					</div>
+				</div>
+				<h3 class="ch_zhu"><span class="ch_aaaaa">&nbsp;1&nbsp;</span> 现代 分段式吸顶灯&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="ch_lllll">￥599</span></h3>
+				<div class="ch_fu">
+					<img src="images/ch_aazz.jpg" alt="">
+					<div>
+						<p>本站价：<span>¥ 599</span></p>
+						<p>销量：11391件</p>
+					</div>
+				</div>
+				<h3 class="ch_zhu"><span class="ch_aaaaa">&nbsp;1&nbsp;</span> 现代 分段式吸顶灯&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="ch_lllll">￥599</span></h3>
+				<div class="ch_fu">
+					<img src="images/ch_aazz.jpg" alt="">
+					<div>
+						<p>本站价：<span>¥ 599</span></p>
+						<!-- <p>销量：11391件</p> -->
+					</div>
+				</div>
+				
+				</div>
+			
+			</div>
+			<div class="ch_lpic">
+				<h2>灯饰选购常识</h2>
+				<div><br>
+						<a href=""><span>灯饰加盟 火热招商</span></a>
+						<br/>
+						<a href=""><span>台灯选购技巧</span></a>
+						<br/>
+						<a href=""><span>LED灯安装知识</span></a>
+						<br/>
+						<a href=""><span>十大无极灯品牌</span></a>
+						<br/>
+						<a href=""><span>家居灯具选购技巧</span></a>
+						<br/>
+						<a href=""><span>客厅吊灯安装知识</span></a>
+				</div>
+				<a href="">
+					<img src="images/ch_lpic1.jpg" alt="">
+				</a>
+				<a href="">
+					<img src="images/ch_lpic2.jpg" alt="">
+				</a>
+				<a href="">
+					<img src="images/ch_lpic3.jpg" alt="">
+				</a>
+				
+			</div>
+		</div><div class="ch_floor1">
+		<h1>1F照明灯饰</h1>
+
+		<p class="ch_ppppp">热门推荐：
+
+			<span><a href="">吊灯 </a></span>|
+			<span><a href="">落地灯 </a></span>|
+			<span><a href="">壁灯 </a></span>|
+			<span><a href="">吸顶灯 </a></span>|
+			<span><a href="">台灯 </a></span>|
+			<span><a href="">LED灯/光源 </a></span>|
+			<span><a href="">水晶灯</a></span>
+		</p>
+		<h6><a href="">更多>></a></h6>
+		<div class="ch_floor11">
+			<div class="ch_floor22">
+				<div class="ch_flun">
+					<img src="images/ch_flun1.jpg" alt="">
+					<img src="images/ch_flun2.jpg" alt="">
+					<img src="images/ch_flun3.jpg" alt="">
+				</div>
+
+				<div class="ch_fbtn">
+					<button></button>
+					<button></button>
+					<button></button>
+				</div>
+
+			</div>
+			<ul class="ch_fk1">
+				<li>
+					<a href=""><img src="images/ch_fk1.jpg" alt=""></a>
+					<div>
+						<a href=""><h2>欧式田园设计</h2></a>
+						<h3>白玉芳兰系列5头吊灯</h3>
+						<h4>包邮价： <span>¥ 199</span></h4>
+					</div>
+				</li>
+				<li>
+					<a href=""><img src="images/ch_fk2.jpg" alt=""></a>
+					<div>
+						<a href=""><h2>欧式田园设计</h2></a>
+						<h3>白玉芳兰系列5头吊灯</h3>
+						<h4>包邮价： <span>¥ 199</span></h4>
+					</div>
+				</li>
+				<li>
+					<a href=""><img src="images/ch_fk3.jpg" alt=""></a>
+					<div>
+						<a href=""><h2>欧式田园设计</h2></a>
+						<h3>白玉芳兰系列5头吊灯</h3>
+						<h4>包邮价： <span>¥ 199</span></h4>
+					</div>
+				</li>
+				<li>
+					<a href=""><img src="images/ch_fk4.jpg" alt=""></a>
+					<div>
+						<a href=""><h2>欧式田园设计</h2></a>
+						<h3>白玉芳兰系列5头吊灯</h3>
+						<h4>包邮价： <span>¥ 199</span></h4>
+					</div>
+				</li>
+			</ul>
+			<div class="ch_lastbox">
+				<h2>&nbsp;&nbsp;销量排行榜</h2>
+
+
+				<h3 class="ch_zhu"><span class="ch_aaaaa">&nbsp;1&nbsp;</span> 现代 分段式吸顶灯&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="ch_lllll">￥599</span></h3>
+				<div class="ch_fu">
+					<img src="images/ch_aazz.jpg" alt="">
+					<div>
+						<p>本站价：<span>¥ 599</span></p>
+						<p>销量：11391件</p>
+					</div>
+				</div>
+				<h3 class="ch_zhu"><span class="ch_aaaaa">&nbsp;1&nbsp;</span> 现代 分段式吸顶灯&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="ch_lllll">￥599</span></h3>
+				<div class="ch_fu">
+					<img src="images/ch_aazz.jpg" alt="">
+					<div>
+						<p>本站价：<span>¥ 599</span></p>
+						<p>销量：11391件</p>
+					</div>
+				</div>
+				<h3 class="ch_zhu"><span class="ch_aaaaa">&nbsp;1&nbsp;</span> 现代 分段式吸顶灯&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="ch_lllll">￥599</span></h3>
+				<div class="ch_fu">
+					<img src="images/ch_aazz.jpg" alt="">
+					<div>
+						<p>本站价：<span>¥ 599</span></p>
+						<p>销量：11391件</p>
+					</div>
+				</div>
+				<h3 class="ch_zhu"><span class="ch_aaaaa">&nbsp;1&nbsp;</span> 现代 分段式吸顶灯&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="ch_lllll">￥599</span></h3>
+				<div class="ch_fu">
+					<img src="images/ch_aazz.jpg" alt="">
+					<div>
+						<p>本站价：<span>¥ 599</span></p>
+						<p>销量：11391件</p>
+					</div>
+				</div>
+				<h3 class="ch_zhu"><span class="ch_aaaaa">&nbsp;1&nbsp;</span> 现代 分段式吸顶灯&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="ch_lllll">￥599</span></h3>
+				<div class="ch_fu">
+					<img src="images/ch_aazz.jpg" alt="">
+					<div>
+						<p>本站价：<span>¥ 599</span></p>
+						<p>销量：11391件</p>
+					</div>
+				</div>
+				<h3 class="ch_zhu"><span class="ch_aaaaa">&nbsp;1&nbsp;</span> 现代 分段式吸顶灯&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="ch_lllll">￥599</span></h3>
+				<div class="ch_fu">
+					<img src="images/ch_aazz.jpg" alt="">
+					<div>
+						<p>本站价：<span>¥ 599</span></p>
+						<!-- <p>销量：11391件</p> -->
+					</div>
+				</div>
+				
+				</div>
+			
+			</div>
+			<div class="ch_lpic">
+				<h2>灯饰选购常识</h2>
+				<div><br>
+						<a href=""><span>灯饰加盟 火热招商</span></a>
+						<br/>
+						<a href=""><span>台灯选购技巧</span></a>
+						<br/>
+						<a href=""><span>LED灯安装知识</span></a>
+						<br/>
+						<a href=""><span>十大无极灯品牌</span></a>
+						<br/>
+						<a href=""><span>家居灯具选购技巧</span></a>
+						<br/>
+						<a href=""><span>客厅吊灯安装知识</span></a>
+				</div>
+				<a href="">
+					<img src="images/ch_lpic1.jpg" alt="">
+				</a>
+				<a href="">
+					<img src="images/ch_lpic2.jpg" alt="">
+				</a>
+				<a href="">
+					<img src="images/ch_lpic3.jpg" alt="">
+				</a>
+				
+			</div>
+		</div>
+
+
+
+</div>
+
+
+
+
+
+	
+	
+ <ul class="j_right_box">
+        <li class="j_right1">
+            <a href="">客服</a>
+            <div class="j_right_txt">咨询在线客服</div>
+        </li>
+        <li class="j_right2">
+            <a href="">体验馆</a>
+            <img src="images/j_tiyan.png" alt="" class="j_gif">
+            <img src="images/address.gif" alt="" class="j_gif">
+        </li> 
+        <div class="j_right_txt" id="j_right_txt">发送体验馆地址</div>
+        <li class="j_right3">
+            <a href="hopping.html">购物车</a>
+            <div class="j_right_txt">查看购物车</div>
+            <div id="j_right_num">0</div>
+        </li>
+        <li class="j_right4">
+            <a href="">抽奖</a>
+            <div class="j_right_txt">参与本期抽奖</div>
+        </li>
+        <li class="j_right5">
+            <p href="" id="j_right_a"></p>
+            <div class="j_right_txt">返回顶部</div>
+        </li>
+	</ul>
+	
+	
+
+
+
+	<div class="WJH_footer">
+			<div class="footer-icon">
+				<div class="WJH_bot_icon">
+					<a href="" target="_blank" class="icon-map">
+						<p class="icon-bg i1"></p>
+						<p class="icon-title">美乐乐O2O</p>
+					</a><a href="" target="_blank" class="icon-map">
+						<p class="icon-bg i2"></p>
+						<p class="icon-title">全国体验馆</p>
+					</a><a href="" target="_blank" class="icon-map">
+						<p class="icon-bg i3"></p>
+						<p class="icon-title">双重质检</p>
+					</a><a href="" target="_blank" class="icon-map">
+						<p class="icon-bg i4"></p>
+						<p class="icon-title">售后无忧</p>
+					</a><a href="" target="_blank" class="icon-map">
+						<p class="icon-bg i5"></p>
+						<p class="icon-title">原创设计</p>
+					</a><a href="" target="_blank" class="icon-map">
+						<p class="icon-bg i6"></p>
+						<p class="icon-title">全球采购</p>
+					</a><a href="" target="_blank" class="icon-map">
+						<p class="icon-bg i7"></p>
+						<p class="icon-title">万千口碑</p>
+					</a><a href="" target="_blank" class="icon-map">
+						<p class="icon-bg i8"></p>
+						<p class="icon-title">团队优势</p>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copy">
+			<div class="link-container">
+	
+				<div class="copy-index clearfix" style="padding-top:0">
+					<div class="fl">
+						<p>
+							<a href="" target="_blank">装修网</a> | <a href="" target="_blank">装修效果图</a> | <a href=""
+								target="_blank">家居资讯</a> |<a href="/list/" target="_blank">家具图片</a> | <a href=""
+								target="_blank">家居资讯</a> | <a href="" target="_blank">生活百科</a> | <a href=""
+								target="_blank">家私导购</a> | <a href="" target="_blank">品牌展厅</a> | <a href=""
+								target="_blank">装修论坛</a> | <a href="" target="_blank" title="客服中心">客服中心</a> | <a href=""
+								target="_blank">网站地图</a> | <a href="" target="_blank">友情链接</a> | <a href=""
+								target="_blank">更多</a>
+						</p>
+						<p>
+							<span class="yen">© 2005-2018 </span><span id="JS_footer_copyright">美乐乐</span> 天津美维信息技术有限公司
+							版权所有，并保留所有权利。<a href="" target="_blank" class="gray">ICP备案证书号：粤ICP备08008334号</a>
+						</p>
+					</div>
+					<div class="fr credit">
+						<a href="" target="_blank"><i class="c1"></i><span class="spec">诚信网站</span></a>
+						<a target="_blank" href=""><i class="c4"></i><span>认证联盟品牌官网</span></a>
+						<a target="_blank" href=""><i class="c2"></i><span>可信网站信用评价</span></a>
+						<i class="c3"></i><span>经营网站备案信息</span>
+					</div>
+				</div>
+	
+			</div>
+		</div>
+</body>
+<script src="js/area.js"></script>
+<script src="js/cxq1.js"></script>
+<script src="js/ch_jcCity.js"></script>
+<script src="js/cebian.js"></script>
+<script src="js/Index_header.js"></script>
+
+</html>

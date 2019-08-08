@@ -1,0 +1,294 @@
+#xy_renqi_head{
+	width: 1190px;
+	height: 42px;
+	border:1px solid #ebebeb;
+	margin:0 auto;
+	background: #FAFAFA
+}
+#xy_renqi_head ul li{
+	width: 56px;
+	height: 40px;
+	color:#e62318;
+	cursor: pointer;
+	border-bottom: 2px solid #e62318;
+	text-align: center;
+	line-height: 40px;
+	font-size:14px;
+	margin-left: 20px
+}
+
+#xy_renqi_content{
+	width: 1190px;
+	height: 200px;
+	padding: 15px 20px;
+	margin:0 auto;
+}
+#xy_renqi_xuan{
+	width: 1190px;
+	height: 24px;
+	margin-left: 237px
+}
+#xy_renqi_xuan span{
+	display: inline-block;
+	font-size: 12px;
+	width: 86px;
+	height: 24px;
+	border:1px solid #ebebeb;
+	text-align: center;
+	line-height: 24px
+}
+#xy_renqi_xuan span a{
+	color:black;
+}
+#xy_renqi_show{
+	height: 130px;
+	margin-top:15px;
+	position: relative;
+}
+#xy_renqi_show_1{
+	width: 155px;
+	height: 130px;
+	position: absolute;
+	top: 0
+}
+#xy_renqi_show_1 h4{
+	width: 155px;
+	font-size: 12px;
+	text-align: center;
+	display: inline-block;
+}
+#xy_renqi_show_2 h4{
+	width: 155px;
+	font-size: 12px;
+	text-align: center;
+	/*display: inline-block;*/
+}
+.zhezhao{
+	width: 155px;
+	height: 25px;
+	background:rgba(0,0,0,0.5);
+	position: absolute;
+	bottom:25px;
+	display: none;
+}
+#xy_renqi_show_1 a:hover .zhezhao{
+	display: inline-block;
+}
+#xy_renqi_show_2 a:hover .zhezhao{
+	display: inline-block;
+}
+.zhezhao p{
+	color:white;
+	text-align: center;
+	font-size: 12px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;	
+}
+#xy_renqi_show_2{
+	display: inline-block;
+	width: 774px;
+	height: 130px;
+	position: absolute;
+	top: 0;
+	left:237px;
+}
+#xy_renqi_show_2 a{		
+	margin-right: 20px;
+}
+#xy_renqi_show_2 li{
+	height: 130px;
+	display: inline-block;
+}
+#xy_renqi_show_2 h4 input{
+	height: 10px;
+}
+#plus{
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	left: 180px;
+	top:25px;
+	font-size: 40px;
+	color:grey;
+}
+#equal{
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	left: 970px;
+	top:25px;
+	font-size: 40px;
+	color:grey;
+}
+#xy_renqi_show_3{
+	width: 118px;
+	height: 110px;
+	position: absolute;
+	right: 0
+}
+.xy_renqi_a{
+	font-size: 12px;
+	color:#666;
+	margin-bottom: 3px
+}
+.xy_renqi_b{
+	font-size: 13px;
+	color:#666;
+	margin-bottom: 3px
+}
+.xy_renqi_c{
+	text-align: center;  
+    background: #e62318;
+    border: solid 1px #e62318;
+}
+.xy_renqi_d{
+	margin-top: 5px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border: solid 1px #bbb
+}
+.xy_renqi_c a{
+	color:white!important;
+	font-size: 14px
+}
+.xy_a{
+	color:#BBBBBB;
+	font-size: 14px
+}
+.xy_renqi_d:hover .xy_a{
+	color:red;
+}
+
+
+
+
+
+
+#cnxhMain{
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    /* border:solid 1px red; */
+}
+.cnxhul{
+    width: 195px;
+    float: left;
+    border:solid 1px#eee;
+}
+.cnxhul p{
+    height: 40px;
+    line-height: 39px;
+    padding: 0 20px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #444;
+    border-bottom: solid 1px #eee;
+    background: #fafafa;
+}
+.cnxhul li{
+    text-align: center;
+    margin: 20px 0;
+}
+.cnxhul li div span{
+    font-size: 12px
+}
+.cnxhul li div .span1{
+    display: inline-block;
+    margin-right: 3px;
+    width: 14px;
+    height: 14px;
+    text-align: center;
+    line-height: 14px;
+    font-size: 12px;
+    color: #fff;
+    border-radius: 14px;
+    background-color: #e62318;
+}
+.cnxhul li div .span2{
+    color: #999;
+}
+.cnxhul li div .span3{
+    color: #e62318!important;
+}
+#aa{
+    position: relative;
+    bottom: 0px;
+}
+.aaa{
+    border-bottom: solid 1px #eee;
+    padding-bottom: 10px;
+}
+#cnxhdiv{
+    float: right;
+}
+.ZWTBula{
+    width: 980px;
+    height: 42px;
+    border:solid 1px #eee;
+    background: #fafafa;
+}
+.ZWTBula li{
+    display: inline-block;  
+    padding: 0 25px;  
+}
+.ZWTBula li:first-child{
+    margin-left: 15px;
+}
+.ZWTBula li a{
+    display: block;
+    font-size: 15px;
+    color: #666;
+    height: 42px;
+    line-height: 42px;
+    border-bottom: solid 2px #eee;
+}
+.xxx{
+    color: red !important;
+    border-bottom-color: red !important;
+}
+.ZWTBula li:hover .xxxx{
+    color: red !important;
+    border-bottom-color: red;
+}
+.cnxhSpin{
+    width: 980px;
+    height: 145px;
+    /* border:solid 1px red; */
+    position: relative;
+}
+.cnxhSpin img{
+    position: absolute;
+    top: 20px;
+    left: 35px;
+}
+.cnxhDtu{
+    width: 980px;
+    float: right;
+}
+.cnxhDtu li{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.cnxhDtu li:nth-child(2){
+    font-size: 0;
+
+    position: relative;
+}
+.cnxhDtu li:nth-child(2) img{
+    display: inline-block;
+}
+.aaaa{
+    float: right;
+    position: absolute;
+    top: 225px;
+}
+.aaaaaa{
+    position: absolute;
+    top:225px;
+    right: 0;
+}
+.aaaaa{
+    position: absolute;
+    top:0px;
+}

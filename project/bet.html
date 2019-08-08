@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin:0;
+			padding: 0; 
+		}
+		#view{
+			width: 600px;
+			height:600px;
+			margin: 50px auto;
+			position: relative;
+		}
+		#view div{
+			width: 200px;
+			height: 200px;
+			position: absolute;
+			background: #dedede;
+			border-radius: 30%;
+			line-height: 200px;
+			text-align: center;
+		}
+		#view .con{
+			background: orange;
+			color: red;
+			font-weight: bolder;
+		}
+		#anniu{
+			width: 290px;
+			margin: 0 auto;
+		}
+		#anniu button{
+			width: 100px;
+			height: 50px;
+			margin: 20px;
+			background: cyan;
+			font-size: 30px;
+		}
+</style>
+</head>
+<body>
+	<div id="view"></div>
+	<div id="anniu">
+	<button id="start">开始</button>
+	<button id="down">停止</button>
+	</div>
+</body>
+<script>
+	var arr=["五百万","九万九","十八一朵花","六十六","八千八","六百六","二百五","八十八"];
+
+	for(var i=0;i<arr.length;i++){//遍历arr 插入div
+		var node=document.createElement("div");
+		node.innerHTML=arr[i];
+		node.index=[i];
+		view.appendChild(node);
+	}
+
+function render(){
+view.children[0].style.left=0;
+view.children[0].style.top=0;
+
+view.children[1].style.left="200px";
+view.children[1].style.top=0;
+
+view.children[2].style.left="400px";
+view.children[2].style.top=0;
+
+view.children[3].style.left="400px";
+view.children[3].style.top="200px";
+
+view.children[4].style.left="400px";
+view.children[4].style.top="400px";
+
+view.children[5].style.left="200px";
+view.children[5].style.top="400px";
+
+view.children[6].style.left=0;0
+view.children[6].style.top="400px";
+
+view.children[7].style.left=0;
+view.children[7].style.top="200px";		
+}
+render();
+	var allowList=["十八一朵花","六十六","八千八","六百六","二百五","八十八"]
+
+	function random(a,b){//提取随机数函数
+		return Math.floor(Math.random()*(b-a+1))+a;
+	}
+
+	view.children[0].className="con";
+
+	var count=0;//记录循环索引值
+	var flag=true;
+
+	start.onclick=function(){
+		var ran=random(0,allowList.length-1);
+		console.log(allowList[ran]);//直接拿到结果
+
+		var t=100;
+		flag=true;
+		function fun(){
+			//切换类名 即换颜色
+			view.children[count].className="";
+			count++;
+			if(count>view.children.length-1){
+				count=0;
+			}
+			view.children[count].className="con";
+
+			if(flag){
+			if(t>50){//减小计时器事件 增大速度
+				t-=5;
+			}
+			}else{
+				if(t<=500){//减小计时器事件 增大速度
+					t+=20;
+				}
+			}
+			//所得标签内容是否为 允许范围内的值
+			var allowFlag=view.children[count].innerHTML==allowList[ran];
+			if(t>500&&allowFlag){//停止计时器循环
+				// console.log(view.children[count].innerHTML);
+			}else{
+				setTimeout(fun,t)
+			}			
+		}
+		fun()
+	}
+
+	down.onclick=function(){
+		flag=false;
+	}
+</script>
+</html>

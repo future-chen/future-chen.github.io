@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+<body>
+	<h2 id="txt"></h2>
+</body>
+<script>
+	
+	if(navigator.geolocation){
+
+
+		navigator.geolocation.watchPosition(function(position){
+
+			document.getElementById('txt').innerHTML="纬度: "+position.coords.latitude+"<br>经度:"+position.coords.longitude; 
+
+		})
+
+	}else{
+		alert("不支持")
+	}
+
+</script>
+</html>

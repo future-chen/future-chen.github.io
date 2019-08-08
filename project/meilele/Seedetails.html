@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>查看详情</title>
+	<link rel="stylesheet" href="css/seedetails_big.css">
+	<link rel="stylesheet" href="css/seedetails_Bf.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/cebian.css">
+	<script src="js/jquery-1.8.3.js"></script>
+	<link rel="stylesheet" href="css/Index_foot.css">
+	<link rel="stylesheet" href="css/Index_header.css">
+</head>
+<body>
+
+	<!-- 页头 -->
+    <div id="WJH_header">
+			<!-- 总栏 -->
+			<div class="WJH_menu">
+	
+				<div class="WJH_area">
+					<!-- 地区栏 -->
+					<ul class="WJH_nav_left">
+						<li class="WJH_change">
+							<i class="i_coord"></i>
+							<span class="WJH_city">全国站</span>
+							<div class="WJH_changeCity">
+								[切换]
+								<ul id="WJH_cityBox">
+									<span class="WJH_arrowBg"></span>
+									<p></p>
+									<ul class="WJH_cityTitle">
+										<li>全国</li>
+										<li>北京</li>
+										<li>上海</li>
+										<li>广州</li>
+										<li>深圳</li>
+										<li>成都</li>
+										<li>西安</li>
+										<li>天津</li>
+										<li>武汉</li>
+										<li>重庆</li>
+										<li>南京</li>
+									</ul>
+									<div class="WJH_search">
+										<input type="text" placeholder="输入城市名"><button>搜索</button>
+									</div>
+									<!-- 首字母 -->
+									<ul id="WJH_firWord">
+	
+									</ul>
+									<!-- 城市列表 -->
+									<div id="WJH_cityliebiao">
+	
+									</div>
+								</ul>
+							</div>
+	
+						</li>
+						<li class="WJH_login">
+							<a href="cdyLogin.html">请登录</a>
+						</li>
+						<li class="WJH_regist">
+							<a href="cdySign.html">免费注册</a>
+						</li>
+					</ul>
+					<!-- 我的美乐乐栏 -->
+					<ul class="WJH_nav_right">
+						<li class="WJH_mymeilele">
+							<a href="">我的美乐乐</a>
+							<div class="WJH_mymeilele_box">
+								<a href="">我的订单</a>
+								<a href="">我的金币</a>
+								<a href="">我的红包</a>
+								<a href="">我的收藏</a>
+								<a href="">我要评价</a>
+								<a href="">申请保价</a>
+							</div>
+							<i class="drop_arrow"></i>
+						</li>
+						<li class="WJH_good">
+							<i class="WJH_cart"></i>
+							<a href="hopping.html">购物车</a><span class="WJH_goodsCount">0</span>
+							<div class="shopCar_line"></div>
+							<div id="shopCar">
+								暂时没有商品
+							</div>
+							<i class="drop_arrow"></i>
+						</li>
+						<li class="WJH_guanzhu">
+							<i class="WJH_guanzhuicon"></i>
+							<a href="">关注美乐乐</a>
+							<i class="drop_arrow"></i>
+						</li>
+						<li class="WJH_helpcenter">
+							<a href="">帮助中心</a>
+							<i class="drop_arrow"></i>
+						</li>
+						<li class="WJH_collet">
+							<a href="">收藏本站</a>
+						</li>
+						<li>
+							<span class="WJH_help">全国帮助中心&nbsp;:</span><span class="WJH_tel">&nbsp;4000000000</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- 页面导航栏 -->
+			<div class="WJH_header_nav">
+				<a href="">
+					<img src="images\WJH_logo2.png" alt="">
+				</a>
+				<a href="">
+					<img src="images\WJH_618.gif" alt="">
+				</a>
+				<div class="WJH_header_nav_search">
+					<input type="text" placeholder="超值半价抢"><button>搜索</button>
+					<div class="WJH_active">
+						<a href="">10元抢半价</a>
+						<a href="">床</a>
+						<a href="">沙发</a>
+						<a href="">餐桌椅</a>
+						<a href="">实木床</a>
+						<a href="">床垫大促</a>
+						<a href="">转角沙发</a>
+						<a href="">灯饰</a>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+
+	<div class="L_view">
+		<div class="Lview_text">
+			<a href="#">首页</a>
+			<span>＞</span>
+			<a href="#">家具</a>
+			<span>＞</span>
+			<div class="LT_01">
+				<p>客厅</p>
+				<span>∨</span>
+				<div class="Lline"></div>
+				<div class="LT_01_tex">
+					<a href="#">卧室</a>
+					<a href="#">客厅</a>
+					<a href="#">餐厅</a>
+					<a href="#">书房</a>
+					<a href="#">儿童房</a>
+					<a href="#">户外/阳台</a>
+					<a href="#">定制家居</a>
+					<a href="#">办公家具</a>
+				</div>
+			</div>
+			<span>＞</span>
+			<div class="LT_01">
+				<p>沙发</p>
+				<span>∨</span>
+				<div class="Lline"></div>
+				<div class="LT_01_tex">
+					<a href="#">沙发</a>
+					<a href="#">茶几/边桌</a>
+					<a href="#">电视柜</a>
+					<a href="#">鞋柜</a>
+					<a href="#">花架/装饰架</a>
+					<a href="#">酒柜/装饰柜</a>
+					<a href="#">间厅/玄关柜</a>
+					<a href="#">客厅套房</a>
+					<a href="#">休闲凳/椅</a>
+					<a href="#">屏风</a>
+				</div>
+			</div>
+			<span>＞</span>
+			<a href="#">哥本哈根系列</a>
+			<span>＞</span>
+			<span>BOYG-MZDR-H1020-SFTZ</span>
+		</div>
+		<div class="L_view01">		
+			<div class="L_view02">
+				<img id="big" src="images/seePic/Seebig/sb01.jpg" alt="">
+				<div id="frames"></div>
+
+			</div>
+			<div class="L_lists">
+				<div class="L_list">
+					<img class="L_box" src="images/seePic/Seesmall/s01.jpg" alt="">
+					<img src="images/seePic/Seesmall/s02.jpg" alt="">
+					<img src="images/seePic/Seesmall/s03.jpg" alt="">
+					<img src="images/seePic/Seesmall/s04.jpg" alt="">
+					<img src="images/seePic/Seesmall/s05.jpg" alt="">
+					<img src="images/seePic/Seesmall/s06.jpg" alt="">
+					<img src="images/seePic/Seesmall/s07.jpg" alt="">
+					<img src="images/seePic/Seesmall/s08.jpg" alt="">
+				</div>				
+				<div class="L_btn">
+					<button id="L_up">＜</button>
+					<button id="L_down">＞</button>
+				</div>
+			</div>			
+			<div id="L_bigbox">
+				<img src="" alt="">
+			</div>	
+		</div>
+		<div class="L_view_03">
+			<h4>
+				<a href="#">哥本哈根系列&nbsp北欧风格</a>
+				优质橡胶木框架&nbsp全实木布艺沙发套装(1+2+3) &nbsp简约客厅家具
+			</h4>
+			<a class="Lv_a02" href="#">【618年中大促】嗨购618，置家之选，钜惠狂省2100！更多爆款限时团，点击>></a>
+			<a href="#"><img style="width: 510px" src="images/seePic/Seepro/Seepro01.jpg" alt=""></a>
+			<ul class="Lv_ul">
+				<li>
+					<div class="li_01">
+						<span class="Lv_ul04">促销价</span>
+						<span class="Lv_ul01">¥6399.00</span>
+						<span class="Lv_ul03">¥8499.00</span>
+						<span class="Lv_ul02">降价通知</span>
+					</div>
+					<div class="li_02">
+						<span class="li_0201">22</span>
+						<span>评价</span>
+					</div>				
+				</li>
+				<li class="Lv_ulli02">
+					<span class="Lv_ul04">领劵</span>
+					<p class="Lv_ul04p">免费配送安装费</p><p class="Lv_ul04p Lv_ul04p02">领取</p>
+				</li>
+				<li class="Lv_ulli03">
+					<span class="Lv_ul04">促销</span>
+					<p>促销</p>
+					<span class="limtimer">限时促销</span>
+					<div id="Lv_timer">
+						<span>18</span>天<span>09</span>时<span>13</span>分<span>59</span>秒<span>后结束</span>
+					</div>
+				</li>
+			</ul>
+			<div class="L_view_04">
+				<div class="PeiSon">
+					<span class="Lv_ul04">配送</span>
+					<div>
+						<span id="Lv_change">请选择</span>∨
+						<div id="Lv_select">
+							<select  id="pro"></select>	
+							<select  id="city"></select>	
+							<select  id="reg"></select>	
+							<p>确定</p>
+							<span>×</span>
+						</div>
+						<span id="Smany" class="PS_txt">查看运费</span>
+						<p>由<span class="PS_txt">美乐乐自营旗舰店</span>发货,并提供售后服务</p>
+					</div>
+									
+				</div>
+				<div class="LeiXing">
+					<span class="Lv_ul04">类型</span>
+					<div class="LX_a">
+						<a class="LX_fa" href="#">沙发套装(1+2+3)</a>
+						<a href="#">沙发套装(1+3)</a>
+						<a href="#">单人位+1*抱枕</a>
+						<a href="#">两人位+2*抱枕</a>
+						<a href="#">三人位+3*抱枕</a>
+					</div>
+				</div>
+				<div class="Guige">
+					<span class="Lv_ul04">规格</span>
+					<div>
+						<span>单人位：长810*宽760*高900mm 双人位：长1490*宽760*高900mm 三人位：长2170*宽760*高900mm</span>
+					</div>
+					
+				</div>
+				<div class="ShuLiang">
+					<span class="Lv_ul04">数量</span>
+					<div class="Sl_a">
+						<a href="#">-</a><span>1</span><a href="#">+</a>
+					</div>
+				</div>
+				<div class="Jiawuche">
+					<div>
+						<div class="Jiawuche01"><span>加入购物车</span></div>
+						<div id="Fayqiu"><img src="images/seePic/Seesmall/s01.jpg" alt=""></div>
+						<div class="Jiawuche02"></div>
+						<a href="#">
+							<div class="Jiawuche03">
+								<div class="jw_star"></div>
+								<span>收藏</span>
+							</div>
+						</a>						
+					</div>					
+				</div>
+				<div class="WuFu">
+					<span class="Lv_ul04">服务</span>
+					<a href="#"><span class="WF_01">30天无忧退换货</span></a>
+					<a href="#"><span class="WF_02">质保三年</span></a>
+					<a href="#"><span class="WF_01">贵就陪</span></a>
+					
+				</div>
+			</div>			
+		</div>	
+		<div class="L_view_05">
+			<div class="Lv5_1">
+				<div></div>
+				<p>看了又看</p>
+				<div></div>
+			</div>
+			<ul>
+				<li>
+					<a href="#"><img src="images/seePic/Seesmall/s09.jpg" alt=""></a>
+					<p>¥8636</p>
+					<div>百搭小清新简约大气...</div>
+				</li>
+				<li>
+					<a href="#"><img src="images/seePic/Seesmall/s09.jpg" alt=""></a>
+					<p>¥9999</p>
+					<div>百搭小清新简约大气...</div>
+				</li>
+				<li>
+					<a href="#"><img src="images/seePic/Seesmall/s09.jpg" alt=""></a>
+					<p>¥3669</p>
+					<div>百搭小清新简约大气...</div>
+				</li>
+				<li>
+					<a href="#"><img src="images/seePic/Seesmall/s09.jpg" alt=""></a>
+					<p>¥3539</p>
+					<div>百搭小清新简约大气...</div>
+				</li>
+			</ul>		
+	
+		</div>
+
+	</div>
+		<div id="xy_renqi_head">
+	            <ul>
+	                <li><a href="">人气搭配</a></li>
+	            </ul>
+	        </div>
+	    
+	        <div id="xy_renqi_content">
+	            <div id="xy_renqi_xuan">
+	                <span><a href="">客厅</a></span>
+	                <span><a href="">卧室</a></span>
+	                <span><a href="">餐厅</a></span>
+	            </div>
+	            <div id="xy_renqi_show">
+	                <div id="xy_renqi_show_1">
+	                    <a href="">
+	                        <img src="images/ganCN/xy_renqi_show.jpg" alt="">
+	                        <div class="zhezhao">
+	                            <p>皮布结合 功能性头枕 皮布结合 功能性头枕</p>
+	                        </div>	
+	                        <h4>￥4999</h4>
+	                    </a>
+	                </div>
+	                <div id="plus">+</div>
+	                <ul id="xy_renqi_show_2">
+	                    <li>
+	                        <a href="">
+	                            <img src="images/ganCN/xy_renqi_lunbo1.jpg" alt="">
+	                            <div class="zhezhao">
+	                                <p>皮布结合 功能性头枕 </p>
+	                            </div>
+	                            <h4><input type="checkbox">￥4999</h4>
+	                        </a>
+	                    </li>
+	                    <li>
+	                        <a href="">
+	                            <img src="images/ganCN/xy_renqi_lunbo1.jpg" alt="">
+	                            <div class="zhezhao">
+	                                <p>皮布结合 功能性头枕 </p>
+	                            </div>
+	                            <h4><input type="checkbox">￥4999</h4>
+	                        </a>
+	                    </li>
+	                    <li>
+	                        <a href="">
+	                            <img src="images/ganCN/xy_renqi_lunbo1.jpg" alt="">
+	                            <div class="zhezhao">
+	                                <p>皮布结合 功能性头枕 </p>
+	                            </div>
+	                            <h4><input type="checkbox">￥4999</h4>
+	                        </a>
+	                    </li>
+	                    <li>
+	                        <a href="">
+	                            <img src="images/ganCN/xy_renqi_lunbo1.jpg" alt="">
+	                            <div class="zhezhao">
+	                                <p>皮布结合 功能性头枕 </p>
+	                            </div>
+	                            <h4><input type="checkbox">￥4999</h4>
+	                        </a>
+	                    </li>
+	                </ul>
+	                <div id="equal">=</div>
+	                <div id="xy_renqi_show_3">
+	                    <ul>
+	                        <li class="xy_renqi_a">已搭配1件</li>
+	                        <li class="xy_renqi_b">套餐价：</li>
+	                        <li class="xy_renqi_c"><a href="">购买搭配组合</a></li>
+	                        <li class="xy_renqi_d"><a class="xy_a" href="">全部清空</a></li>
+	                    </ul>
+	                </div>
+	            </div>
+	        </div>
+	<main id="cnxhMain">
+	<ul class="cnxhul">
+	    <p>猜您喜欢</p>
+	    <li>
+	        <img src="images/ganCN/ganCN1.jpg" alt="">
+	        <div>
+	            <span class="span1">1</span>
+	            <span class="span2">已售12345678</span>
+	            <span class="span3">￥6599</span>
+	        </div>
+	    </li>
+	    <li>
+	        <img src="images/ganCN/ganCN1.jpg" alt="">
+	        <div>
+	            <span class="span1">2</span>
+	            <span class="span2">已售12345678</span>
+	            <span class="span3">￥6599</span>
+	        </div>
+	    </li>
+	    <li>
+	            <img src="images/ganCN/ganCN1.jpg" alt="">
+	            <div>
+	                <span class="span1">3</span>
+	                <span class="span2">已售12345678</span>
+	                <span class="span3">￥6599</span>
+	            </div>
+	    </li>
+	    <li class="aaa">
+	            <img src="images/ganCN/ganCN1.jpg" alt="">
+	            <div>
+	                <span class="span1">4</span>
+	                <span class="span2">已售12345678</span>
+	                <span class="span3">￥6599</span>
+	            </div>
+	    </li>
+	    <ul class="cnxhul" id="aa">
+	            <p>本周热销榜</p>
+	            <li>
+	                <img src="images/ganCN/ganCN1.jpg" alt="">
+	                <div>
+	                    <span class="span1">1</span>
+	                    <span class="span2">热销12345678</span>
+	                    <span class="span3">￥6599</span>
+	                </div>
+	            </li>
+	            <li>
+	                <img src="images/ganCN/ganCN1.jpg" alt="">
+	                <div>
+	                    <span class="span1">2</span>
+	                    <span class="span2">热销12345678</span>
+	                    <span class="span3">￥6599</span>
+	                </div>
+	            </li>
+	            <li>
+	                    <img src="images/ganCN/ganCN1.jpg" alt="">
+	                    <div>
+	                        <span class="span1">3</span>
+	                        <span class="span2">热销12345678</span>
+	                        <span class="span3">￥6599</span>
+	                    </div>
+	            </li>
+	            <li>
+	                    <img src="images/ganCN/ganCN1.jpg" alt="">
+	                    <div>
+	                        <span class="span1">4</span>
+	                        <span class="span2">热销12345678</span>
+	                        <span class="span3">￥6599</span>
+	                    </div>
+	            </li>
+	         
+	    </ul>
+	 
+	</ul>
+	 <!-- left -->
+	<div id="cnxhdiv">
+		<!--有浮动 头部  -->
+		<ul class="ZWTBula">
+		    <li><a class="xxx" href="">商品详情</a></li>
+		    <li><a class="xxxx" href="">规格参数</a></li>
+		    <li><a class="xxxx" href="">评价(3)</a></li>
+		    <li><a class="xxxx" href="">已售(172)</a></li>
+		    <li><a class="xxxx" href="">服务保障</a></li>
+		</ul>
+		<!-- 商品编号 -->
+		<div class="cnxhSpin">
+		    <img src="images/ganCN/ganlan1.png" alt="">
+		</div>
+		<!-- 大图 -->
+		<ul class="cnxhDtu">
+		    <li><img src="images/ganCN/ganCN2.jpg" alt=""></li>
+		    <li>
+		        <a href="gdnsem.html"><img src="images/ganCN/ganCN3.jpg" alt=""></a> 
+		        <img class="aaaaa" src="images/ganCN/ganCN4.jpg" alt="">
+		        <img class="aaaa" src="images/ganCN/ganCN5.jpg" alt="">
+		        <img class="aaaaaa" src="images/ganCN/ganCN6.jpg" alt="">
+		    </li>
+
+		    <li><img src="images/ganCN/ganCN7.jpg" alt=""></li>
+		    <li><img src="images/ganCN/ganCN8.jpg" alt=""></li>
+		    <li><img src="images/ganCN/ganCN9.jpg" alt=""></li>
+		    <li><img src="images/ganCN/ganCN10.jpg" alt=""></li>
+		    <li><img src="images/ganCN/ganCN11.jpg" alt=""></li>
+		    <li><img src="images/ganCN/ganCN12.jpg" alt=""></li>
+		    <li><img src="images/ganCN/ganCN13.jpg" alt=""></li>
+		    <li><img src="images/ganCN/ganCN14.jpg" alt=""></li>
+		    <li><img src="images/ganCN/ganCN15.jpg" alt=""></li>
+		    <li><img src="images/ganCN/ganCN16.jpg" alt=""></li>
+		</ul>	    
+	 </div>
+	</main>
+	<div class="WJH_footer">
+			<div class="footer-icon">
+				<div class="WJH_bot_icon">
+					<a href="" target="_blank" class="icon-map">
+						<p class="icon-bg i1"></p>
+						<p class="icon-title">美乐乐O2O</p>
+					</a><a href="" target="_blank" class="icon-map">
+						<p class="icon-bg i2"></p>
+						<p class="icon-title">全国体验馆</p>
+					</a><a href="" target="_blank" class="icon-map">
+						<p class="icon-bg i3"></p>
+						<p class="icon-title">双重质检</p>
+					</a><a href="" target="_blank" class="icon-map">
+						<p class="icon-bg i4"></p>
+						<p class="icon-title">售后无忧</p>
+					</a><a href="" target="_blank" class="icon-map">
+						<p class="icon-bg i5"></p>
+						<p class="icon-title">原创设计</p>
+					</a><a href="" target="_blank" class="icon-map">
+						<p class="icon-bg i6"></p>
+						<p class="icon-title">全球采购</p>
+					</a><a href="" target="_blank" class="icon-map">
+						<p class="icon-bg i7"></p>
+						<p class="icon-title">万千口碑</p>
+					</a><a href="" target="_blank" class="icon-map">
+						<p class="icon-bg i8"></p>
+						<p class="icon-title">团队优势</p>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copy">
+			<div class="link-container">
+	
+				<div class="copy-index clearfix" style="padding-top:0">
+					<div class="fl">
+						<p>
+							<a href="" target="_blank">装修网</a> | <a href="" target="_blank">装修效果图</a> | <a href=""
+								target="_blank">家居资讯</a> |<a href="/list/" target="_blank">家具图片</a> | <a href=""
+								target="_blank">家居资讯</a> | <a href="" target="_blank">生活百科</a> | <a href=""
+								target="_blank">家私导购</a> | <a href="" target="_blank">品牌展厅</a> | <a href=""
+								target="_blank">装修论坛</a> | <a href="" target="_blank" title="客服中心">客服中心</a> | <a href=""
+								target="_blank">网站地图</a> | <a href="" target="_blank">友情链接</a> | <a href=""
+								target="_blank">更多</a>
+						</p>
+						<p>
+							<span class="yen">© 2005-2018 </span><span id="JS_footer_copyright">美乐乐</span> 天津美维信息技术有限公司
+							版权所有，并保留所有权利。<a href="" target="_blank" class="gray">ICP备案证书号：粤ICP备08008334号</a>
+						</p>
+					</div>
+					<div class="fr credit">
+						<a href="" target="_blank"><i class="c1"></i><span class="spec">诚信网站</span></a>
+						<a target="_blank" href=""><i class="c4"></i><span>认证联盟品牌官网</span></a>
+						<a target="_blank" href=""><i class="c2"></i><span>可信网站信用评价</span></a>
+						<i class="c3"></i><span>经营网站备案信息</span>
+					</div>
+				</div>
+	
+			</div>
+		</div>
+	<ul class="j_right_box">
+			<li class="j_right1">
+				<a href="">客服</a>
+				<div class="j_right_txt">咨询在线客服</div>
+			</li>
+			<li class="j_right2">
+				<a href="">体验馆</a>
+				<img src="images/j_tiyan.png" alt="" class="j_gif">
+				<img src="images/address.gif" alt="" class="j_gif">
+			</li> 
+			<div class="j_right_txt" id="j_right_txt">发送体验馆地址</div>
+			<li class="j_right3">
+				<a href="hopping.html">购物车</a>
+				<div class="j_right_txt">查看购物车</div>
+				<div id="j_right_num">0</div>
+			</li>
+			<li class="j_right4">
+				<a href="">抽奖</a>
+				<div class="j_right_txt">参与本期抽奖</div>
+			</li>
+			<li class="j_right5">
+				<p href="" id="j_right_a"></p>
+				<div class="j_right_txt">返回顶部</div>
+			</li>
+		</ul>
+</body>
+<script src="js/areas.js"></script>
+<script src="js/seedetails_Bfs.js"></script>
+<script src="js/areachange.js"></script>
+<script src="js/SD_big.js"></script>
+<script src="js/SD_bigfoot.js"></script>
+<script src="js/limtimer.js"></script>
+<script src="js/cebian.js"></script>
+<script src="js/area.js"></script>
+<script src="js/Index_header.js"></script>
+</html>

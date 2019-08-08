@@ -1,0 +1,89 @@
+/*第三层 搜索下方*/
+		#xy_intro{
+			width: 1200px;
+			height: 122px;
+			margin:0 auto;
+		}
+		.xy_intro_remen{
+			display: inline-block;
+			width: 64px;
+			height: 78px;
+			text-align: center;
+			vertical-align:bottom;
+		}
+		.xy_intro_remen p{
+			margin-top: 18px;
+			font-size: 16px;
+			font-weight: 700;
+			color:#b6874f;	
+		}
+		.xy_intro_remen .asd{
+			margin-top: 26px
+		}
+		.xy_intro_mucai_first{
+			display: inline-block;
+			width: 140px;
+			height: 78px;
+			padding-left: 50px;
+		}
+		.xy_intro_mucai_second{
+			display: inline-block;
+			width: 212px;
+			height: 78px;
+			padding-left: 40px;
+		}
+		.xy_intro_mucai_third{
+			display: inline-block;
+			width: 240px;
+			height: 78px;
+			padding-left: 30px;
+		}
+		.xy_intro_mucai_first a{
+			width: 70px;
+			font-size: 16px;
+			float: left;
+			color:#333;
+			padding-bottom: 23px;
+		}
+		.xy_intro_mucai_second a{
+			width: 106px;
+			font-size: 16px;
+			float: left;
+			color:#333;
+			padding-bottom: 23px;
+		}
+		.xy_intro_mucai_third a{
+			width: 70px;
+			font-size: 16px;
+			float: left;
+			color:#333;
+			padding-bottom: 23px;
+		}
+		#xy_intro li{
+			height: 58px;
+			margin-top: 24px;
+			border-left: 1px solid #ddd;
+			float: left;
+			padding-left: 70px;
+    		padding-right: 18px;	
+		}
+		#xy_intro .first_list{
+			border-left: none;
+			padding-right: 18px;
+		}
+		.xy_intro_mucai_first a:hover{
+			color:#b6874f;
+		}
+		.xy_intro_mucai_second a:hover{
+			color:#b6874f;
+		}
+		.xy_intro_mucai_third a:hover{
+			color:#b6874f;
+		}
+		
+		/*分割线*/
+		#line{
+			width: 100%;
+			height: 1px;
+			background:#ddd 
+		}

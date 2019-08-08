@@ -1,0 +1,105 @@
+.TuLan_Part{
+	width: 1190px;
+	margin:0 auto;
+}
+.TuLan_parttxt{
+	overflow: hidden;
+	margin-top: 39px;
+	margin-bottom:15px;
+}
+.TuLan_parttxt>span{
+	font-size: 24px;
+	color:#333;
+	float: left;
+}
+.TuLan_parttxt>div{
+	font-size: 13px;
+	float: right;
+	color: #555;
+}
+.TuLan_parttxt>div a,.TuLan_parttxt>div span{
+	display: inline-block;
+	vertical-align: -13px;
+}
+.TuLan_parttxt>div a{
+	color: #555;
+	padding-left: 20px; 
+}
+.TuLan_parttxt>div a:hover{
+	color:#d70c19;
+}
+
+.TuLan_partcontent{
+
+	font-size: 0;
+
+}
+
+.TL_Part_top div,.TL_Part_bottom div{
+	cursor: pointer;
+	display: inline-block;
+	width: 120px;
+	height: 228px;
+	background-image: url(../images/bg/icon.png);
+	background-repeat: no-repeat;
+	background-position: 0 0; 
+	background-color: #eea118;
+	font-size: 16px;
+	color:white;
+	font-weight: 700;
+	line-height: 301px;
+	text-align: center;
+	vertical-align: top;
+}
+.TL_Part_bottom div{
+	background-color: #73645f;
+}
+.TPT{
+	display: inline-block;
+	width: 1048px;
+	height: 208px;
+	padding-left: 22px;
+	padding-top:20px;
+	border-bottom: 1px solid #eee;
+	background-color: white;
+	vertical-align: top;
+	font-size: 0;
+}
+.TPT li{
+	width: 242px;
+	float: left;
+	margin-right: 20px;
+}
+.TPT li:hover p{
+	color:#d70c19;
+}
+.TPT li img{
+	width: 242px;
+	height: 160px;
+}
+.TPT li p{
+	font-size: 13px;
+	color:#444444;
+	padding-top: 14px;
+	text-align: center;
+}
+.TL_Part_foot{
+	background-color: white;
+	height: 131px;
+}
+.TL_Part_foot li{	
+	padding: 18px 29px;
+	float: left;
+}
+.TL_Part_foot li span{
+	display: block;
+	font-size: 13px;
+	text-align:center;
+	color:#333;
+}
+.TL_Part_foot li a{
+	display: block;
+}
+.TL_Part_foot li a:hover span{
+	color:#d70c19;
+}

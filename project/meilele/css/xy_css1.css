@@ -1,0 +1,46 @@
+*{
+	margin:0;
+	padding:0;
+	font-family: "微软雅黑";
+	list-style: none;
+	text-decoration: none;
+}
+/*第一层 阅木LOGO*/
+#xy_header{
+	height: 96px;
+	width: 1200px;
+	margin:0 auto; 
+	margin-top: 20px;
+}
+ul{
+	display: inline-block;
+}
+#xy_header ul li{
+	font-size: 16px;
+	float: left;
+	padding:0 20px;
+	line-height: 96px;
+	cursor: pointer;			
+}
+#xy_header a{
+	color:black;
+}
+#xy_header img{
+	float: left;
+	padding-bottom: 30px
+}
+#xy_header li:hover{
+	border-bottom: solid 6px #b6874f;	
+}
+#xy_header li:hover a{
+	color:#b6874f;
+}
+.xy_box{
+	width: 100%;
+}
+/* .xy_box img{
+	float: left;
+}
+.xy_box ul{
+	float: right;
+} */

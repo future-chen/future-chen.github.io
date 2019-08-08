@@ -1,0 +1,49 @@
+/*木材小课堂*/
+#xy_last{
+	width: 100%;
+	height: 1051px;
+	background: url(../images/xy_bg3.jpg);
+}
+#xy_last_box{
+	width: 1200px;
+	height: 981px;
+	margin:0 auto;
+	padding-top: 90px;
+}
+#xy_last_title{
+	width: 237px;
+	height:140px;
+	text-align: center;
+	margin:0 auto;
+}
+#xy_last_content{
+	width: 1200px;
+	height: 710px;
+	background: #fff;
+	padding-top: 30px
+}
+#xy_last_content a img{
+	width: 360px;
+	height: 270px;	
+}
+#xy_last_content p{
+	display: block;
+    padding-left: 10px;
+    margin-top: 14px;
+    line-height: 1;
+    font-size: 16px;
+    color: #333;
+    border-left: solid 4px #b6874f;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#xy_last_content a{
+	float: left;
+    width: 360px;
+    margin-left: 30px;
+    margin-bottom: 40px;
+}
+#xy_last_content a p:hover{
+	color:#b6874f;
+}

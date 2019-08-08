@@ -1,0 +1,639 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+#ganBox{
+    background: #ffc1a8;
+    overflow: hidden;
+}
+.ganAdv{
+    width:100%;
+    background: url(../images/gdn1.jpg) no-repeat center top;
+}
+.ganAdv_1,.ganBed_2img,.ganBed_3img{
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0;
+}
+.ganAdv_1 img,.ganBed_2img img{
+    display: block;
+}
+/*  chuang  --------------------*/
+#ganBed{
+    background: #ffc1a8;
+    background:url(../images/gdn2.jpg) no-repeat center top;
+}
+.ganBed_3img img{
+    display: inline-block;
+    vertical-align: middle;
+}
+.ganShiyuan{
+    width: 1104px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#ganlis{
+    width: 1104px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0;
+}
+#ganlis .lis_3 img{
+    display: inline-block;
+    vertical-align: middle;
+}
+/*  限时真5折 --------------------------------*/
+#ganlis_2_1 li{
+    width: 275px;
+	height: 56px;
+	background: #fa9674;
+	line-height: 56px;
+	text-align: center;
+	float:left;
+    margin-left: 1px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    display: block;
+}
+#ganlis_2_1{
+    overflow: hidden;
+	margin-bottom: 10px;
+}
+#ganlis_2_1 .ganlis_2_10{
+    margin-left: 0;
+    background: #f5774e;
+}
+.ganlis_2{
+    width:1105px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+#ganlis_2_2{
+    width: 1105px;
+}
+#ganlis_2_2 li{
+    font-size: 18px;
+    display: none;
+}
+/* 22222 ------------------------*/
+#ganlis_2_2 .ganlis_2_3{
+    display: block;
+}
+.ganlis_2_30{
+    width: 364px;
+    background: white;
+    padding-bottom: 20px;  
+    position: relative; 
+}
+.ganlis_2_30 img{
+    width: 364px;
+}
+.ganlis_2_30 .ganTime{
+    width: 55px;
+    height: 26px;
+    line-height: 26px;
+    font-size: 14px;
+    color: #b0b0b0;
+    text-align: center;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background:rgba(0, 0, 0, .7);
+    border-top-right-radius: 42%;
+    border-bottom-right-radius: 42%;
+}
+.ganlis_2_30 p{
+    color: #8c8c8c;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+}
+.ganMoney{
+    width: 324px;
+    height: 62px;
+    border-radius: 30px;
+    background: #ff8a3f;
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center;
+    line-height: 62px;
+    overflow: hidden;
+    font-size: 0;
+}
+.ganMoney del{
+    font-size: 16px;
+    color: white;
+    position: relative;
+    top: 5px;
+}
+.ganMoney span,.ganMoney del{
+    display: inline-block;
+    vertical-align:bottom;
+}
+.ganMoney span{
+    font-size: 18px;
+    color:white;
+    display: inline-block;
+    vertical-align: bottom;
+}
+.ganMoney .ganMoney_2{
+    font-size: 29px;
+}
+.ganMoney_1{
+    cursor: pointer;
+    width: 84px;
+    height: 62px;
+    background: #003000;
+    float: right;
+    position: relative;
+}
+.ganMoney_10{
+    position: absolute;
+    top: -10px;
+    left: 25%;
+    font-size: 20px;
+}
+.ganMoney_11{
+    position: absolute;
+    top: 10px;
+    left: 25%;
+    font-size: 20px;
+}
+#ganlis_2_2 li{
+    width: 1105px;
+}
+#ganlis_2_2 li nav{
+    display: inline-block;
+    margin: 0 0 5px 0;
+}
+/* 超划算组合 ----------------------------------- */
+#ganMoma_1 li{
+    width: 137px;
+	height: 56px;
+	background: #fa9674;
+	line-height: 56px;
+	text-align: center;
+	float:left;
+    margin-left: 1px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+#ganMoma_1{
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.ganMoma{
+    width: 1105px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#ganMoma_1 .ganMoma_1_1{
+    margin-left: 0;
+    background: #f5774e;
+}
+#ganMoma_2 li{
+    width: 1105px;
+    display: none;
+}
+#ganMoma_2 .ganMoma_2_1{   
+    display: block;
+}
+#ganMoma_2 .ganMomaP1{
+    width: 191px;
+    height: 17px;
+    line-height: 17px;
+    font-size: 16px;
+    color: #5c5c5c;
+}
+.ganMomaP1{
+    white-space: nowrap !important;
+    text-overflow: ellipsis !important;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+#ganMoma_2 nav{
+    overflow: hidden;
+    padding: 5px 5px 0 5px;
+    position: relative;
+    background: white;
+    width: 262px;
+}
+#ganMoma_2 .ganMomaP1{
+    width: 191px;
+    height: 19px;
+}
+#ganMoma_2 .ganMomaP2{
+    font-size: 25px;
+    color: #ed2e2e;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.ganMomaBox{
+    width: 54px;
+    height: 36px;
+    background: #ff9202;
+    float: right;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    position: relative;
+    top: -17px;
+    right:-5px;
+    transition: all .1s
+}
+.ganMomaBox .ganMomaP3{
+    position: absolute;
+    top: 33%;
+    left: 35%;
+    border:solid white;
+    border-width:0 2px 2px 0;
+    padding:6px;
+    transform: rotate(-45deg);
+}
+.ganMomaBox:hover{
+    background:rgb(255, 90, 0);
+    width: 65px;
+}
+#ganMoma_2 nav{
+    display: inline-block;
+}
+.ganWosiimg{
+    font-size: 0;
+}
+#ganWosi,#ganCanting,#ganChuang,#ganXianjia,#ganDengshi,#ganDingbu{
+    width: 1105px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#ganWosiul li, #ganKetingul li,#ganCanting li,#ganChuang li,#ganXianjiaul li{
+    overflow: hidden;
+    padding: 5px 5px 10px 5px;
+    position: relative;
+    background: white;
+    width: 262px;
+    display: inline-block;
+}
+.ganWosip1{
+    width: 191px;
+    height: 17px;
+    line-height: 17px;
+    font-size: 16px;
+    color: #5c5c5c;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+.ganWosip2{
+    font-size: 25px;
+    color: #ed2e2e;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.ganWosip3{
+    width: 191px;
+    height: 9px;
+    line-height: 9px;
+    font-size: 12px;
+    margin-left: 10px;
+    color: #a8a8a8;
+}
+.ganGgdiv{
+    width: 54px;
+    height: 36px;
+    background: #ff9202;
+    float: right;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    position: relative;
+    top: -10px;
+    right:-5px;
+    transition: all .1s
+}
+.ganGgp{
+    position: absolute;
+    top: 33%;
+    left: 35%;
+    border:solid white;
+    border-width:0 2px 2px 0;
+    padding:6px;
+    transform: rotate(-45deg);
+}
+.ganGgdiv:hover{
+    background:rgb(255, 90, 0);
+    width: 65px;
+}
+#ganKeting{
+    width: 1105px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ganKetingimg,.ganCantingimg,.ganChuangimg{
+    font-size: 0;
+}
+.ganXianjiap1{
+    color: #333;
+    font-size: 14px;
+    width: 191px;
+    white-space: nowrap !important;
+    text-overflow: ellipsis !important;
+    overflow: hidden;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.ganXianjiap1:hover{
+    color: red;
+}
+.ganXianjiap2,#ganXianjia .ganXianjiap4 small{
+    color: #999;
+    font-size: 12px;
+    margin-top: 3px;
+    margin-bottom: 2px;
+}
+.ganXianjiap3{
+    margin-bottom: 5px;
+}
+.ganXianjiap3 span:first-child{
+    color: #d20023;
+    font-weight: bold;
+}
+.ganXianjiap3 span:nth-child(2){
+    color: #333;
+    font-size: 12px;
+}
+.ganXianjiap3 span:last-child{
+    font-size: 16px;
+    color: #cf000e;
+}
+#ganXianjia .ganXianjiap4 div{
+    width: 83px;
+    height: 33px;
+    border:solid 1px red;
+    background: red;
+    color:white;
+    text-align: center;
+    line-height: 33px;
+    cursor: pointer;
+}
+#ganXianjiaul li{
+    position: relative;
+}
+#ganXianjia .ganXianjiap4 small{
+    margin-left: 20px;
+}
+#ganXianjia .ganXianjiap4{
+    position: absolute;
+    right: 5px;
+    top: 72%; 
+}
+.ganDengship1{
+    height: 20px;
+    line-height: 20px;
+    font-size: 16px;
+    color: #5c5c5c;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 15px;
+}
+#ganDengshi li{
+    overflow: hidden;
+    position: relative;
+    background: white;
+    width: 262px;
+    padding: 0 0 45px 0;
+    border:solid 3px #ffc1a8;
+    display: inline-block;
+}
+#ganDengshi li:hover{
+    border:solid 3px red;
+}
+.ganDengship2{
+    font-size: 19px;
+    color: #252525;
+    margin-left: 15px;
+}
+.ganDengship2 span{
+    font-weight: bold;
+    font-size: 20px;
+    color: #ed2e2e;
+}
+.ganDengship3{
+    width: 77px;
+    height: 77px;
+    border-radius: 50%;
+    background: #f7ac46;
+    color:white;
+    text-align: center;
+    line-height: 20px;
+    font-size: 18px;
+    position: absolute;
+    right: 10px;
+    top: 68%;
+    cursor: pointer;
+}
+.ganDengship3:hover{
+    background: #d20023;
+}
+.ganDengship3 p{
+    position: relative;
+    top: 17px;
+}
+#ganChoujiang{
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0;
+    overflow: hidden;
+    position: relative;
+}
+#ganChoujiang>div{
+    display: inline-block;
+}
+.ganChoujiang_101{
+    width: 601px;
+    height: 601px;
+    position: absolute;
+    background: url(../images/ganCJ1.png) no-repeat center top;
+    left: 17px;
+    top: 75px;
+}
+.ganChoujiang_102{
+    width: 511px;
+    height: 512px;
+    position: absolute;
+    background: url(../images/ganCJ3.png) no-repeat center top;
+    left: 60px;
+    top: 120px;
+    animation-name:xuanzhuan;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.ganChoujiang_103{
+    width: 200px;
+    height: 199px;
+    position: absolute;
+    background: url(../images/ganCJ2.png) no-repeat center top;
+    left: 220px;
+    top: 280px;
+    cursor: pointer;
+}
+/* 11111111111111111 */
+.ganChoujiang_1{
+    width: 580px;
+    height: 671px;
+    background: url(../images/ganCJ5.jpg) no-repeat center top;
+    position: relative;
+}
+@keyframes xuanzhuan{
+    from{
+        /* 设置旋转 */
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.ganChoujiang_1 img:first-child{
+    position: absolute;
+    left: 3%;
+    top: 80px;
+    z-index: 1;
+}
+.ganChoujiang_2{
+    width: 500px;
+    height: 671px;
+    background: url(../images/ganCJ4.jpg) no-repeat center top;
+}
+.ganChoujiang_3{
+    margin-left: -10px;
+}
+.ganChoujiang_1 img:nth-child(2){
+    position: absolute;
+    left: 11%;
+    top: 126px;
+    z-index: 2;
+}
+.ganChoujiang_1 img:last-child{
+    position: absolute;
+    left: 38%;
+    top: 280px;
+    z-index: 3;
+}
+#ganChoujiangulbox{
+    width: 299px;
+    height: 273px;
+    overflow: hidden;
+    position: absolute;
+    right: 140px;
+    top: 40%;
+}
+.ganChoujiang_2 ul li{
+    width: 299px;
+    height: 39px;
+    border-bottom: 1px solid #dedede;
+}
+.ganChoujiang_2 ul li p{
+    width: 250px;
+    height: 39px;
+    font-size: 16px;
+    color: #999;
+    line-height: 39px;
+    margin-left: 25px;
+    overflow: hidden;
+    white-space: nowrap !important;
+    text-overflow: ellipsis !important;
+}
+.ganChoujiang_2 .ganChoujiang_2span{
+    position: absolute;
+    width: 173px;
+    height: 20px;
+    line-height: 20px;
+    right: 175px;
+    bottom: 145px;
+    color: #fff2ab;
+    font-size: 20px;
+}
+#ganDingbu{
+    position: relative;
+}
+#ganDingbu img{
+   position: absolute;
+   right: 22px;
+   bottom: 0px;
+   cursor: pointer;
+}
+#ganHuodongmain{
+   width: 100%;
+   background: white;
+   padding: 10px 0 50px 0;
+}
+#ganHuodong{
+    width: 980px;
+    background: #eee;
+    margin: 0 auto;
+    padding: 10px 15px 10px 10px;
+    margin-top: 20px;
+}
+#ganHuodong p{
+    color: #535353;
+    font-size: 14px;
+}
+.ganHuodongul{
+    width: 980px;
+}
+.ganHuodongul li{
+    padding: 5px;
+    border:solid 1px #999;
+    display: inline-block;
+    margin: 8px;
+    cursor: pointer;
+}
+#ganLC{
+    width: 105px;
+    position: fixed;
+    top: 200px;
+    left: 50%;
+    margin-left: -780px;
+    background: #ff8459;
+    overflow: hidden;
+    border-top-right-radius: 70px;
+    border-top-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    border-bottom-left-radius: 70px;
+    display: none;
+}
+#ganLC li{
+    text-align: center;
+    height: 36px;
+    line-height: 36px;
+    color: white;
+    font-size: 15px;
+    border-bottom: solid 1px white;
+    cursor: pointer;
+}
+#ganLC li:hover{
+    color: rgb(225, 132, 89);
+    background: rgb(225, 229, 203);
+}
+#ganLC li:first-child{
+    margin-top: 10px;
+}
+#ganLC li:last-child{
+    border-bottom:none;
+    position: relative;
+}
+#ganLC li:last-child i{
+    position: absolute;
+    border:solid white;
+    border-width:0 1px 1px 0;
+    padding:3px;
+    left: 47%;
+    top: 20%;
+    transform: rotate(-135deg);
+}

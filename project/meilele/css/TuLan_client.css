@@ -1,0 +1,72 @@
+.TuLan_Client{
+	width: 1190px;
+	margin:0 auto;
+	margin-bottom:80px;
+}
+.TuLan_clienttxt{
+	overflow: hidden;
+	margin-top: 39px;
+	margin-bottom:15px;
+}
+.TuLan_clienttxt>span{
+	font-size: 24px;
+	color:#333;
+	float: left;
+}
+.TuLan_clienttxt>div{
+	font-size: 13px;
+	float: right;
+	color: #555;
+}
+.TuLan_clienttxt>div a,.TuLan_clienttxt>div span{
+	display: inline-block;
+	vertical-align: -13px;
+}
+.TuLan_clienttxt>div a{
+	color: #555;
+	padding-left: 20px; 
+}
+.TuLan_clienttxt>div a:hover{
+	color:#d70c19;
+}
+.TuLan_clientcontent{
+	font-size: 0;
+}
+.TLC_left{
+	display: inline-block;
+	width: 585px;
+	height: 212px;
+}
+.TLC_left div{
+	display: inline-block;
+	width: 215px;
+	height: 162px;
+	padding: 25px;
+	background-color: white; 
+	vertical-align: top;
+}
+.TLC_left h3{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-size: 20px;
+	font-weight: normal;
+	margin-bottom: 10px;
+	color: #444;
+}
+.TLC_right{
+	margin-left:20px;
+}
+.TLC_left p{
+	font-size: 13px;
+	color: #888;
+}
+.TLC_left div a{
+	display: block;
+	font-size: 13px;
+	color:#555;
+	margin-top: 66px;
+}
+.TLC_left div a:hover{
+	color:#d70c19;
+}

@@ -1,0 +1,145 @@
+
+
+
+/* 页脚 */
+.icon-bg {
+    width: 50px;
+    height: 50px;
+    background: url(../images/WJH_site1.png) no-repeat;
+    margin: 0 auto;
+}
+
+.i1 {
+    background-position: 0 0;
+}
+
+.i2 {
+    background-position: 0 -50px;
+}
+
+.i3 {
+    background-position: 0 -100px;
+}
+
+.i4 {
+    background-position: 0 -150px;
+}
+
+.i5 {
+    background-position: 0 -200px;
+}
+
+.i6 {
+    background-position: 0 -250px;
+}
+
+.i7 {
+    background-position: 0 -300px;
+}
+
+.i8 {
+    background-position: 0 -350px;
+}
+
+.icon-map {
+    display: inline-block;
+    width: 148px;
+    margin-top: 40px;
+}
+
+
+
+
+
+.WJH_bot_icon {
+    width: 1190px;
+    margin: 0px auto;
+    height: 150px;
+
+}
+
+.footer-icon {
+    width: 100%;
+    background: #f8f8f8;
+    line-height: 150px;
+
+}
+
+.icon-title {
+    margin: 0 auto;
+    text-align: center;
+    color: #333;
+    line-height: 30px;
+}
+
+.link-container {
+    width: 100%;
+    height: 100px;
+    background: #000000;
+    color: #777;
+    font-size: 13px;
+}
+
+.clearfix {
+    width: 1250px;
+    margin: 0 auto;
+}
+
+.fl {
+    float: left;
+    margin-top: 25px;
+}
+
+.fr {
+    float: right;
+    margin-top: 20px;
+
+}
+
+.c1 {
+    display: block;
+    width: 27px;
+    height: 22px;
+    background: url(../images/WJH_credit.png) no-repeat 0 0;
+}
+
+.c4 {
+    display: block;
+    width: 32px;
+    height: 26px;
+    background: url(../images/WJH_credit.png) no-repeat 0 -69px
+}
+
+.c2 {
+    display: block;
+    width: 27px;
+    height: 21px;
+    background: url(../images/WJH_credit.png) no-repeat 0 -47px;
+}
+
+.c3 {
+    display: block;
+    width: 27px;
+    height: 25px;
+    background: url(../images/WJH_credit.png) no-repeat 0 -22px;
+}
+
+.credit i {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.credit span {
+    display: inline-block;
+    width: 60px;
+    vertical-align: middle;
+
+}
+
+.credit span {
+    display: inline-block;
+    width: 60px;
+}
+a{
+    color: #9999;
+}

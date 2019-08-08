@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>图览家居</title>
+	<script src="js/jquery-1.8.3.js"></script>
+	<link rel="stylesheet" href="css/TuLan_banner.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/TuLan_hotPic.css">
+	<link rel="stylesheet" href="css/TuLan_style.css">
+	<link rel="stylesheet" href="css/TuLan_part.css">
+	<link rel="stylesheet" href="css/TuLan_client.css">
+	<link rel="stylesheet" href="css/Index_foot.css">
+	<link rel="stylesheet" href="css/Index_header.css">
+</head>
+<body>
+	<div id="WJH_header">
+			<!-- 总栏 -->
+			<div class="WJH_menu">
+	
+				<div class="WJH_area">
+					<!-- 地区栏 -->
+					<ul class="WJH_nav_left">
+						<li class="WJH_change">
+							<i class="i_coord"></i>
+							<span class="WJH_city">全国站</span>
+							<div class="WJH_changeCity">
+								[切换]
+								<ul id="WJH_cityBox">
+									<span class="WJH_arrowBg"></span>
+									<p></p>
+									<ul class="WJH_cityTitle">
+										<li>全国</li>
+										<li>北京</li>
+										<li>上海</li>
+										<li>广州</li>
+										<li>深圳</li>
+										<li>成都</li>
+										<li>西安</li>
+										<li>天津</li>
+										<li>武汉</li>
+										<li>重庆</li>
+										<li>南京</li>
+									</ul>
+									<div class="WJH_search">
+										<input type="text" placeholder="输入城市名"><button>搜索</button>
+									</div>
+									<!-- 首字母 -->
+									<ul id="WJH_firWord">
+	
+									</ul>
+									<!-- 城市列表 -->
+									<div id="WJH_cityliebiao">
+	
+									</div>
+								</ul>
+							</div>
+	
+						</li>
+						<li class="WJH_login">
+							<a href="cdyLogin.html">请登录</a>
+						</li>
+						<li class="WJH_regist">
+							<a href="cdySign.html">免费注册</a>
+						</li>
+					</ul>
+					<!-- 我的美乐乐栏 -->
+					<ul class="WJH_nav_right">
+						<li class="WJH_mymeilele">
+							<a href="">我的美乐乐</a>
+							<div class="WJH_mymeilele_box">
+								<a href="">我的订单</a>
+								<a href="">我的金币</a>
+								<a href="">我的红包</a>
+								<a href="">我的收藏</a>
+								<a href="">我要评价</a>
+								<a href="">申请保价</a>
+							</div>
+							<i class="drop_arrow"></i>
+						</li>
+						<li class="WJH_good">
+							<i class="WJH_cart"></i>
+							<a href="hopping.html">购物车</a><span class="WJH_goodsCount">0</span>
+							<div class="shopCar_line"></div>
+							<div id="shopCar">
+								暂时没有商品
+							</div>
+							<i class="drop_arrow"></i>
+						</li>
+						<li class="WJH_guanzhu">
+							<i class="WJH_guanzhuicon"></i>
+							<a href="">关注美乐乐</a>
+							<i class="drop_arrow"></i>
+						</li>
+						<li class="WJH_helpcenter">
+							<a href="">帮助中心</a>
+							<i class="drop_arrow"></i>
+						</li>
+						<li class="WJH_collet">
+							<a href="">收藏本站</a>
+						</li>
+						<li>
+							<span class="WJH_help">全国帮助中心&nbsp;:</span><span class="WJH_tel">&nbsp;4000000000</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- 页面导航栏 -->
+			<div class="WJH_header_nav">
+				<a href="lqc.html">
+					<img src="images\WJH_logo2.png" alt="">
+				</a>
+				<a href="">
+					<img src="images\WJH_618.gif" alt="">
+				</a>
+				<div class="WJH_header_nav_search">
+					<input type="text" placeholder="超值半价抢"><button>搜索</button>
+					<div class="WJH_active">
+						<a href="">10元抢半价</a>
+						<a href="">床</a>
+						<a href="">沙发</a>
+						<a href="">餐桌椅</a>
+						<a href="">实木床</a>
+						<a href="">床垫大促</a>
+						<a href="">转角沙发</a>
+						<a href="">灯饰</a>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+	<!-- 轮播图 -->
+	<div class="LLB_Banner">
+		<ul class="LLB_list">
+			<li style="background: rgb(133,136,141);"><img src="images/banner/banner01.jpg" alt=""></li>
+			<li style="background: rgb(183,180,171)"><img src="images/banner/banner02.jpg" alt=""></li>
+			<li style="background: rgb(219,212,181);"><img src="images/banner/banner03.jpg" alt=""></li>
+
+
+		</ul>
+		<div id="LLB_btn">
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>	
+	</div>
+
+	<div class="Lbanner_Lnav">
+		<ul class="Lbanner_navlist">
+			<li>
+				<div class="Lb_nav_left">
+					<p class="chstyle">风格</p>
+					<p class="enstyle">STYLE</p>
+				</div>
+				<div class="Lb_nav_right">
+					<a href="meilele-pic.html">现代</a>
+					<a href="meilele-pic.html">欧式</a>
+					<a href="meilele-pic.html">美式</a>
+					<a href="meilele-pic.html">地中海</a>
+					<a href="meilele-pic.html">中式</a>
+					<a href="meilele-pic.html">韩式</a>
+					<a href="meilele-pic.html">法式</a>
+					<a href="meilele-pic.html">新古典</a>
+				</div>
+			</li>
+			<li>
+				<div class="Lb_nav_left">
+					<p class="chstyle">空间</p>
+					<p class="enstyle">HOME</p>
+				</div>
+				<div class="Lb_nav_right">
+					<a href="meilele-pic.html">客厅</a>
+					<a href="meilele-pic.html">卧室</a>
+					<a href="meilele-pic.html">餐厅</a>
+					<a href="meilele-pic.html">书房</a>
+					<a href="meilele-pic.html">儿童房</a>
+					<a href="meilele-pic.html">卫浴</a>
+				</div>
+			</li>
+			<li>
+				<div class="Lb_nav_left">
+					<p class="chstyle">局部</p>
+					<p class="enstyle">LAYOUT</p>
+				</div>
+				<div class="Lb_nav_right">
+					<a href="meilele-pic.html">床&nbsp</a>
+					<a href="meilele-pic.html">沙发</a>
+					<a href="meilele-pic.html">餐桌</a>
+					<a href="meilele-pic.html">书桌</a>
+					<a href="meilele-pic.html">衣柜</a>
+					<a href="meilele-pic.html">电视柜</a>
+					<a href="meilele-pic.html">茶几</a>
+				</div>
+			</li>
+			<li>
+				<div class="Lb_nav_left">
+					<p class="chstyle">热门</p>
+					<p class="enstyle">HOT</p>
+				</div>
+				<div class="Lb_nav_lright">
+					<a href="meilele-pic.html">欧式床</a>
+					<a href="meilele-pic.html">现代沙发</a>
+					<a href="meilele-pic.html">美式餐桌</a>
+					<a href="meilele-pic.html">地中海沙发</a>
+					<a href="meilele-pic.html">现代床</a>
+				</div>
+			</li>
+		</ul>
+	</div>
+	
+	<div class="TuLan_Hot">
+		<div class="TuLan_hottxt">
+			<span>热图精选</span>
+			<div>
+				<span>热门搜索:</span>
+				<a href="#">美式沙发</a>
+				<a href="#">现代沙发</a>
+				<a href="#">欧式床</a>
+				<a href="#">美式餐桌</a>
+				<a href="#">现代床</a>
+			</div>
+		</div>
+		<div class="TuLan_hotContent">
+			<div class="TuLan_HC_Left">
+				<div class="THL01">
+					<a href="Seedetails.html"></a>
+					<img src="images/hotPic/hotPic01.jpg" alt="">
+					<p>优质橡胶木&nbsp布艺沙发</p>
+					<div class="HC_cover">
+						<p>优质橡胶木&nbsp布艺沙发</p>
+						<div class="HC_bom">
+							<span>热销:&nbsp0&nbsp&nbsp&nbsp&nbsp|</span>
+							<span>&nbsp&nbsp&nbsp收藏:0</span>
+						</div>					
+					</div>
+				</div>
+				<div class="THL02">
+					<a href="Seedetails.html"></a>
+					<img src="images/hotPic/hotPic02.jpg" alt="">
+					<p>造型典雅&nbsp中式气息</p>
+					<div class="HC_cover">
+						<p>造型典雅&nbsp中式气息</p>
+						<div class="HC_bom">
+							<span>热销:&nbsp0&nbsp&nbsp&nbsp&nbsp|</span>
+							<span>&nbsp&nbsp&nbsp收藏:0</span>
+						</div>					
+					</div>
+				</div>
+				<div class="THL03">
+					<a href="Seedetails.html"></a>
+					<img src="images/hotPic/hotPic03.jpg" alt="">
+					<p>北欧风格&nbsp自然主义</p>
+					<div class="HC_cover_bom">
+						<p>北欧风格&nbsp自然主义</p>
+						<div class="HC_bom">
+							<span>热销:&nbsp0&nbsp&nbsp&nbsp&nbsp|</span>
+							<span>&nbsp&nbsp&nbsp收藏:0</span>
+						</div>					
+					</div>
+				</div>
+				<div class="THL04">
+					<a href="Seedetails.html"></a>
+					<img src="images/hotPic/hotPic04.jpg" alt="">
+					<p>手工雕刻&nbsp头层黄牛皮</p>
+					<div class="HC_cover_bom">
+						<p>手工雕刻&nbsp头层黄牛皮</p>
+						<div class="HC_bom">
+							<span>热销:&nbsp0&nbsp&nbsp&nbsp&nbsp|</span>
+							<span>&nbsp&nbsp&nbsp收藏:0</span>
+						</div>					
+					</div>
+				</div>
+				<div class="THL05">
+					<a href="Seedetails.html"></a>
+					<img src="images/hotPic/hotPic05.jpg" alt="">
+					<p>铜钉工艺&nbsp撞色真皮杀</p>
+					<div class="HC_cover_bom">
+						<p>铜钉工艺&nbsp撞色真皮杀</p>
+						<div class="HC_bom">
+							<span>热销:&nbsp0&nbsp&nbsp&nbsp&nbsp|</span>
+							<span>&nbsp&nbsp&nbsp收藏:0</span>
+						</div>					
+					</div>
+				</div>
+				<div class="THL06">
+					<a href="Seedetails.html"></a>
+					<img src="images/hotPic/hotPic06.jpg" alt="">
+					<p>优质北欧松&nbsp1.2米...</p>
+					<div class="HC_cover_bom">
+						<p>优质北欧松&nbsp1.2米...</p>
+						<div class="HC_bom">
+							<span>热销:&nbsp0&nbsp&nbsp&nbsp&nbsp|</span>
+							<span>&nbsp&nbsp&nbsp收藏:0</span>
+						</div>					
+					</div>
+				</div>
+			</div>
+
+			<div class="TuLan_HC_right">
+				<h2>本周热门排行</h2>
+				<ul class="rank_list">
+					<li>
+						<a href="#"><img src="images/rankPic/rankPic01.jpg" alt=""></a>
+						<div>
+							<div class="Lb_view"></div>
+							<a href="#">舒适黄牛真皮沙发...</a>
+							<p>38</p>
+							<span>8张</span>
+						</div>
+					</li>
+					<li>
+						<a href="#"><img src="images/rankPic/rankPic02.jpg" alt=""></a>
+						<div>
+							<div class="Lb_view"></div>
+							<a href="#">人气爆款栅栏式简约...</a>
+							<p>40</p>
+							<span>4张</span>
+						</div>
+					</li>
+					<li>
+						<a href="#"><img src="images/rankPic/rankPic03.jpg" alt=""></a>
+						<div>
+							<div class="Lb_view"></div>
+							<a href="#">名流之选 巴西进口...</a>
+							<p>38</p>
+							<span>5张</span>
+						</div>
+					</li>
+					<li>
+						<a href="#"><img src="images/rankPic/rankPic04.jpg" alt=""></a>
+						<div>
+							<div class="Lb_view"></div>
+							<a href="#">典藏珍品 优质橡胶...</a>
+							<p>38</p>
+							<span>11张</span>
+						</div>
+					</li>
+					<li>
+						<a href="#"><img src="images/rankPic/rankPic05.jpg" alt=""></a>
+						<div>
+							<div class="Lb_view"></div>
+							<a href="#">人气爆款 可拆背包...</a>
+							<p>34</p>
+							<span>4张</span>
+						</div>
+					</li>
+					<li>
+						<a href="#"><img src="images/rankPic/rankPic06.jpg" alt=""></a>
+						<div>
+							<div class="Lb_view"></div>
+							<a href="#">沙发有型可调可靠...</a>
+							<p>29</p>
+							<span>12张</span>
+						</div>
+					</li>
+					<li>
+						<a href="#"><img src="images/rankPic/rankPic07.jpg" alt=""></a>
+						<div>
+							<div class="Lb_view"></div>
+							<a href="#">畅销款 高档水牛头...</a>
+							<p>29</p>
+							<span>10张</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<div class="TuLan_Style">
+		<div class="TuLan_styletxt">
+			<span>风格搭配</span>
+			<div>
+				<a href="#">地中海沙发</a>
+				<a href="#">现代床</a>
+				<a href="#">美式餐桌</a>
+				<a href="#">欧式床</a>		
+			</div>
+		</div>
+		<div class="TuLan_styleContent">
+			<div class="TuLan_SC_Left">
+				<div class="TSL01">
+					<a href="Seedetails.html"></a>
+					<img src="images/stylePic/stylePic01.jpg" alt="">
+					<p>高档典雅 复古大气</p>
+					<div class="HS_cover">
+						<p>高档典雅 复古大气</p>
+						<div class="HS_bom">
+							<span>热销:&nbsp0&nbsp&nbsp&nbsp&nbsp|</span>
+							<span>&nbsp&nbsp&nbsp收藏:0</span>
+						</div>					
+					</div>
+				</div>				
+			</div>
+			<div class="TuLan_SC_right">
+				<div class="TSL02">
+					<a href="Seedetails.html"></a>
+					<img src="images/stylePic/stylePic02.jpg" alt="">
+					<p>王者之巅 头层黄牛真...</p>
+					<div class="HS_cover_bom">
+						<p>王者之巅 头层黄牛真...</p>
+						<div class="HS_bom">
+							<span>热销:&nbsp0&nbsp&nbsp&nbsp&nbsp|</span>
+							<span>&nbsp&nbsp&nbsp收藏:0</span>
+						</div>					
+					</div>
+				</div>
+				<div class="TSL02">
+					<a href="Seedetails.html"></a>
+					<img src="images/stylePic/stylePic03.jpg" alt="">
+					<p>美式轻奢 桃花芯木</p>
+					<div class="HS_cover_bom">
+						<p>美式轻奢 桃花芯木</p>
+						<div class="HS_bom">
+							<span>热销:&nbsp0&nbsp&nbsp&nbsp&nbsp|</span>
+							<span>&nbsp&nbsp&nbsp收藏:0</span>
+						</div>					
+					</div>
+				</div>		
+				<div class="TSL04">
+					<a href="Seedetails.html"></a>
+					<img src="images/stylePic/stylePic04.jpg" alt="">
+					<p>进口金丝檀木 简约时...</p>
+					<div class="HS_cover_bom">
+						<p>进口金丝檀木 简约时...</p>
+						<div class="HS_bom">
+							<span>热销:&nbsp0&nbsp&nbsp&nbsp&nbsp|</span>
+							<span>&nbsp&nbsp&nbsp收藏:0</span>
+						</div>					
+					</div>
+				</div>
+				<div class="TSL04">
+					<a href="Seedetails.html"></a>
+					<img src="images/stylePic/stylePic05.jpg" alt="">
+					<p>优雅别致雕花描香槟金</p>
+					<div class="HS_cover_bom">
+						<p>优雅别致雕花描香槟金</p>
+						<div class="HS_bom">
+							<span>热销:&nbsp0&nbsp&nbsp&nbsp&nbsp|</span>
+							<span>&nbsp&nbsp&nbsp收藏:0</span>
+						</div>					
+					</div>
+				</div>
+				<div class="TSL04">
+					<a href="Seedetails.html"></a>
+					<img src="images/stylePic/stylePic06.jpg" alt="">
+					<p>典雅精致 实用书桌</p>
+					<div class="HS_cover_bom">
+						<p>典雅精致 实用书桌</p>
+						<div class="HS_bom">
+							<span>热销:&nbsp0&nbsp&nbsp&nbsp&nbsp|</span>
+							<span>&nbsp&nbsp&nbsp收藏:0</span>
+						</div>					
+					</div>
+				</div>		
+				
+			</div>
+		</div>
+	</div>
+	
+	<div class="TuLan_Part">
+		<div class="TuLan_parttxt">
+			<span>局部之美</span>
+			<div>
+				<a href="#">床</a>
+				<a href="#">沙发</a>
+				<a href="#">餐桌</a>
+				<a href="#">书桌</a>		
+				<a href="#">电视柜</a>		
+				<a href="#">茶几</a>		
+				<a href="#">儿童床</a>		
+			</div>
+		</div>
+		<div class="TuLan_partcontent">
+			<div class="TL_Part_top">
+				<div>客厅</div>
+				<ul class="TPT">
+					<li>
+						<a href="#">
+							<img src="images/partPic/partPic12.jpg" alt="">
+							<p>高档头层牛皮沙发 高密度海绵座垫沙发...</p>
+						</a>					
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/partPic/partPic11.jpg" alt="">
+							<p>臻品雅致 上等实木雕花配以描金勾勒 ...</p>
+						</a>					
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/partPic/partPic10.jpg" alt="">
+							<p>典雅舒适 进口橡胶木 高弹海绵 人性...</p>
+						</a>					
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/partPic/partPic09.jpg" alt="">
+							<p>上等白杨实木框架 储物收纳L型沙发 ...</p>
+						</a>					
+					</li>
+				</ul>
+			</div>
+			<div class="TL_Part_bottom">
+				<div>卧室</div>
+				<ul class="TPT">
+					<li>
+						<a href="#">
+							<img src="images/partPic/partPic16.jpg" alt="">
+							<p>独享尊贵 1.8米黄牛珠光真皮软包床...</p>
+						</a>					
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/partPic/partPic15.jpg" alt="">
+							<p>全实木手工雕刻 香槟金 进口头层黄牛...</p>
+						</a>					
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/partPic/partPic14.jpg" alt="">
+							<p>进口金丝檀木 能工巧匠 简约时尚  ...</p>
+						</a>					
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/partPic/partPic13.jpg" alt="">
+							<p> 人气爆款   1.8米床  象牙白...</p>
+						</a>					
+					</li>
+				</ul>
+			</div>
+			<div class="TL_Part_foot">
+				<ul>
+					<li><a href="#"><img src="images/partPic/partPic01.jpg" alt=""><span>床</span></a>
+					</li>
+					<li><a href="#"><img src="images/partPic/partPic02.jpg" alt=""><span>沙发</span></a></li>
+					<li><a href="#"><img src="images/partPic/partPic03.jpg" alt=""><span>餐桌</span></a></li>
+					<li><a href="#"><img src="images/partPic/partPic04.jpg" alt=""><span>电视柜</span></a></li>
+					<li><a href="#"><img src="images/partPic/partPic05.jpg" alt=""><span>茶几</span></a></li>
+					<li><a href="#"><img src="images/partPic/partPic06.jpg" alt=""><span>酒柜</span></a></li>
+					<li><a href="#"><img src="images/partPic/partPic07.jpg" alt=""><span>衣柜</span></a></li>
+					<li><a href="#"><img src="images/partPic/partPic08.jpg" alt=""><span>儿童床</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="TuLan_Client">
+		<div class="TuLan_clienttxt">
+			<span>客户秀家</span>
+			<div>
+				<a href="#">更多></a>	
+			</div>
+		</div>
+		<div class="TuLan_clientcontent">
+			<div class="TLC_left">
+				<a href="#"><img src="images/clientPic/clientPic01.jpg" alt=""></a>
+				<div>
+					<h3>品质之选 德国进口高弹海绵 轻奢手工玫瑰雕花工艺左贵妃沙发</h3>
+					<p>沙发很不错，无论是样式做工还是坐感都很满意，家里是朝阳的离锦州近过去买的，很满意。</p>
+					<a href="#">查看详情></a>
+				</div>
+			</div>
+			<div class="TLC_left TLC_right">
+				<a href="#"><img src="images/clientPic/clientPic02.jpg" alt=""></a>
+				<div>
+					<h3>精致雕花扶手餐椅 高档桃花芯实木餐椅 头层黄牛皮真皮餐椅 </h3>
+					<p>一整套都在美乐乐购买的，客餐厅卧室书房，质量很不错。实物颜色要更浅一点</p>
+					<a href="#">查看详情></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="WJH_footer">
+			<div class="footer-icon">
+				<div class="WJH_bot_icon">
+					<a href="" target="_blank" class="icon-map">
+						<p class="icon-bg i1"></p>
+						<p class="icon-title">美乐乐O2O</p>
+					</a><a href="" target="_blank" class="icon-map">
+						<p class="icon-bg i2"></p>
+						<p class="icon-title">全国体验馆</p>
+					</a><a href="" target="_blank" class="icon-map">
+						<p class="icon-bg i3"></p>
+						<p class="icon-title">双重质检</p>
+					</a><a href="" target="_blank" class="icon-map">
+						<p class="icon-bg i4"></p>
+						<p class="icon-title">售后无忧</p>
+					</a><a href="" target="_blank" class="icon-map">
+						<p class="icon-bg i5"></p>
+						<p class="icon-title">原创设计</p>
+					</a><a href="" target="_blank" class="icon-map">
+						<p class="icon-bg i6"></p>
+						<p class="icon-title">全球采购</p>
+					</a><a href="" target="_blank" class="icon-map">
+						<p class="icon-bg i7"></p>
+						<p class="icon-title">万千口碑</p>
+					</a><a href="" target="_blank" class="icon-map">
+						<p class="icon-bg i8"></p>
+						<p class="icon-title">团队优势</p>
+					</a>
+				</div>
+			</div>
+	</div>
+	<div class="footer-copy">
+		<div class="link-container">
+
+			<div class="copy-index clearfix" style="padding-top:0">
+				<div class="fl">
+					<p>
+						<a href="" target="_blank">装修网</a> | <a href="" target="_blank">装修效果图</a> | <a href=""
+							target="_blank">家居资讯</a> |<a href="/list/" target="_blank">家具图片</a> | <a href=""
+							target="_blank">家居资讯</a> | <a href="" target="_blank">生活百科</a> | <a href=""
+							target="_blank">家私导购</a> | <a href="" target="_blank">品牌展厅</a> | <a href=""
+							target="_blank">装修论坛</a> | <a href="" target="_blank" title="客服中心">客服中心</a> | <a href=""
+							target="_blank">网站地图</a> | <a href="" target="_blank">友情链接</a> | <a href=""
+							target="_blank">更多</a>
+					</p>
+					<p>
+						<span class="yen">© 2005-2018 </span><span id="JS_footer_copyright">美乐乐</span> 天津美维信息技术有限公司
+						版权所有，并保留所有权利。<a href="" target="_blank" class="gray">ICP备案证书号：粤ICP备08008334号</a>
+					</p>
+				</div>
+				<div class="fr credit">
+					<a href="" target="_blank"><i class="c1"></i><span class="spec">诚信网站</span></a>
+					<a target="_blank" href=""><i class="c4"></i><span>认证联盟品牌官网</span></a>
+					<a target="_blank" href=""><i class="c2"></i><span>可信网站信用评价</span></a>
+					<i class="c3"></i><span>经营网站备案信息</span>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</body>
+<script src="js/area.js"></script>
+<script src="js/Index_header.js"></script>
+<script src="js/TLJJ_Banner.js"></script>
+<script src="js/TLJJ_hotPic.js"></script>
+</html>
