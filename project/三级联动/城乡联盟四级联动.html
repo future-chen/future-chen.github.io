@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	*{
+		margin:0;
+		padding: 0; 
+	}
+	#markview{
+		width: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		background:rgba(50,50,50,0.4);
+		display: none;
+	}
+	#view{
+		padding: 50px;
+		width: 800px;
+		margin:200px auto;
+		font-size: 15px;
+		background: white;
+		border-radius:10px;
+		position: relative; 
+	}#view h2{
+		color: blue;
+		float: left;
+		width: 100px;
+		height: 100px;
+	}
+	#pro h2{
+		height: 120px;
+	}
+	#view span{
+		display: inline-block;
+		margin: 5px;
+		cursor: pointer;
+	}
+	#view p{
+		display: inline-block;
+		width: 700px;
+	}
+	#pro{
+		overflow: hidden;
+	}
+	#city,#place,#btn{
+		display: none;
+		overflow: hidden;
+	}
+	#btn{
+		width: 200px;
+		height: 50px;
+		background: red;
+		color: white;
+		font-size: 20px;
+		margin-left:38%;
+		outline:0;
+		cursor: pointer;
+	}
+</style>
+</head>
+<body>
+	<h2 id="change">change</h2>
+	<div id="markview">
+		<div id="view">
+			<div id="pro"><h2>country</h2><p></p></div>
+			<div id="city"><h2>city</h2><p></p></div>
+			<div id="place"><h2>place</h2><p></p></div>
+			<button id="btn">change</button>
+		</div>
+	</div>
+</body>
+<script src="area.js"></script>
+<script>
+	var pro_box=pro.children[1];
+	var city_box=city.children[1]
+	var place_box=place.children[1];
+
+	var pro_value;
+	var city_value;
+	var place_value;
+	//遮罩层出现
+	change.onclick=function(){
+			markview.style.display="block"
+		}
+	//插入省份
+	for(var x in area){
+		var node=document.createElement("span");
+		node.innerHTML=x;
+		pro_box.appendChild(node);
+	}
+	pro_box.onclick=function(e){
+		
+		if(e.target.nodeName=="SPAN"){
+			for(var i=0;i<pro_box.children.length;i++){
+				this.children[i].style.color="black";
+			}			
+			e.target.style.color="red"
+			//记录点击的省份
+			pro_value=e.target.innerHTML;
+			//点击省份时市区开始出现
+			city.style.display="block";
+			city_box.innerHTML="";
+			for(var x in area[e.target.innerHTML][0]){
+				var node=document.createElement("span");
+				node.innerHTML=x;
+				city_box.appendChild(node)
+			}
+		}
+	}
+city_box.onclick=function(e){
+	if(e.target.nodeName=="SPAN"){
+		for(var i=0;i<this.children.length;i++){
+			this.children[i].style.color="black";
+		}
+		e.target.style.color="red"
+		city_value=e.target.innerHTML;
+		place.style.display="block";
+		place_box.innerHTML="";
+		for(var i=0;i<area[pro_value][0][city_value].length;i++){
+			for(var x in area[pro_value][0][city_value][i]){
+				var node=document.createElement("span");
+				node.innerHTML=x;
+				place_box.appendChild(node)
+			}
+		}
+	}
+}
+place_box.onclick=function(e){
+	if(e.target.nodeName=="SPAN"){
+		for(var i=0;i<this.children.length;i++){
+			this.children[i].style.color="black"
+		}
+		e.target.style.color="red";
+		place_value=e.target.innerHTML;
+		btn.style.display="block"
+	}
+}
+btn.onclick=function(){
+	alert("选中的是"+pro_value+city_value+place_value)
+}
+</script>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	*{
+		margin: 0;
+		padding: 0;
+		font-family: "微软雅黑";
+	}
+	#view{
+		width: 1225px;
+		margin: 0 auto;
+		border: 2px solid pink;
+		position: relative;
+		background: #dedede
+	}
+	#view div{
+		width: 236px;
+		margin: 5px;
+		position: absolute;
+		background: #ffffff;
+	}
+	p{
+		width: 230px;
+		text-align: center;
+		color: lightblue;
+	}
+	div:hover {
+		border: 1px solid pink;
+	}
+</style>
+</head>
+<body>
+	<div id="view">
+		<!-- <div class="box">
+			<img src="" alt="">
+			<p></p>
+		</div> -->
+	</div>
+</body>
+<script src="homework.js"></script>
+<script>
+var view=document.getElementById("view")
+var arr=[{col:1,h:0},{col:2,h:0},{col:3,h:0},{col:4,h:0},{col:5,h:0}]
+
+for(var i=0;i<data.length;i++){
+	arr.sort(function(a,b){
+		if (a.h>b.h) {
+			return 1;
+		}else{
+			return -1;
+		}
+	})
+
+	var boxs=document.createElement('div');
+	var imgs=document.createElement('img');
+	var text=document.createElement('p');
+	
+	text.innerHTML=data[i].title;
+	imgs.src=data[i].img_url;
+	boxs.style.left=(arr[0].col-1)*245+"px";
+	boxs.style.top=arr[0].h+"px"
+
+	boxs.appendChild(imgs);
+	boxs.appendChild(text);
+	view.appendChild(boxs);
+
+	var high=parseInt(getComputedStyle(text,null).height);
+	arr[0].h+=Number(data[i].img_url.split("?")[1].split("x")[1])+high+15;
+}
+
+	arr.sort(function(a,b){
+		if (a.h>b.h) {
+			return 1;
+		}else{
+			return -1;
+		}
+	})
+	console.log(arr);
+	view.style.height=arr[arr.length-1].h+"px"
+</script>
+</html>

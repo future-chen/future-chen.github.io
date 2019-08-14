@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<select name="" id="pro"></select>
+	<select name="" id="city"></select>
+	<select name="" id="place"></select>
+	<select name="" id="street"></select>
+</body>
+<script src="area.js"></script>
+<script>
+	var pro=document.getElementById("pro")
+	var city=document.getElementById("city")
+	var place=document.getElementById("place")
+	var street=document.getElementById("street")
+//省份
+for(var x in area){
+	// console.log(x)
+	var node=document.createElement("option");
+	node.innerHTML=x;
+	pro.appendChild(node)
+}
+//市级
+function updatacity(){
+	city.innerHTML="";
+for(var x in area[pro.value][0]){
+	// console.log(x)
+	var node=document.createElement("option");
+	node.innerHTML=x;
+	city.appendChild(node)
+}
+}
+//区级
+function updataplace(){
+	place.innerHTML="";
+var city_string=area[pro.value][0][city.value];
+for(var i=0;i<city_string.length;i++){
+for(var x in city_string[i]){
+	var node=document.createElement("option");
+	node.innerHTML=x;
+	place.appendChild(node)
+	}
+}
+}
+//街道
+/*for(i=0;i<city_string.length;i++){
+ 	for(var x in city_string[i]){
+ 		if(i==0){
+ 		var arr=city_string[i][x].split("、");
+ 		console.log(arr)
+ 		for(var j=0;j<arr.length;j++){
+ 		var node=document.createElement("option");
+			node.innerHTML=arr[j];
+			street.appendChild(node)
+		}
+ 		}
+ 	}
+}*/
+function updatestreet(){
+	street.innerHTML="";
+	var city_string=area[pro.value][0][city.value];
+for(var x in city_string[place.selectedIndex]){
+	var arr=city_string[place.selectedIndex][x].split("、");
+	for(var i=0;i<arr.length;i++){
+		var node=document.createElement("option");
+		node.innerHTML=arr[i];
+		street.appendChild(node)
+	}
+}
+}
+
+updatacity();
+updataplace();
+updatestreet();
+pro.onclick=function(){
+updatacity();
+updataplace();
+updatestreet();
+}
+city.onclick=function(){
+updataplace();
+updatestreet();
+}
+place.onclick=function(){
+updatestreet();
+}
+
+</script>
+</html>

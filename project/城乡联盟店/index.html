@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	*{	
+		margin:0;
+		padding: 0;
+		font-family: "微软雅黑";			
+	}
+
+	.top a{
+		text-decoration: none;
+		color: black;
+		margin:13px;
+	}
+	#ding{
+		width: 100%;
+		height: 42px;
+		background: #f5f5f5;
+	}
+	.top{
+		overflow: hidden;
+		width: 1200px;
+		margin:0 auto; 
+		font-size: 10px;
+	}
+	.topleft{
+		float: left;
+		line-height: 42px;
+	}
+	.topleft .xinxiang{
+		font-size:15px;
+		color: #c81623;
+	}
+	.topright{
+		float: right;
+		line-height: 42px;
+	}
+	.top1 a{
+		margin:15px;
+	}
+	/*最上行*/
+	.top2{
+		width: 866px;
+		height: 100px;
+		margin: 0 auto;
+		margin-top: 50px;
+		margin-bottom: 50px;
+		overflow: hidden;
+		background: white;
+		/*padding: 60px 0px 0px 100px;*/
+	}
+	.top22{
+		width: 520px;
+		height: 44px;
+		overflow: hidden;
+		float: right;
+	}
+	.top2 p input{
+			width:420px;
+			height: 40px; 
+			border:2px solid #be0108;
+		}		
+	.top2 span input{
+		width: 80px;
+		height: 44px;
+		background: #be0108;
+		text-align:center;
+		color: white; 			
+	}
+	.top22 input{
+		float: left;
+	}
+	.top2.shen{
+		color: red;
+		font-size:15px;
+	}
+/*城乡联盟店*/
+	.top3{
+		width: 1200px;
+		height: 40px;
+		overflow: hidden;
+		margin:0 auto;
+		padding:0;
+	}
+	.top3 a{
+		text-decoration: none;
+		color: black;
+	} 
+	.top3left{
+		float:left;
+	}
+	.top3right{
+		float: right;		
+	}
+	.top3right img{
+		line-height:40px;
+	}
+	.top3right a{
+		color: red;
+		line-height: 40px;
+	}
+
+	.top3left .shouye{
+		color: #d70c19;
+	}
+	.topleft1 {
+		float: left;
+		width: 140px;
+		height: 40px;
+		background: red;
+		padding: 0px 40px;
+	}
+	.topleft1 a{
+		color: white;
+		font-size: 15px;
+		line-height:40px;
+		margin-left:36px;
+	}
+	.topleft2{
+		float: right;
+	}
+	.topleft2 a{
+		line-height:40px;
+		margin-left: 50px; 
+	}
+/*红线位置*/
+	.line1{
+		border-bottom: 2px solid red;
+	}
+
+	li{
+		list-style: none; 
+	  }
+	.top41{
+		width: 218px;
+		height: 400px;
+		border-left:1px solid #dfdfdf;
+		border-right:1px solid #dfdfdf;
+		margin: 0 auto;
+		display: inline-block;
+		float: left;
+	}
+	.top41 li{
+		height: 43px;
+		border-bottom:1px dashed #dfdfdf;
+		line-height: 43px;
+	}
+	.top41 a{
+		margin-left:69px;
+		color: #535353 ;
+		font-weight: bolder;
+		font-size:14px;
+	}
+/*日用百货*/
+	 .top42{
+		display: inline-block;
+	}
+/*大图片*/
+	.top4 a{
+		text-decoration:none;
+		font-size:13px;
+		color: #666666;
+	}
+	.top43{
+		width: 262px;
+		height: 342px;
+		padding: 14px 26px 35px 18px;
+		background:#fafafa; 
+		display: inline-block;
+		float: right;
+	}
+	h2{
+		color: #d70c19;
+		font-size:16px;
+		margin-bottom: 15px;
+	}
+	.top43 li{
+/*		margin-left: px;	*/
+		height: 32px;
+		line-height:32px;	
+	}
+	ul{
+		border-top: 1.5px solid #dfdfdf;
+	}
+/*最新活动*/
+	.top4{
+		width: 1200px;
+		height: 400px;
+		margin:0 auto;
+		overflow: hidden;
+	}
+/*第四行*/
+	.top5{
+		width: 1200px;
+		height: 50px;
+		margin:0 auto;
+		overflow: hidden;
+	}	
+	.top5 img{
+		float: left;
+		margin-top: 18px;
+	}
+	.top5left{
+		width: 900px;
+		float: left;
+		line-height:50px;
+	}
+		.top5left1{
+			width: 500px;
+			float: left;
+			color: red;
+		}
+		.top5left2{
+			width: 100px;
+			float: right;
+		}
+	.top5right{
+		width: 300px;
+		float: right;
+		line-height:50px;
+		color: red;
+	}
+/*联盟店行*/
+.product{
+		width:270px;
+		padding:10px;
+		border:1px solid #dfdfdf; 
+		float: left;
+		margin:5px 2px; 
+	}
+	.product img{
+		width: 100%;
+		height: 270px;
+	}
+	.title_box{
+		overflow: hidden;
+		height: 30px;
+	}
+	.title_box p{
+		float: left;
+	}
+	.title_box span{
+		float: right;
+		color: #a5a5a5;
+	}
+	.stra{
+		overflow: : hidden;
+		height: 25px
+	}
+	.stra  div img{
+		width: 100px;
+		height: 20px;
+	}
+	.stra p img{
+		width: 20px;
+		height: 20px;
+	}
+	.stra div{
+		color:red;
+		float: left; 
+	}
+	.stra p{
+		float: right;
+		color: #a5a5a5;
+	}
+	.product>p{
+		color:#535353;
+	}
+	.top6{
+		width: 1200px;
+		height: 1160px;
+		margin: 0 auto;
+	}
+	.top6left{
+		overflow: hidden;
+		width: 900px;
+		height: 1150px;
+		border:2px solid black; 
+	}
+	.top6right{
+		margin-left: 10px;
+		width: 300px;
+		height: 1150px;
+	}
+/*图片布置*/
+	.top7{
+		/*background-size: 42px;*/
+		width: 100%;
+		height: 42px;
+		background: #b70914;
+		/*padding-right: 400px;
+		padding-left: 400px;*/
+	}
+	.top7center{
+		width: 1200px;
+		margin: 0 auto;
+	}
+	.top7 p{
+		font-size:14px;
+		margin: 9px 100px 8px 100px;
+		display: inline-block;
+		color: #ffffff;
+		/*text-align: center;*/
+	}
+/*大红线*/
+.top8{
+	width: 1200px;
+	height: 180px;
+	margin: 0 auto;
+	overflow: hidden; 
+}
+h1{
+	text-decoration:none;
+	font-size:18px;
+	color: #c81623;
+	/*text-align: center;*/
+}
+.top81{
+	width: 72px;
+	height:125px;
+	margin: 25px 60px 30px 60px;
+	float: left;
+	
+}
+.top8 a{
+	text-decoration:none;
+	color: #999999;
+	font-size:14px;
+}
+.top8 li{
+	padding-top: 10px;
+}
+
+.top9{
+	width: 1200px;
+	height: 200px;
+	margin: 0 auto;
+}
+
+.top91 ,.top92,.top93{
+	/*width: 550px;*/
+	text-align: center;
+	font-size:15px;
+	margin-top: 20px;
+}
+.top91{
+	margin-top: 50px;
+}
+</style>
+</head>
+<body>
+	<div id="ding">
+	<div class="top">
+		<div class="topleft">
+			<a href="" class="xinxiang">新乡市</a>
+			<a href="">原阳县</a>
+			<a href="">[切换]</a>
+		</div>
+		<div class="topright">
+		<a href="" >登录</a>
+		<a href="">注册</a>
+		<a href="">消息(0)</a>
+		<a href="">免费开店</a>
+		<a href="">便民宝</a>
+		<a href="">便民网</a>
+		<a href="">网站地图</a>
+		</div>
+	</div>
+	</div>
+
+<div class="top2">
+	<img src="pic/zi.jpg" alt="找不到图片">
+	<div class="top22">
+	<form action="http://www.baidu.com" >
+	<p><input type="text" name=" " placeholder="请输入商品或品牌"></p>
+	<span><input type="submit" value="搜索"></span>
+	</form></div>
+</div>
+</div>
+	<div class="top3"> 
+		<div class="top3left">
+			<div class="topleft1">
+				<a href="" >全部分类 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ∨</a>
+			</div>
+			<div class="topleft2">
+				<a href="" class="shouye">首页</a>
+				<a href="">联盟分部</a>
+				<a href="">招商加盟</a>
+			</div>
+		</div>
+
+		<div class="top3right">
+			<img src="pic/888.jpg" alt="0">
+			<a href="">申请联盟店</a>
+		</div>
+	</div>
+	<div class="line1"></div>
+<div class="top4">
+	<div class="top41">	
+		<ul>
+			<li><a href="">日用百货</a></li>
+			<li><a href="">生活服务</a></li>
+			<li><a href="">娱乐休闲</a></li>
+			<li><a href="">美食 购物</a></li>
+			<li><a href="">旅游 酒店</a></li>
+			<li><a href="">数码 电器</a></li>
+			<li><a href="">美容护肤</a></li>
+			<li><a href="">丽人</a></li>
+			<li><a href="">电影</a></li>		
+		</ul>
+	</div>
+	<div class="top42">
+		<img src="pic/big.jpg" alt="找不到图片">
+	</div>
+
+	<div class="top43">
+		<h2>最新活动</h2>
+			<div class="line"></div>
+			<ul>
+				<li><a href="">九九鸭翅：价值一元的麻辣鸭翅一份，提供...</a></li>
+				<li><a href="">为美丽加分，超柔无痕美睫依次，女士专享...</a></li>
+				<li><a href="">黄家老店，8人餐，滋味鲜美，邀您品鉴，...</a></li>
+				<li><a href="">生日双享，欢乐加倍！金洋蛋糕特推出美味...</a></li>
+				<li><a href="">精致美味，信服滋味，韩翔福特别推出美味...</a></li>
+				<li><a href="">为美丽加分，超柔无痕美睫依次，女士专享...</a></li>
+				<li><a href="">生日双享，欢乐加倍！金洋蛋糕特推出美味...</a></li>
+				<li><a href="">精致美味，信服滋味，韩翔福特别推出美味...</a></li>
+				<li><a href="">星际桌球会所：价值32元的台球畅打2小时...</a></li>
+			</ul>
+	</div>
+</div>
+
+	<div class="top5"> 
+		<div class="top5left">
+			<div class="top5left1">
+				<img src="pic/999.jpg" alt="">
+			<p>&nbsp;联盟店</p></div>
+			<p><div class="top5left2">更多 > ></div></p>
+		</div>
+		<div class="top5right">
+			<img src="pic/101.jpg" alt="0">
+			<p>&nbsp;推荐联盟</p>
+		</div>
+	</div>
+
+<div class="top6">
+	<div clas="top6left">
+	<div class="product">
+	<a href="http://www.taobao.com" target="2">	
+		<img src="pic/111.png" alt="找不到图片"></a>
+		<div class="title_box">
+			<p>三毛</p>
+			<span>美食购物</span>
+		</div>
+		<div class="stra">
+			<div><img src="pic/star.png" alt=""> 5.0</div>
+			<p><img src="pic/001.png" alt=""> 收藏：<span>500</span></p>
+		</div>
+		<p class="tel">客服电话：0371-8412782</p>
+	</div>
+
+<div class="product">
+	<a href="http://www.taobao.com" target="2">	
+		<img src="pic/222.jpg" alt="找不到图片"></a>
+		<div class="title_box">
+			<p>大商集团</p>
+			<span>美食购物</span>
+		</div>
+		<div class="stra">
+			<div><img src="pic/star.png" alt=""> 5.0</div>
+			<p><img src="pic/001.png" alt=""> 收藏：<span>500</span></p>
+		</div>
+		<p class="tel">客服电话：0371-8412782</p>
+	</div>
+
+	<div class="product">
+	<a href="http://www.taobao.com" target="2">	
+		<img src="pic/333.jpg" alt="找不到图片"></a>
+		<div class="title_box">
+			<p>快天下</p>
+			<span>美食购物</span>
+		</div>
+		<div class="stra">
+			<div><img src="pic/star.png" alt=""> 5.0</div>
+			<p><img src="pic/001.png" alt=""> 收藏：<span>500</span></p>
+		</div>
+		<p class="tel">客服电话：0371-8412782</p>
+	</div>
+<div class="product">
+	<a href="http://www.taobao.com" target="2">	
+		<img src="pic/444.jpg" alt="找不到图片"></a>
+		<div class="title_box">
+			<p>东苑超市</p>
+			<span>美食购物</span>
+		</div>
+		<div class="stra">
+			<div><img src="pic/star.png" alt=""> 5.0</div>
+			<p><img src="pic/001.png" alt=""> 收藏：<span>500</span></p>
+		</div>
+		<p class="tel">客服电话：0371-8412782</p>
+	</div>
+<div class="product">
+	<a href="http://www.taobao.com" target="2">	
+		<img src="pic/555.jpg" alt="找不到图片"></a>
+		<div class="title_box">
+			<p>大商</p>
+			<span>美食购物</span>
+		</div>
+		<div class="stra">
+			<div><img src="pic/star.png" alt=""> 5.0</div>
+			<p><img src="pic/001.png" alt=""> 收藏：<span>500</span></p>
+		</div>
+		<p class="tel">客服电话：0371-8412782</p>
+	</div>
+<div class="product">
+	<a href="http://www.taobao.com" target="2">	
+		<img src="pic/666.jpg" alt="找不到图片"></a>
+		<div class="title_box">
+			<p>城关联盟店</p>
+			<span>美食购物</span>
+		</div>
+		<div class="stra">
+			<div><img src="pic/star.png" alt=""> 5.0</div>
+			<p><img src="pic/001.png" alt=""> 收藏：<span>500</span></p>
+		</div>
+		<p class="tel">客服电话：0371-8412782</p>
+	</div>
+
+	<div class="product">
+	<a href="http://www.taobao.com" target="2">	
+		<img src="pic/333.jpg" alt="找不到图片"></a>
+		<div class="title_box">
+			<p>城关联盟店</p>
+			<span>美食购物</span>
+		</div>
+		<div class="stra">
+			<div><img src="pic/star.png" alt=""> 5.0</div>
+			<p><img src="pic/001.png" alt=""> 收藏：<span>500</span></p>
+		</div>
+		<p class="tel">客服电话：0371-8412782</p>
+	</div>
+
+	<div class="product">
+	<a href="http://www.taobao.com" target="2">	
+		<img src="pic/777.jpg" alt="找不到图片"></a>
+		<div class="title_box">
+			<p>城关联盟店</p>
+			<span>美食购物</span>
+		</div>
+		<div class="stra">
+			<div><img src="pic/star.png" alt=""> 5.0</div>
+			<p><img src="pic/001.png" alt=""> 收藏：<span>500</span></p>
+		</div>
+		<p class="tel">客服电话：0371-8412782</p>
+	</div>
+
+	<div class="product">
+	<a href="http://www.taobao.com" target="2">	
+		<img src="pic/111.png" alt="找不到图片"></a>
+		<div class="title_box">
+			<p>城关联盟店</p>
+			<span>美食购物</span>
+		</div>
+		<div class="stra">
+			<div><img src="pic/star.png" alt=""> 5.0</div>
+			<p><img src="pic/001.png" alt=""> 收藏：<span>500</span></p>
+		</div>
+		<p class="tel">客服电话：0371-8412782</p>
+	</div>
+	</div>
+<!-- 右边的三张图 -->
+	<div top6right>
+		<div class="product">
+	<a href="http://www.taobao.com" target="2">	
+		<img src="pic/222.jpg" alt="找不到图片"></a>
+		<div class="title_box">
+			<p>大商</p>
+			<span>美食购物</span>
+		</div>
+		<div class="stra">
+			<div><img src="pic/star.png" alt=""> 5.0</div>
+			<p><img src="pic/001.png" alt=""> 收藏：<span>500</span></p>
+		</div>
+		<p class="tel">客服电话：0371-8412782</p>
+	</div>
+
+	<div class="product">
+	<a href="http://www.taobao.com" target="2">	
+		<img src="pic/111.png" alt="找不到图片"></a>
+		<div class="title_box">
+			<p>三毛</p>
+			<span>美食购物</span>
+		</div>
+		<div class="stra">
+			<div><img src="pic/star.png" alt=""> 5.0</div>
+			<p><img src="pic/001.png" alt=""> 收藏：<span>500</span></p>
+		</div>
+		<p class="tel">客服电话：0371-8412782</p>
+	</div>
+
+	<div class="product">
+	<a href="http://www.taobao.com" target="2">	
+		<img src="pic/333.jpg" alt="找不到图片"></a>
+		<div class="title_box">
+			<p>快天下</p>
+			<span>美食购物</span>
+		</div>
+		<div class="stra">
+			<div><img src="pic/star.png" alt=""> 5.0</div>
+			<p><img src="pic/001.png" alt=""> 收藏：<span>500</span></p>
+		</div>
+		<p class="tel">客服电话：0371-8412782</p>
+	</div>
+	</div>
+</div>
+<!-- 大红线 -->
+<div class="top7">
+	<div class="top7center">
+	<p>正规渠道  正品保证</p>
+	<p>品类齐全  轻松购物</p>
+	<p>产地直供  原汁原味</p>
+	</div>
+</div>
+<!-- 用户指南 -->
+<div class="top8">
+	<div class="top81">
+		<h1>用户指南</h1>
+	<ul>	
+			<li><a href="">注册应用</a></li>
+			<li><a href="">找回密码</a></li>
+			<li><a href="">便民宝</a></li>		
+	</ul>
+	</div>
+	<div class="top81">
+		<h1>订单交易</h1>
+	<ul>	
+			<li><a href="">交易流程</a></li>
+			<li><a href="">财务安全</a></li>
+			<li><a href="">支付方式</a></li>		
+			<li><a href="">我要退单</a></li>				
+	</ul>
+	</div>
+	<div class="top81">
+		<h1>联盟店</h1>
+	<ul>	
+			<li><a href="">申请流程</a></li>
+			<li><a href="">我要加入</a></li>
+			<li><a href="">资质认证</a></li>		
+			<li><a href="">信息发布</a></li>		
+	</ul>
+	</div>
+	<div class="top81">
+		<h1>合作社</h1>
+	<ul>	
+			<li><a href="">申请流程</a></li>
+			<li><a href="">我要加入</a></li>
+			<li><a href="">资质认证</a></li>		
+			<li><a href="">信息发布</a></li>		
+	</ul>
+	</div>
+	<div class="top81">
+		<h1>物流港</h1>
+	<ul>	
+			<li><a href="">功能说明</a></li>
+			<li><a href="">常见问题</a></li>
+			<li><a href="">查找信息</a></li>		
+			<li><a href="">联系我们</a></li>		
+	</ul>
+	</div>
+	<div class="top81">
+		<h1>信息站</h1>
+	<ul>	
+			<li><a href="">申请流程</a></li>
+			<li><a href="">我要加入</a></li>
+			<li><a href="">资质认证</a></li>		
+			<li><a href="">信息发布</a></li>		
+	</ul>
+	</div>
+	<div class="top81">
+		<h1>服务中心</h1>
+	<ul>	
+			<li><a href="">售后政策</a></li>
+			<li><a href="">价格保护</a></li>
+			<li><a href="">联系客服</a></li>			
+	</ul>
+	</div>
+	
+</div>
+
+<div class="top9">
+	<p class="top91">城乡商贸城	丨	法律声明		丨	用户协议	丨	隐私安全		丨		友情链接		丨投诉建议	丨		联系我们	</p>
+	<p class="top92">豫ICP备13021607号-17		****备案			合作热线：0371-56087190</p>
+	<p class="top93">&copy;2015		郑州市康途计算机科技有限公司		版权所有</p>
+</div>
+</body>
+</html>

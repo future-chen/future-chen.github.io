@@ -1,0 +1,26 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.header{
+	height: 80px;
+	background: skyblue;
+}
+.nav{
+	width: 280px;
+	background: #333d4d;
+	position: absolute;
+	top: 80px;
+	left: 0;
+	bottom: 0;
+	overflow: auto;
+}
+.content{
+	position: absolute;
+	top: 90px;
+	bottom: 10px;
+	left: 290px;
+	right: 10px;
+	background: #dedede;
+	overflow: auto;
+}
